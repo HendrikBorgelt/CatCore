@@ -1778,8 +1778,6 @@ slots:
     range: string
     slot_uri: catcore:sample_holder
     multivalued: true
-    
-# ==================== ADDITIONAL CHARACTERIZATION SLOTS ====================
 
   # X-ray source slots
   xray_source:
@@ -1954,7 +1952,6 @@ slots:
     range: string
     slot_uri: catcore:filter_or_grating
     multivalued: true  
-# ==================== ADDITIONAL CHARACTERIZATION SLOTS (Continued) ====================
 
   # GC-MS specific slots
   external_standard:
@@ -2308,7 +2305,6 @@ slots:
     multivalued: true
     unit:
       ucum_code: cm-1
-# ==================== ADDITIONAL CHARACTERIZATION & REACTION SLOTS ====================
 
   # DRIFTS and spectroscopy slots (continued)
   background_correction_method:
@@ -2661,3 +2657,670 @@ slots:
     multivalued: true
     unit:
       ucum_code: cm
+# ==================== SIMULATION SLOTS ====================
+
+  # General simulation slots
+  software_package:
+    description: Software or package used for simulation
+    range: string
+    slot_uri: catcore:software_package
+    multivalued: true
+    
+  simulation_method:
+    description: Simulation method used
+    range: SimulationMethod
+    slot_uri: catcore:simulation_method
+    multivalued: true
+    
+  calculated_property:
+    description: Property calculated from simulation
+    range: CalculatedProperty
+    slot_uri: catcore:calculated_property
+    multivalued: true
+    
+  # DFT specific slots
+  exchange_correlation_functional:
+    description: Exchange-correlation functional used (e.g., PBE, B3LYP)
+    range: string
+    slot_uri: catcore:exchange_correlation_functional
+    multivalued: true
+    
+  energy_cutoff:
+    description: Energy cutoff for plane wave basis
+    range: float
+    slot_uri: catcore:energy_cutoff
+    multivalued: true
+    unit:
+      ucum_code: eV
+    
+  convergence_criteria:
+    description: Convergence criteria (e.g., energy, force)
+    range: string
+    slot_uri: catcore:convergence_criteria
+    multivalued: true
+    
+  dft_u_parameters:
+    description: DFT+U parameters used
+    range: string
+    slot_uri: catcore:dft_u_parameters
+    multivalued: true
+    
+  spin_polarization:
+    description: Spin polarization setting
+    range: boolean
+    slot_uri: catcore:spin_polarization
+    multivalued: true
+    
+  total_energy_per_atom:
+    description: Total energy per atom
+    range: float
+    slot_uri: catcore:total_energy_per_atom
+    multivalued: true
+    unit:
+      ucum_code: eV
+    
+  # Molecular dynamics slots
+  force_field:
+    description: Force field used
+    range: string
+    slot_uri: catcore:force_field
+    multivalued: true
+    
+  simulation_timestep:
+    description: Time step for simulation
+    range: float
+    slot_uri: APOLLO_SV:00000012
+    multivalued: true
+    unit:
+      ucum_code: fs
+    
+  simulation_time:
+    description: Total simulation time
+    range: float
+    slot_uri: catcore:simulation_time
+    multivalued: true
+    unit:
+      ucum_code: ps
+    
+  ensemble_type:
+    description: Ensemble type (e.g., NVT, NPT)
+    range: string
+    slot_uri: catcore:ensemble_type
+    multivalued: true
+    
+  number_of_atoms:
+    description: Number of atoms in simulation
+    range: integer
+    slot_uri: catcore:number_of_atoms
+    multivalued: true
+    
+  # Microkinetics slots
+  rate_constants:
+    description: Rate constants or Arrhenius parameters
+    range: string
+    slot_uri: NCIT:C94967
+    multivalued: true
+    
+  solver_type:
+    description: Type of solver used
+    range: string
+    slot_uri: catcore:solver_type
+    multivalued: true
+    
+  pressure:
+    description: Pressure in simulation
+    range: float
+    slot_uri: catcore:pressure
+    multivalued: true
+    unit:
+      ucum_code: bar
+    
+  surface_coverage:
+    description: Surface coverage of species
+    range: float
+    slot_uri: catcore:surface_coverage
+    multivalued: true
+    
+  activation_energy:
+    description: Activation energy for each step
+    range: float
+    slot_uri: catcore:activation_energy
+    multivalued: true
+    unit:
+      ucum_code: eV
+    
+  # Monte Carlo slots
+  interaction_potential:
+    description: Interaction potential used
+    range: string
+    slot_uri: catcore:interaction_potential
+    multivalued: true
+    
+  number_of_steps:
+    description: Number of Monte Carlo steps
+    range: integer
+    slot_uri: catcore:number_of_steps
+    multivalued: true
+    
+  lattice_size_type:
+    description: Lattice size and type
+    range: string
+    slot_uri: catcore:lattice_size_type
+    multivalued: true
+    
+  acceptance_criteria:
+    description: Acceptance criteria for Monte Carlo moves
+    range: string
+    slot_uri: catcore:acceptance_criteria
+    multivalued: true
+    
+  equilibration_steps:
+    description: Number of equilibration steps
+    range: integer
+    slot_uri: catcore:equilibration_steps
+    multivalued: true
+    
+  sampling_interval:
+    description: Sampling interval for data collection
+    range: integer
+    slot_uri: catcore:sampling_interval
+    multivalued: true
+    
+  # Thermodynamic stability slots
+  formation_energy:
+    description: Formation energy per atom
+    range: float
+    slot_uri: catcore:formation_energy
+    multivalued: true
+    unit:
+      ucum_code: eV
+    
+  reference_energies:
+    description: Reference elemental energies
+    range: string
+    slot_uri: catcore:reference_energies
+    multivalued: true
+    
+  energy_above_hull:
+    description: Energy above convex hull
+    range: float
+    slot_uri: catcore:energy_above_hull
+    multivalued: true
+    unit:
+      ucum_code: eV
+    
+  phase_diagram_type:
+    description: Phase diagram type (e.g., binary, ternary)
+    range: string
+    slot_uri: catcore:phase_diagram_type
+    multivalued: true
+    
+  competing_phases:
+    description: Competing phase list
+    range: string
+    slot_uri: catcore:competing_phases
+    multivalued: true
+    
+  # Piezoelectricity slots
+  piezoelectric_tensor:
+    description: Piezoelectric tensor components
+    range: string
+    slot_uri: catcore:piezoelectric_tensor
+    multivalued: true
+    
+  crystal_symmetry:
+    description: Crystal symmetry
+    range: string
+    slot_uri: catcore:crystal_symmetry
+    multivalued: true
+    
+  strain_applied:
+    description: Strain applied
+    range: float
+    slot_uri: catcore:strain_applied
+    multivalued: true
+    
+  ionic_electronic_contributions:
+    description: Ionic and electronic contributions
+    range: string
+    slot_uri: catcore:ionic_electronic_contributions
+    multivalued: true
+    
+  # Elastic constants slots
+  elastic_tensor:
+    description: Elastic tensor components
+    range: string
+    slot_uri: catcore:elastic_tensor
+    multivalued: true
+    
+  bulk_modulus:
+    description: Bulk modulus
+    range: float
+    slot_uri: catcore:bulk_modulus
+    multivalued: true
+    unit:
+      ucum_code: GPa
+    
+  shear_modulus:
+    description: Shear modulus
+    range: float
+    slot_uri: catcore:shear_modulus
+    multivalued: true
+    unit:
+      ucum_code: GPa
+    
+  poisson_ratio:
+    description: Poisson's ratio
+    range: float
+    slot_uri: catcore:poisson_ratio
+    multivalued: true
+    
+  young_modulus:
+    description: Young's modulus
+    range: float
+    slot_uri: catcore:young_modulus
+    multivalued: true
+    unit:
+      ucum_code: GPa
+    
+  # Surfaces slots
+  surface_energy:
+    description: Surface energy
+    range: float
+    slot_uri: catcore:surface_energy
+    multivalued: true
+    unit:
+      ucum_code: J/m2
+    
+  miller_indices:
+    description: Miller indices of surface
+    range: string
+    slot_uri: catcore:miller_indices
+    multivalued: true
+    
+  slab_thickness:
+    description: Slab thickness
+    range: float
+    slot_uri: catcore:slab_thickness
+    multivalued: true
+    unit:
+      ucum_code: angstrom
+    
+  vacuum_spacing:
+    description: Vacuum spacing
+    range: float
+    slot_uri: catcore:vacuum_spacing
+    multivalued: true
+    unit:
+      ucum_code: angstrom
+    
+  surface_termination_method:
+    description: Surface termination method
+    range: string
+    slot_uri: catcore:surface_termination_method
+    multivalued: true
+    
+  # Dielectric tensors slots
+  material_composition:
+    description: Material composition
+    range: string
+    slot_uri: catcore:material_composition
+    multivalued: true
+    
+  crystal_structure:
+    description: Crystal structure (space group, lattice parameters)
+    range: string
+    slot_uri: SIO:001100
+    multivalued: true
+    
+  k_point_mesh:
+    description: k-point mesh for sampling
+    range: string
+    slot_uri: catcore:k_point_mesh
+    multivalued: true
+
+  # Phonon dispersion slots
+  force_constant_method:
+    description: Force constant calculation method
+    range: string
+    slot_uri: catcore:force_constant_method
+    multivalued: true
+    
+  kq_point_mesh:
+    description: k/q-point mesh for phonons
+    range: string
+    slot_uri: catcore:kq_point_mesh
+    multivalued: true
+    
+  smearing_parameter:
+    description: Smearing/broadening parameter
+    range: float
+    slot_uri: catcore:smearing_parameter
+    multivalued: true
+    unit:
+      ucum_code: eV
+    
+  imaginary_modes:
+    description: Imaginary modes present
+    range: boolean
+    slot_uri: catcore:imaginary_modes
+    multivalued: true
+    
+  # Equations of state slots
+  fit_method:
+    description: Fit method (e.g., Birch-Murnaghan, Vinet)
+    range: string
+    slot_uri: catcore:fit_method
+    multivalued: true
+    
+  pressure_derivative:
+    description: Pressure derivative of bulk modulus
+    range: float
+    slot_uri: catcore:pressure_derivative
+    multivalued: true
+    
+  fit_residuals:
+    description: Residuals of fit
+    range: float
+    slot_uri: catcore:fit_residuals
+    multivalued: true
+    
+  # Aqueous stability slots
+  ph_range:
+    description: pH range considered
+    range: string
+    slot_uri: catcore:ph_range
+    multivalued: true
+    
+  potential_range:
+    description: Potential range considered
+    range: string
+    slot_uri: catcore:potential_range
+    multivalued: true
+    
+  solvation_model:
+    description: Solvation model used
+    range: string
+    slot_uri: catcore:solvation_model
+    multivalued: true
+    
+  ionic_strength:
+    description: Ionic strength of solution
+    range: float
+    slot_uri: catcore:ionic_strength
+    multivalued: true
+    unit:
+      ucum_code: mol/L
+    
+  # Grain boundaries slots
+  grain_boundary_plane:
+    description: Grain boundary plane
+    range: string
+    slot_uri: catcore:grain_boundary_plane
+    multivalued: true
+    
+  misorientation_angle:
+    description: Misorientation angle
+    range: float
+    slot_uri: catcore:misorientation_angle
+    multivalued: true
+    unit:
+      ucum_code: deg
+    
+  grain_boundary_energy:
+    description: Grain boundary energy
+    range: float
+    slot_uri: catcore:grain_boundary_energy
+    multivalued: true
+    unit:
+      ucum_code: J/m2
+    
+  simulation_cell_size:
+    description: Simulation cell size
+    range: string
+    slot_uri: catcore:simulation_cell_size
+    multivalued: true
+    
+  gb_excess_volume:
+    description: GB excess volume
+    range: float
+    slot_uri: catcore:gb_excess_volume
+    multivalued: true
+    
+  gb_structural_units:
+    description: GB structural units description
+    range: string
+    slot_uri: catcore:gb_structural_units
+    multivalued: true
+    
+  charge_defect_segregation:
+    description: Charge or defect segregation data
+    range: string
+    slot_uri: catcore:charge_defect_segregation
+    multivalued: true
+    
+  # Electronic structure slots
+  smearing_method:
+    description: Smearing method and width
+    range: string
+    slot_uri: catcore:smearing_method
+    multivalued: true
+    
+  spin_polarized:
+    description: Spin-polarized calculation
+    range: boolean
+    slot_uri: catcore:spin_polarized
+    multivalued: true
+    
+  band_path:
+    description: Band path used
+    range: string
+    slot_uri: catcore:band_path
+    multivalued: true
+    
+  fermi_energy:
+    description: Fermi energy
+    range: float
+    slot_uri: catcore:fermi_energy
+    multivalued: true
+    unit:
+      ucum_code: eV
+    
+  # Ferroelectrics slots
+  polarization_direction:
+    description: Polarization direction
+    range: string
+    slot_uri: catcore:polarization_direction
+    multivalued: true
+    
+  spontaneous_polarization:
+    description: Spontaneous polarization magnitude
+    range: float
+    slot_uri: catcore:spontaneous_polarization
+    multivalued: true
+    unit:
+      ucum_code: uC/cm2
+    
+  reference_structure:
+    description: Reference paraelectric structure
+    range: string
+    slot_uri: catcore:reference_structure
+    multivalued: true
+    
+  switching_barrier:
+    description: Switching barrier
+    range: float
+    slot_uri: catcore:switching_barrier
+    multivalued: true
+    unit:
+      ucum_code: eV
+    
+  coercive_field:
+    description: Coercive field
+    range: float
+    slot_uri: catcore:coercive_field
+    multivalued: true
+    unit:
+      ucum_code: kV/cm
+    
+  temperature_dependence:
+    description: Temperature dependence
+    range: string
+    slot_uri: catcore:temperature_dependence
+    multivalued: true
+    
+  # Band gap slots
+  material_sample:
+    description: Material sample
+    range: string
+    slot_uri: voc4cat:0005056
+    multivalued: true
+    
+  structure_model:
+    description: Structure or model used
+    range: string
+    slot_uri: catcore:structure_model
+    multivalued: true
+    
+  smearing_broadening:
+    description: Smearing or broadening parameter
+    range: float
+    slot_uri: catcore:smearing_broadening
+    multivalued: true
+    unit:
+      ucum_code: eV
+    
+  direct_indirect:
+    description: Direct or indirect band gap
+    range: string
+    slot_uri: catcore:direct_indirect
+    multivalued: true
+    
+  experimental_reference:
+    description: Experimental reference value
+    range: float
+    slot_uri: catcore:experimental_reference
+    multivalued: true
+    unit:
+      ucum_code: eV
+    
+  gw_hybrid_correction:
+    description: GW or hybrid correction used
+    range: boolean
+    slot_uri: catcore:gw_hybrid_correction
+    multivalued: true
+    
+  excitonic_correction:
+    description: Excitonic correction applied
+    range: float
+    slot_uri: catcore:excitonic_correction
+    multivalued: true
+    unit:
+      ucum_code: eV
+    
+  # Sublimation specific slots
+  synthesis_duration:
+    description: Duration of synthesis
+    range: float
+    slot_uri: voc4cat:0000050
+    multivalued: true
+    unit:
+      ucum_code: h
+
+  # Molecular synthesis specific slots  
+  reaction_vessel:
+    description: Vessel used for reaction
+    range: string
+    slot_uri: catcore:reaction_vessel
+    multivalued: true
+    
+  mixing_device:
+    description: Device used for mixing
+    range: string
+    slot_uri: catcore:mixing_device
+    multivalued: true
+    
+  crystallisation_solvents:
+    description: Solvents used for crystallisation
+    range: string
+    slot_uri: catcore:crystallisation_solvents
+    multivalued: true
+    
+  precipitation_agent:
+    description: Agent used for precipitation
+    range: string
+    slot_uri: catcore:precipitation_agent
+    multivalued: true
+    
+  crystallisation_duration:
+    description: Duration of crystallisation
+    range: float
+    slot_uri: catcore:crystallisation_duration
+    multivalued: true
+    unit:
+      ucum_code: h
+    
+  purification_solvent:
+    description: Solvent used for purification
+    range: string
+    slot_uri: catcore:purification_solvent
+    multivalued: true
+
+  bubble_size_distribution:
+    range: string
+
+# ==================== ENUMERATIONS ====================
+
+enums:
+
+  CatalysisResearchFieldEnum:
+    description: Enumeration of catalysis research fields
+    permissible_values:
+      heterogeneous_catalysis:
+        description: Heterogeneous catalysis
+        meaning: voc4cat:0007001
+      homogeneous_catalysis:
+        description: Homogeneous catalysis
+        meaning: voc4cat:0000294
+      biocatalysis:
+        description: Biocatalysis
+        meaning: voc4cat:0000204
+      electrocatalysis:
+        description: Electrocatalysis
+        meaning: voc4cat:0000216
+      hybrid_catalysis:
+        description: Hybrid catalysis
+      other:
+        description: Other catalysis research field
+        
+  ImpregnationTypeEnum:
+    description: Enumeration of impregnation types
+    permissible_values:
+      wet_impregnation:
+        description: Wet impregnation method
+      dry_impregnation:
+        description: Dry impregnation method
+      incipient_wetness:
+        description: Incipient wetness impregnation
+      other:
+        description: Other impregnation type
+        
+  SampleStateEnum:
+    description: Enumeration of sample states
+    permissible_values:
+      solid:
+        description: Solid state
+      liquid:
+        description: Liquid state
+      gas:
+        description: Gas state
+      solution:
+        description: Solution state
+      powder:
+        description: Powder form
+      pellet:
+        description: Pellet form
+      thin_film:
+        description: Thin film
+      other:
+        description: Other sample state
