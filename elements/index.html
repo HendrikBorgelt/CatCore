@@ -1,0 +1,2271 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://HendrikBorgelt.github.io/CatCore/elements/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../about/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Schema - CatCore</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/ansi-colours.css">
+    
+      <link rel="stylesheet" href="../css/jupyter-cells.css">
+    
+      <link rel="stylesheet" href="../css/pandas-dataframe.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#catcore-metadata-reference-model" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="CatCore" class="md-header__button md-logo" aria-label="CatCore" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CatCore
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Schema
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/HendrikBorgelt/CatCore" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CatCore" class="md-nav__button md-logo" aria-label="CatCore" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CatCore
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/HendrikBorgelt/CatCore" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schema
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slots
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enumerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enumerations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subsets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subsets
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slots
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enumerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enumerations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subsets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subsets
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="catcore-metadata-reference-model">CatCore Metadata Reference Model</h1>
+<p>The CatCore describes the minimum information which must be reported with research data 
+concerning the field of catalysis. This guideline helps to handle and standardize data 
+based on the FAIR principle (Findable, Accessible, Interoperable, Reusable).</p>
+<p>URI: https://w3id.org/nfdi4cat/catcore</p>
+<p>Name: catcore-metadata</p>
+<h2 id="classes">Classes</h2>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="CatCoreEntity/">CatCoreEntity</a></td>
+<td>Root class for all CatCore entities</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="CalculatedProperty/">CalculatedProperty</a></td>
+<td>Property calculated from simulation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="AqueousStability/">AqueousStability</a></td>
+<td>Aqueous stability property</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="BandGap/">BandGap</a></td>
+<td>Band gap property</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="DielectricTensors/">DielectricTensors</a></td>
+<td>Dielectric tensors property</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ElasticConstants/">ElasticConstants</a></td>
+<td>Elastic constants property</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ElectronicStructure/">ElectronicStructure</a></td>
+<td>Electronic structure property</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="EquationsOfState/">EquationsOfState</a></td>
+<td>Equations of state property</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Ferroelectrics/">Ferroelectrics</a></td>
+<td>Ferroelectric property</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="GrainBoundaries/">GrainBoundaries</a></td>
+<td>Grain boundaries property</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="PhononDispersion/">PhononDispersion</a></td>
+<td>Phonon dispersion property</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Piezoelectricity/">Piezoelectricity</a></td>
+<td>Piezoelectricity property</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Surfaces/">Surfaces</a></td>
+<td>Surface property</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ThermodynamicStability/">ThermodynamicStability</a></td>
+<td>Thermodynamic stability property</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="CatCore/">CatCore</a></td>
+<td>The CatCore describes the minimum information which must be reported with res...</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Characterization/">Characterization</a></td>
+<td>The data class 'Characterization' describes the minimum information which sho...</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="CharacterizationTechnique/">CharacterizationTechnique</a></td>
+<td>Characterization technique used for catalyst analysis</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="BET/">BET</a></td>
+<td>Brunauer-Emmett-Teller surface area analysis</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ConductivityMeasurement/">ConductivityMeasurement</a></td>
+<td>Conductivity measurement</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="CyclicVoltammetry/">CyclicVoltammetry</a></td>
+<td>Cyclic voltammetry</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="DRIFTS/">DRIFTS</a></td>
+<td>Diffuse reflectance infrared Fourier transform spectroscopy</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="DynamicLightScattering/">DynamicLightScattering</a></td>
+<td>Dynamic light scattering</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="EDX/">EDX</a></td>
+<td>Energy-dispersive X-ray emission spectroscopy</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ElementalAnalysis/">ElementalAnalysis</a></td>
+<td>Elemental analysis</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ESIMS/">ESIMS</a></td>
+<td>Electrospray ionisation mass spectrometry</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="GCMS/">GCMS</a></td>
+<td>Gas chromatography-mass spectrometry</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="HPLCMS/">HPLCMS</a></td>
+<td>High-performance liquid chromatography mass spectrometry</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ICPAES/">ICPAES</a></td>
+<td>Inductively-coupled plasma atomic emission spectroscopy</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="InfraredSpectroscopy/">InfraredSpectroscopy</a></td>
+<td>Infrared spectroscopy</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="NMRSpectroscopy/">NMRSpectroscopy</a></td>
+<td>Nuclear magnetic resonance spectroscopy</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="PhotoluminescenceLifetime/">PhotoluminescenceLifetime</a></td>
+<td>Photoluminescence lifetime measurement</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="PhotoluminescenceSpectroscopy/">PhotoluminescenceSpectroscopy</a></td>
+<td>Photoluminescence spectroscopy</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="PowderXRD/">PowderXRD</a></td>
+<td>Powder X-ray diffraction</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="RamanSpectroscopy/">RamanSpectroscopy</a></td>
+<td>Raman spectroscopy</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ScanningElectronMicroscopy/">ScanningElectronMicroscopy</a></td>
+<td>Scanning electron microscopy</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="SingleCrystalXRD/">SingleCrystalXRD</a></td>
+<td>Single crystal X-ray diffraction</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="SizeExclusionChromatography/">SizeExclusionChromatography</a></td>
+<td>Size-exclusion chromatography</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Thermogravimetry/">Thermogravimetry</a></td>
+<td>Thermogravimetry</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="TPO/">TPO</a></td>
+<td>Temperature-programmed oxidation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="TPR/">TPR</a></td>
+<td>Temperature-programmed reduction</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="TransmissionElectronMicroscopy/">TransmissionElectronMicroscopy</a></td>
+<td>Transmission electron microscopy</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="UVVisSpectroscopy/">UVVisSpectroscopy</a></td>
+<td>Ultraviolet-visible spectroscopy</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="XPS/">XPS</a></td>
+<td>X-ray photoelectron spectroscopy</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="XRayAbsorptionSpectroscopy/">XRayAbsorptionSpectroscopy</a></td>
+<td>X-ray absorption spectroscopy</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="OperationParameters/">OperationParameters</a></td>
+<td>Operation parameters for the reaction</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Precursor/">Precursor</a></td>
+<td>Precursor material used in catalyst synthesis</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="PreparationMethod/">PreparationMethod</a></td>
+<td>Method used for catalyst preparation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="AtomicLayerDeposition/">AtomicLayerDeposition</a></td>
+<td>Atomic layer deposition method for catalyst preparation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="CombustionSynthesis/">CombustionSynthesis</a></td>
+<td>Combustion synthesis method for catalyst preparation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="CoPrecipitation/">CoPrecipitation</a></td>
+<td>Co-precipitation method for catalyst preparation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="DepositionPrecipitation/">DepositionPrecipitation</a></td>
+<td>Deposition-precipitation method for catalyst preparation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ExsolutionSynthesis/">ExsolutionSynthesis</a></td>
+<td>Exsolution synthesis method for catalyst preparation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="FlameSprayPyrolysis/">FlameSprayPyrolysis</a></td>
+<td>Flame spray pyrolysis method for catalyst preparation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Impregnation/">Impregnation</a></td>
+<td>Impregnation method for catalyst preparation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="MechanochemicalSynthesis/">MechanochemicalSynthesis</a></td>
+<td>Mechanochemical synthesis method for catalyst preparation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="MicrowaveAssisted/">MicrowaveAssisted</a></td>
+<td>Microwave-assisted method for catalyst preparation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="MolecularSynthesis/">MolecularSynthesis</a></td>
+<td>Molecular synthesis method for catalyst preparation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="PlasmaAssisted/">PlasmaAssisted</a></td>
+<td>Plasma-assisted method for catalyst preparation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="SolGel/">SolGel</a></td>
+<td>Sol-gel method for catalyst preparation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Solvothermal/">Solvothermal</a></td>
+<td>Solvothermal method for catalyst preparation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="SonochemicalSynthesis/">SonochemicalSynthesis</a></td>
+<td>Sonochemical synthesis method for catalyst preparation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Sublimation/">Sublimation</a></td>
+<td>Sublimation method for catalyst preparation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ProductIdentificationMethod/">ProductIdentificationMethod</a></td>
+<td>Method used for product identification</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Reaction/">Reaction</a></td>
+<td>The data class 'Reaction' describes the minimum information which should be r...</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ReactorDesignType/">ReactorDesignType</a></td>
+<td>Type of reactor design used</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Autoclave/">Autoclave</a></td>
+<td>Autoclave reactor</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="CSTR/">CSTR</a></td>
+<td>Continuous stirred tank reactor</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ElectrochemicalReactor/">ElectrochemicalReactor</a></td>
+<td>Electrochemical reactor</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="FixedBedReactor/">FixedBedReactor</a></td>
+<td>Fixed bed reactor</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="FluidizedBedReactor/">FluidizedBedReactor</a></td>
+<td>Fluidized bed reactor</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Microreactor/">Microreactor</a></td>
+<td>Microreactor</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="PlugFlowReactor/">PlugFlowReactor</a></td>
+<td>Plug flow reactor model</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="SlurryReactor/">SlurryReactor</a></td>
+<td>Slurry reactor</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Simulation/">Simulation</a></td>
+<td>The data class 'Simulation' describes the minimum information which should be...</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="SimulationMethod/">SimulationMethod</a></td>
+<td>Simulation method used</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="DFT/">DFT</a></td>
+<td>Density functional theory</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Microkinetics/">Microkinetics</a></td>
+<td>Microkinetics simulation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="MolecularDynamics/">MolecularDynamics</a></td>
+<td>Molecular dynamics</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="MonteCarlo/">MonteCarlo</a></td>
+<td>Monte Carlo simulation</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Synthesis/">Synthesis</a></td>
+<td>The data class 'Synthesis' describes the minimum information which should be ...</td>
+</tr>
+</tbody>
+</table>
+<h2 id="slots">Slots</h2>
+<table>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="absorption_edge/">absorption_edge</a></td>
+<td>Absorption edge measured</td>
+</tr>
+<tr>
+<td><a href="ac_dc_mode/">ac_dc_mode</a></td>
+<td>AC or DC measurement mode</td>
+</tr>
+<tr>
+<td><a href="acceleration_voltage/">acceleration_voltage</a></td>
+<td>Acceleration voltage</td>
+</tr>
+<tr>
+<td><a href="acceptance_criteria/">acceptance_criteria</a></td>
+<td>Acceptance criteria for Monte Carlo moves</td>
+</tr>
+<tr>
+<td><a href="acquisition_mode/">acquisition_mode</a></td>
+<td>Data acquisition mode</td>
+</tr>
+<tr>
+<td><a href="activation_energy/">activation_energy</a></td>
+<td>Activation energy for each step</td>
+</tr>
+<tr>
+<td><a href="active_site/">active_site</a></td>
+<td>Active site of the catalyst</td>
+</tr>
+<tr>
+<td><a href="adsorbate_gas/">adsorbate_gas</a></td>
+<td>Adsorbate gas used</td>
+</tr>
+<tr>
+<td><a href="adsorption_gas/">adsorption_gas</a></td>
+<td>Adsorption gas used</td>
+</tr>
+<tr>
+<td><a href="aging_temperature/">aging_temperature</a></td>
+<td>Temperature during aging</td>
+</tr>
+<tr>
+<td><a href="aging_time/">aging_time</a></td>
+<td>Duration of aging process</td>
+</tr>
+<tr>
+<td><a href="atmosphere/">atmosphere</a></td>
+<td>Atmospheric conditions</td>
+</tr>
+<tr>
+<td><a href="background_correction/">background_correction</a></td>
+<td>Background correction method</td>
+</tr>
+<tr>
+<td><a href="background_correction_method/">background_correction_method</a></td>
+<td>Background correction method used</td>
+</tr>
+<tr>
+<td><a href="ball_material/">ball_material</a></td>
+<td>Material of milling balls</td>
+</tr>
+<tr>
+<td><a href="ball_size/">ball_size</a></td>
+<td>Size of milling balls</td>
+</tr>
+<tr>
+<td><a href="ball_to_powder_ratio/">ball_to_powder_ratio</a></td>
+<td>Ratio of ball to powder</td>
+</tr>
+<tr>
+<td><a href="band_path/">band_path</a></td>
+<td>Band path used</td>
+</tr>
+<tr>
+<td><a href="beamline_source/">beamline_source</a></td>
+<td>Beamline source identification</td>
+</tr>
+<tr>
+<td><a href="bed_expansion_height/">bed_expansion_height</a></td>
+<td>Bed expansion height</td>
+</tr>
+<tr>
+<td><a href="bubble_size_distribution/">bubble_size_distribution</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="bulk_modulus/">bulk_modulus</a></td>
+<td>Bulk modulus</td>
+</tr>
+<tr>
+<td><a href="calcination_dwelling_time/">calcination_dwelling_time</a></td>
+<td>Dwelling time at calcination temperature</td>
+</tr>
+<tr>
+<td><a href="calcination_final_temperature/">calcination_final_temperature</a></td>
+<td>Final temperature for calcination</td>
+</tr>
+<tr>
+<td><a href="calcination_gas_flow_rate/">calcination_gas_flow_rate</a></td>
+<td>Gas flow rate during calcination</td>
+</tr>
+<tr>
+<td><a href="calcination_gaseous_environment/">calcination_gaseous_environment</a></td>
+<td>Gaseous environment during calcination</td>
+</tr>
+<tr>
+<td><a href="calcination_heating_rate/">calcination_heating_rate</a></td>
+<td>Heating rate during calcination</td>
+</tr>
+<tr>
+<td><a href="calcination_initial_temperature/">calcination_initial_temperature</a></td>
+<td>Initial temperature for calcination</td>
+</tr>
+<tr>
+<td><a href="calculated_property/">calculated_property</a></td>
+<td>Property calculated from simulation</td>
+</tr>
+<tr>
+<td><a href="calibration_method/">calibration_method</a></td>
+<td>Calibration method used</td>
+</tr>
+<tr>
+<td><a href="calibration_standard/">calibration_standard</a></td>
+<td>Calibration standard used</td>
+</tr>
+<tr>
+<td><a href="capillary_pressure/">capillary_pressure</a></td>
+<td>Capillary pressure</td>
+</tr>
+<tr>
+<td><a href="capillary_temperature/">capillary_temperature</a></td>
+<td>Capillary temperature</td>
+</tr>
+<tr>
+<td><a href="carrier_gas/">carrier_gas</a></td>
+<td>Carrier gas used</td>
+</tr>
+<tr>
+<td><a href="carrier_gas_purity/">carrier_gas_purity</a></td>
+<td>Purity of carrier gas</td>
+</tr>
+<tr>
+<td><a href="catalysis_research_field/">catalysis_research_field</a></td>
+<td>Field of catalysis research</td>
+</tr>
+<tr>
+<td><a href="catalyst_measured_properties/">catalyst_measured_properties</a></td>
+<td>Measured properties of the catalyst (e</td>
+</tr>
+<tr>
+<td><a href="catalyst_quantity/">catalyst_quantity</a></td>
+<td>Quantity of catalyst used</td>
+</tr>
+<tr>
+<td><a href="catalyst_type/">catalyst_type</a></td>
+<td>Type of catalyst</td>
+</tr>
+<tr>
+<td><a href="characterization_technique/">characterization_technique</a></td>
+<td>Technique used for characterization</td>
+</tr>
+<tr>
+<td><a href="charge_compensation/">charge_compensation</a></td>
+<td>Charge compensation method</td>
+</tr>
+<tr>
+<td><a href="charge_defect_segregation/">charge_defect_segregation</a></td>
+<td>Charge or defect segregation data</td>
+</tr>
+<tr>
+<td><a href="coercive_field/">coercive_field</a></td>
+<td>Coercive field</td>
+</tr>
+<tr>
+<td><a href="column_type/">column_type</a></td>
+<td>Type of chromatography column</td>
+</tr>
+<tr>
+<td><a href="combustion_temperature/">combustion_temperature</a></td>
+<td>Combustion temperature</td>
+</tr>
+<tr>
+<td><a href="competing_phases/">competing_phases</a></td>
+<td>Competing phase list</td>
+</tr>
+<tr>
+<td><a href="concentration/">concentration</a></td>
+<td>Concentration of sample</td>
+</tr>
+<tr>
+<td><a href="convergence_criteria/">convergence_criteria</a></td>
+<td>Convergence criteria (e</td>
+</tr>
+<tr>
+<td><a href="cooling_rate/">cooling_rate</a></td>
+<td>Rate of cooling</td>
+</tr>
+<tr>
+<td><a href="counter_electrode/">counter_electrode</a></td>
+<td>Counter electrode used</td>
+</tr>
+<tr>
+<td><a href="counting_time/">counting_time</a></td>
+<td>Counting time for detection</td>
+</tr>
+<tr>
+<td><a href="crystal_structure/">crystal_structure</a></td>
+<td>Crystal structure (space group, lattice parameters)</td>
+</tr>
+<tr>
+<td><a href="crystal_symmetry/">crystal_symmetry</a></td>
+<td>Crystal symmetry</td>
+</tr>
+<tr>
+<td><a href="crystallisation_duration/">crystallisation_duration</a></td>
+<td>Duration of crystallisation</td>
+</tr>
+<tr>
+<td><a href="crystallisation_solvents/">crystallisation_solvents</a></td>
+<td>Solvents used for crystallisation</td>
+</tr>
+<tr>
+<td><a href="degassing_temperature/">degassing_temperature</a></td>
+<td>Degassing temperature</td>
+</tr>
+<tr>
+<td><a href="deposition_temperature/">deposition_temperature</a></td>
+<td>Temperature during deposition</td>
+</tr>
+<tr>
+<td><a href="deposition_time/">deposition_time</a></td>
+<td>Time for deposition</td>
+</tr>
+<tr>
+<td><a href="detection_limit/">detection_limit</a></td>
+<td>Detection limit</td>
+</tr>
+<tr>
+<td><a href="detector_type/">detector_type</a></td>
+<td>Type of detector used</td>
+</tr>
+<tr>
+<td><a href="dft_u_parameters/">dft_u_parameters</a></td>
+<td>DFT+U parameters used</td>
+</tr>
+<tr>
+<td><a href="diluting_reference/">diluting_reference</a></td>
+<td>Diluting reference material</td>
+</tr>
+<tr>
+<td><a href="direct_indirect/">direct_indirect</a></td>
+<td>Direct or indirect band gap</td>
+</tr>
+<tr>
+<td><a href="dispersant/">dispersant</a></td>
+<td>Dispersant used</td>
+</tr>
+<tr>
+<td><a href="drying/">drying</a></td>
+<td>Drying process description</td>
+</tr>
+<tr>
+<td><a href="drying_atmosphere/">drying_atmosphere</a></td>
+<td>Atmosphere during drying</td>
+</tr>
+<tr>
+<td><a href="drying_device/">drying_device</a></td>
+<td>Device used for drying</td>
+</tr>
+<tr>
+<td><a href="drying_temperature/">drying_temperature</a></td>
+<td>Temperature during drying</td>
+</tr>
+<tr>
+<td><a href="drying_time/">drying_time</a></td>
+<td>Duration of drying process</td>
+</tr>
+<tr>
+<td><a href="elastic_tensor/">elastic_tensor</a></td>
+<td>Elastic tensor components</td>
+</tr>
+<tr>
+<td><a href="electrode_configuration/">electrode_configuration</a></td>
+<td>Configuration of electrodes</td>
+</tr>
+<tr>
+<td><a href="electrolyte_composition/">electrolyte_composition</a></td>
+<td>Composition of electrolyte</td>
+</tr>
+<tr>
+<td><a href="electrolyte_concentration/">electrolyte_concentration</a></td>
+<td>Concentration of electrolyte</td>
+</tr>
+<tr>
+<td><a href="element_analyzed/">element_analyzed</a></td>
+<td>Chemical element being analyzed</td>
+</tr>
+<tr>
+<td><a href="elements_analyzed/">elements_analyzed</a></td>
+<td>Elements analyzed</td>
+</tr>
+<tr>
+<td><a href="eluent/">eluent</a></td>
+<td>Eluent used</td>
+</tr>
+<tr>
+<td><a href="emission_range/">emission_range</a></td>
+<td>Emission range measured</td>
+</tr>
+<tr>
+<td><a href="emission_wavelength/">emission_wavelength</a></td>
+<td>Emission wavelength</td>
+</tr>
+<tr>
+<td><a href="energy_above_hull/">energy_above_hull</a></td>
+<td>Energy above convex hull</td>
+</tr>
+<tr>
+<td><a href="energy_cutoff/">energy_cutoff</a></td>
+<td>Energy cutoff for plane wave basis</td>
+</tr>
+<tr>
+<td><a href="energy_resolution/">energy_resolution</a></td>
+<td>Energy resolution of the measurement</td>
+</tr>
+<tr>
+<td><a href="ensemble_type/">ensemble_type</a></td>
+<td>Ensemble type (e</td>
+</tr>
+<tr>
+<td><a href="equilibration_steps/">equilibration_steps</a></td>
+<td>Number of equilibration steps</td>
+</tr>
+<tr>
+<td><a href="equipment/">equipment</a></td>
+<td>Equipment used</td>
+</tr>
+<tr>
+<td><a href="exchange_correlation_functional/">exchange_correlation_functional</a></td>
+<td>Exchange-correlation functional used (e</td>
+</tr>
+<tr>
+<td><a href="excitation_laser_power/">excitation_laser_power</a></td>
+<td>Excitation laser power</td>
+</tr>
+<tr>
+<td><a href="excitation_laser_wavelength/">excitation_laser_wavelength</a></td>
+<td>Excitation laser wavelength</td>
+</tr>
+<tr>
+<td><a href="excitation_wavelength/">excitation_wavelength</a></td>
+<td>Excitation wavelength</td>
+</tr>
+<tr>
+<td><a href="excitonic_correction/">excitonic_correction</a></td>
+<td>Excitonic correction applied</td>
+</tr>
+<tr>
+<td><a href="experiment_duration/">experiment_duration</a></td>
+<td>Duration of the experiment</td>
+</tr>
+<tr>
+<td><a href="experiment_pressure/">experiment_pressure</a></td>
+<td>Pressure during experiment</td>
+</tr>
+<tr>
+<td><a href="experimental_reference/">experimental_reference</a></td>
+<td>Experimental reference value</td>
+</tr>
+<tr>
+<td><a href="exposure_time/">exposure_time</a></td>
+<td>Time of exposure</td>
+</tr>
+<tr>
+<td><a href="external_standard/">external_standard</a></td>
+<td>External standard used for calibration</td>
+</tr>
+<tr>
+<td><a href="feed_composition_range/">feed_composition_range</a></td>
+<td>Range of feed composition</td>
+</tr>
+<tr>
+<td><a href="fermi_energy/">fermi_energy</a></td>
+<td>Fermi energy</td>
+</tr>
+<tr>
+<td><a href="field_emitter/">field_emitter</a></td>
+<td>Field emitter type</td>
+</tr>
+<tr>
+<td><a href="filling_volume/">filling_volume</a></td>
+<td>Filling volume of vessel</td>
+</tr>
+<tr>
+<td><a href="filter_or_grating/">filter_or_grating</a></td>
+<td>Filter or grating used</td>
+</tr>
+<tr>
+<td><a href="filter_type/">filter_type</a></td>
+<td>Type of filter used</td>
+</tr>
+<tr>
+<td><a href="filtration/">filtration</a></td>
+<td>Filtration method used</td>
+</tr>
+<tr>
+<td><a href="filtration_device/">filtration_device</a></td>
+<td>Device used for filtration</td>
+</tr>
+<tr>
+<td><a href="final_temperature/">final_temperature</a></td>
+<td>Final temperature</td>
+</tr>
+<tr>
+<td><a href="fit_method/">fit_method</a></td>
+<td>Fit method (e</td>
+</tr>
+<tr>
+<td><a href="fit_residuals/">fit_residuals</a></td>
+<td>Residuals of fit</td>
+</tr>
+<tr>
+<td><a href="flame_ring/">flame_ring</a></td>
+<td>Flame ring configuration</td>
+</tr>
+<tr>
+<td><a href="flame_type/">flame_type</a></td>
+<td>Type of flame used</td>
+</tr>
+<tr>
+<td><a href="flow_rate/">flow_rate</a></td>
+<td>Flow rate</td>
+</tr>
+<tr>
+<td><a href="force_constant_method/">force_constant_method</a></td>
+<td>Force constant calculation method</td>
+</tr>
+<tr>
+<td><a href="force_field/">force_field</a></td>
+<td>Force field used</td>
+</tr>
+<tr>
+<td><a href="formation_energy/">formation_energy</a></td>
+<td>Formation energy per atom</td>
+</tr>
+<tr>
+<td><a href="frequency/">frequency</a></td>
+<td>Frequency of measurement</td>
+</tr>
+<tr>
+<td><a href="fuel/">fuel</a></td>
+<td>Fuel used in combustion</td>
+</tr>
+<tr>
+<td><a href="fuel_dispersant_ratio/">fuel_dispersant_ratio</a></td>
+<td>Ratio of fuel to dispersant</td>
+</tr>
+<tr>
+<td><a href="fuel_to_oxidizer_ratio/">fuel_to_oxidizer_ratio</a></td>
+<td>Ratio of fuel to oxidizer</td>
+</tr>
+<tr>
+<td><a href="gas_distributor_type/">gas_distributor_type</a></td>
+<td>Type of gas distributor</td>
+</tr>
+<tr>
+<td><a href="gb_excess_volume/">gb_excess_volume</a></td>
+<td>GB excess volume</td>
+</tr>
+<tr>
+<td><a href="gb_structural_units/">gb_structural_units</a></td>
+<td>GB structural units description</td>
+</tr>
+<tr>
+<td><a href="gradient_program/">gradient_program</a></td>
+<td>Gradient program for elution</td>
+</tr>
+<tr>
+<td><a href="grain_boundary_energy/">grain_boundary_energy</a></td>
+<td>Grain boundary energy</td>
+</tr>
+<tr>
+<td><a href="grain_boundary_plane/">grain_boundary_plane</a></td>
+<td>Grain boundary plane</td>
+</tr>
+<tr>
+<td><a href="gun_type/">gun_type</a></td>
+<td>Type of electron gun</td>
+</tr>
+<tr>
+<td><a href="gw_hybrid_correction/">gw_hybrid_correction</a></td>
+<td>GW or hybrid correction used</td>
+</tr>
+<tr>
+<td><a href="heating_procedure/">heating_procedure</a></td>
+<td>Heating procedure used</td>
+</tr>
+<tr>
+<td><a href="heating_ramp/">heating_ramp</a></td>
+<td>Heating ramp rate</td>
+</tr>
+<tr>
+<td><a href="heating_rate/">heating_rate</a></td>
+<td>Heating rate</td>
+</tr>
+<tr>
+<td><a href="hydrolysis_ratio/">hydrolysis_ratio</a></td>
+<td>Ratio for hydrolysis</td>
+</tr>
+<tr>
+<td><a href="identifier/">identifier</a></td>
+<td>Unique identifier for the entity</td>
+</tr>
+<tr>
+<td><a href="image_resolution/">image_resolution</a></td>
+<td>Image resolution</td>
+</tr>
+<tr>
+<td><a href="imaginary_modes/">imaginary_modes</a></td>
+<td>Imaginary modes present</td>
+</tr>
+<tr>
+<td><a href="impregnation_duration/">impregnation_duration</a></td>
+<td>Duration of impregnation process</td>
+</tr>
+<tr>
+<td><a href="impregnation_temperature/">impregnation_temperature</a></td>
+<td>Temperature during impregnation</td>
+</tr>
+<tr>
+<td><a href="impregnation_type/">impregnation_type</a></td>
+<td>Type of impregnation method</td>
+</tr>
+<tr>
+<td><a href="initial_temperature/">initial_temperature</a></td>
+<td>Initial temperature</td>
+</tr>
+<tr>
+<td><a href="injection_volume/">injection_volume</a></td>
+<td>Injection volume</td>
+</tr>
+<tr>
+<td><a href="inlet_system/">inlet_system</a></td>
+<td>Inlet system configuration</td>
+</tr>
+<tr>
+<td><a href="inlet_temperature/">inlet_temperature</a></td>
+<td>Inlet temperature</td>
+</tr>
+<tr>
+<td><a href="integration_time/">integration_time</a></td>
+<td>Integration time</td>
+</tr>
+<tr>
+<td><a href="interaction_potential/">interaction_potential</a></td>
+<td>Interaction potential used</td>
+</tr>
+<tr>
+<td><a href="internal_standard/">internal_standard</a></td>
+<td>Internal standard used for calibration</td>
+</tr>
+<tr>
+<td><a href="ionic_electronic_contributions/">ionic_electronic_contributions</a></td>
+<td>Ionic and electronic contributions</td>
+</tr>
+<tr>
+<td><a href="ionic_strength/">ionic_strength</a></td>
+<td>Ionic strength of solution</td>
+</tr>
+<tr>
+<td><a href="ionization_mode/">ionization_mode</a></td>
+<td>Ionization mode used</td>
+</tr>
+<tr>
+<td><a href="irradiation_frequency/">irradiation_frequency</a></td>
+<td>Irradiation frequency</td>
+</tr>
+<tr>
+<td><a href="k_point_mesh/">k_point_mesh</a></td>
+<td>k-point mesh for sampling</td>
+</tr>
+<tr>
+<td><a href="kq_point_mesh/">kq_point_mesh</a></td>
+<td>k/q-point mesh for phonons</td>
+</tr>
+<tr>
+<td><a href="lattice_size_type/">lattice_size_type</a></td>
+<td>Lattice size and type</td>
+</tr>
+<tr>
+<td><a href="lense_mode/">lense_mode</a></td>
+<td>Lens mode setting</td>
+</tr>
+<tr>
+<td><a href="lifetime_fitting_model/">lifetime_fitting_model</a></td>
+<td>Lifetime fitting model used</td>
+</tr>
+<tr>
+<td><a href="light_wavelength/">light_wavelength</a></td>
+<td>Light wavelength used</td>
+</tr>
+<tr>
+<td><a href="magnification_setting/">magnification_setting</a></td>
+<td>Magnification setting</td>
+</tr>
+<tr>
+<td><a href="material_composition/">material_composition</a></td>
+<td>Material composition</td>
+</tr>
+<tr>
+<td><a href="material_sample/">material_sample</a></td>
+<td>Material sample</td>
+</tr>
+<tr>
+<td><a href="matrix_effect_correction/">matrix_effect_correction</a></td>
+<td>Matrix effect correction method</td>
+</tr>
+<tr>
+<td><a href="maximum_2theta/">maximum_2theta</a></td>
+<td>Maximum 2-theta angle</td>
+</tr>
+<tr>
+<td><a href="maximum_energy/">maximum_energy</a></td>
+<td>Maximum energy value</td>
+</tr>
+<tr>
+<td><a href="maximum_oven_temperature/">maximum_oven_temperature</a></td>
+<td>Maximum oven temperature</td>
+</tr>
+<tr>
+<td><a href="maximum_potential/">maximum_potential</a></td>
+<td>Maximum potential</td>
+</tr>
+<tr>
+<td><a href="maximum_temperature/">maximum_temperature</a></td>
+<td>Maximum temperature</td>
+</tr>
+<tr>
+<td><a href="maximum_wavelength/">maximum_wavelength</a></td>
+<td>Maximum wavelength</td>
+</tr>
+<tr>
+<td><a href="maximum_wavenumber/">maximum_wavenumber</a></td>
+<td>Maximum wavenumber</td>
+</tr>
+<tr>
+<td><a href="measurement_duration/">measurement_duration</a></td>
+<td>Duration of measurement</td>
+</tr>
+<tr>
+<td><a href="measurement_temperature/">measurement_temperature</a></td>
+<td>Measurement temperature</td>
+</tr>
+<tr>
+<td><a href="microwave_frequency/">microwave_frequency</a></td>
+<td>Frequency of microwave</td>
+</tr>
+<tr>
+<td><a href="miller_indices/">miller_indices</a></td>
+<td>Miller indices of surface</td>
+</tr>
+<tr>
+<td><a href="milling_duration/">milling_duration</a></td>
+<td>Duration of milling</td>
+</tr>
+<tr>
+<td><a href="milling_speed/">milling_speed</a></td>
+<td>Speed of milling</td>
+</tr>
+<tr>
+<td><a href="minimum_2theta/">minimum_2theta</a></td>
+<td>Minimum 2-theta angle</td>
+</tr>
+<tr>
+<td><a href="minimum_energy/">minimum_energy</a></td>
+<td>Minimum energy value</td>
+</tr>
+<tr>
+<td><a href="minimum_oven_temperature/">minimum_oven_temperature</a></td>
+<td>Minimum oven temperature</td>
+</tr>
+<tr>
+<td><a href="minimum_potential/">minimum_potential</a></td>
+<td>Minimum potential</td>
+</tr>
+<tr>
+<td><a href="minimum_temperature/">minimum_temperature</a></td>
+<td>Minimum temperature</td>
+</tr>
+<tr>
+<td><a href="minimum_wavelength/">minimum_wavelength</a></td>
+<td>Minimum wavelength</td>
+</tr>
+<tr>
+<td><a href="minimum_wavenumber/">minimum_wavenumber</a></td>
+<td>Minimum wavenumber</td>
+</tr>
+<tr>
+<td><a href="misorientation_angle/">misorientation_angle</a></td>
+<td>Misorientation angle</td>
+</tr>
+<tr>
+<td><a href="mixing_device/">mixing_device</a></td>
+<td>Device used for mixing</td>
+</tr>
+<tr>
+<td><a href="mixing_rate/">mixing_rate</a></td>
+<td>Rate of mixing</td>
+</tr>
+<tr>
+<td><a href="mixing_temperature/">mixing_temperature</a></td>
+<td>Temperature during mixing</td>
+</tr>
+<tr>
+<td><a href="mixing_time/">mixing_time</a></td>
+<td>Duration of mixing</td>
+</tr>
+<tr>
+<td><a href="monochromator/">monochromator</a></td>
+<td>Monochromator type used</td>
+</tr>
+<tr>
+<td><a href="mz_maximum/">mz_maximum</a></td>
+<td>Maximum m/z value</td>
+</tr>
+<tr>
+<td><a href="mz_minimum/">mz_minimum</a></td>
+<td>Minimum m/z value</td>
+</tr>
+<tr>
+<td><a href="nmr_pulse_sequence/">nmr_pulse_sequence</a></td>
+<td>NMR pulse sequence used</td>
+</tr>
+<tr>
+<td><a href="nmr_sample_tube/">nmr_sample_tube</a></td>
+<td>NMR sample tube type</td>
+</tr>
+<tr>
+<td><a href="noise_of_measurement/">noise_of_measurement</a></td>
+<td>Noise level of the measurement</td>
+</tr>
+<tr>
+<td><a href="nominal_composition/">nominal_composition</a></td>
+<td>Nominal composition of the catalyst</td>
+</tr>
+<tr>
+<td><a href="nucleus/">nucleus</a></td>
+<td>Nucleus being observed</td>
+</tr>
+<tr>
+<td><a href="number_of_atoms/">number_of_atoms</a></td>
+<td>Number of atoms in simulation</td>
+</tr>
+<tr>
+<td><a href="number_of_cycles/">number_of_cycles</a></td>
+<td>Number of cycles in the process</td>
+</tr>
+<tr>
+<td><a href="number_of_scans/">number_of_scans</a></td>
+<td>Number of scans performed</td>
+</tr>
+<tr>
+<td><a href="number_of_shots/">number_of_shots</a></td>
+<td>Number of shots for measurement</td>
+</tr>
+<tr>
+<td><a href="number_of_steps/">number_of_steps</a></td>
+<td>Number of Monte Carlo steps</td>
+</tr>
+<tr>
+<td><a href="operation_mode/">operation_mode</a></td>
+<td>Operation mode of the instrument</td>
+</tr>
+<tr>
+<td><a href="operation_parameters/">operation_parameters</a></td>
+<td>Operation parameters for the reaction</td>
+</tr>
+<tr>
+<td><a href="optical_filter/">optical_filter</a></td>
+<td>Optical filter used</td>
+</tr>
+<tr>
+<td><a href="order_of_addition/">order_of_addition</a></td>
+<td>Order in which components are added</td>
+</tr>
+<tr>
+<td><a href="oxidizer/">oxidizer</a></td>
+<td>Oxidizer used</td>
+</tr>
+<tr>
+<td><a href="oxidizing_gas_composition/">oxidizing_gas_composition</a></td>
+<td>Composition of oxidizing gas</td>
+</tr>
+<tr>
+<td><a href="pass_energy/">pass_energy</a></td>
+<td>Pass energy setting</td>
+</tr>
+<tr>
+<td><a href="path_length/">path_length</a></td>
+<td>Path length of cell</td>
+</tr>
+<tr>
+<td><a href="ph_range/">ph_range</a></td>
+<td>pH range considered</td>
+</tr>
+<tr>
+<td><a href="phase_diagram_type/">phase_diagram_type</a></td>
+<td>Phase diagram type (e</td>
+</tr>
+<tr>
+<td><a href="piezoelectric_tensor/">piezoelectric_tensor</a></td>
+<td>Piezoelectric tensor components</td>
+</tr>
+<tr>
+<td><a href="plasma_type/">plasma_type</a></td>
+<td>Type of plasma used</td>
+</tr>
+<tr>
+<td><a href="poisson_ratio/">poisson_ratio</a></td>
+<td>Poisson's ratio</td>
+</tr>
+<tr>
+<td><a href="polarization_direction/">polarization_direction</a></td>
+<td>Polarization direction</td>
+</tr>
+<tr>
+<td><a href="pore_size_distribution_method/">pore_size_distribution_method</a></td>
+<td>Method for pore size distribution analysis</td>
+</tr>
+<tr>
+<td><a href="post_treatment/">post_treatment</a></td>
+<td>Post-treatment process</td>
+</tr>
+<tr>
+<td><a href="potential_range/">potential_range</a></td>
+<td>Potential range considered</td>
+</tr>
+<tr>
+<td><a href="power/">power</a></td>
+<td>Power setting</td>
+</tr>
+<tr>
+<td><a href="power_input/">power_input</a></td>
+<td>Power input for the process</td>
+</tr>
+<tr>
+<td><a href="precipitating_agent/">precipitating_agent</a></td>
+<td>Agent used for precipitation</td>
+</tr>
+<tr>
+<td><a href="precipitating_concentration/">precipitating_concentration</a></td>
+<td>Concentration of precipitating agent</td>
+</tr>
+<tr>
+<td><a href="precipitation_agent/">precipitation_agent</a></td>
+<td>Agent used for precipitation</td>
+</tr>
+<tr>
+<td><a href="precursor/">precursor</a></td>
+<td>Precursor material used in synthesis</td>
+</tr>
+<tr>
+<td><a href="precursor_quantity/">precursor_quantity</a></td>
+<td>Quantity of precursor used</td>
+</tr>
+<tr>
+<td><a href="preparation_method/">preparation_method</a></td>
+<td>Method used for catalyst preparation</td>
+</tr>
+<tr>
+<td><a href="pressure/">pressure</a></td>
+<td>Pressure in simulation</td>
+</tr>
+<tr>
+<td><a href="pressure_derivative/">pressure_derivative</a></td>
+<td>Pressure derivative of bulk modulus</td>
+</tr>
+<tr>
+<td><a href="primary_energy/">primary_energy</a></td>
+<td>Primary energy of electron beam</td>
+</tr>
+<tr>
+<td><a href="product_identification_method/">product_identification_method</a></td>
+<td>Method used for product identification</td>
+</tr>
+<tr>
+<td><a href="pulse_time/">pulse_time</a></td>
+<td>Pulse time for deposition</td>
+</tr>
+<tr>
+<td><a href="purging_duration/">purging_duration</a></td>
+<td>Duration of purging</td>
+</tr>
+<tr>
+<td><a href="purification/">purification</a></td>
+<td>Purification method used</td>
+</tr>
+<tr>
+<td><a href="purification_solvent/">purification_solvent</a></td>
+<td>Solvent used for purification</td>
+</tr>
+<tr>
+<td><a href="rate_constants/">rate_constants</a></td>
+<td>Rate constants or Arrhenius parameters</td>
+</tr>
+<tr>
+<td><a href="ratio_reference_sample/">ratio_reference_sample</a></td>
+<td>Ratio of reference to sample</td>
+</tr>
+<tr>
+<td><a href="reactant/">reactant</a></td>
+<td>Reactant used in the reaction</td>
+</tr>
+<tr>
+<td><a href="reaction_type/">reaction_type</a></td>
+<td>Type of reaction</td>
+</tr>
+<tr>
+<td><a href="reaction_vessel/">reaction_vessel</a></td>
+<td>Vessel used for reaction</td>
+</tr>
+<tr>
+<td><a href="reactor_design_type/">reactor_design_type</a></td>
+<td>Type of reactor design</td>
+</tr>
+<tr>
+<td><a href="reactor_temperature_range/">reactor_temperature_range</a></td>
+<td>Temperature range in reactor</td>
+</tr>
+<tr>
+<td><a href="reducing_gas_composition/">reducing_gas_composition</a></td>
+<td>Composition of reducing gas</td>
+</tr>
+<tr>
+<td><a href="reference_electrode/">reference_electrode</a></td>
+<td>Reference electrode used</td>
+</tr>
+<tr>
+<td><a href="reference_energies/">reference_energies</a></td>
+<td>Reference elemental energies</td>
+</tr>
+<tr>
+<td><a href="reference_structure/">reference_structure</a></td>
+<td>Reference paraelectric structure</td>
+</tr>
+<tr>
+<td><a href="refractive_index/">refractive_index</a></td>
+<td>Refractive index</td>
+</tr>
+<tr>
+<td><a href="resolution/">resolution</a></td>
+<td>Spectral resolution</td>
+</tr>
+<tr>
+<td><a href="sample_description/">sample_description</a></td>
+<td>Description of the sample</td>
+</tr>
+<tr>
+<td><a href="sample_geometry/">sample_geometry</a></td>
+<td>Geometry of the sample</td>
+</tr>
+<tr>
+<td><a href="sample_holder/">sample_holder</a></td>
+<td>Holder for sample</td>
+</tr>
+<tr>
+<td><a href="sample_mass/">sample_mass</a></td>
+<td>Mass of sample</td>
+</tr>
+<tr>
+<td><a href="sample_preparation/">sample_preparation</a></td>
+<td>Preparation of sample</td>
+</tr>
+<tr>
+<td><a href="sample_pretreatment/">sample_pretreatment</a></td>
+<td>Pre-treatment of sample</td>
+</tr>
+<tr>
+<td><a href="sample_spinning_speed/">sample_spinning_speed</a></td>
+<td>Sample spinning speed</td>
+</tr>
+<tr>
+<td><a href="sample_state/">sample_state</a></td>
+<td>State of the sample</td>
+</tr>
+<tr>
+<td><a href="sampling_interval/">sampling_interval</a></td>
+<td>Sampling interval for data collection</td>
+</tr>
+<tr>
+<td><a href="scan_rate/">scan_rate</a></td>
+<td>Scan rate for voltammetry</td>
+</tr>
+<tr>
+<td><a href="scattering_angle/">scattering_angle</a></td>
+<td>Scattering angle</td>
+</tr>
+<tr>
+<td><a href="set_temperature/">set_temperature</a></td>
+<td>Set temperature for the process</td>
+</tr>
+<tr>
+<td><a href="shear_modulus/">shear_modulus</a></td>
+<td>Shear modulus</td>
+</tr>
+<tr>
+<td><a href="simulation_cell_size/">simulation_cell_size</a></td>
+<td>Simulation cell size</td>
+</tr>
+<tr>
+<td><a href="simulation_method/">simulation_method</a></td>
+<td>Simulation method used</td>
+</tr>
+<tr>
+<td><a href="simulation_time/">simulation_time</a></td>
+<td>Total simulation time</td>
+</tr>
+<tr>
+<td><a href="simulation_timestep/">simulation_timestep</a></td>
+<td>Time step for simulation</td>
+</tr>
+<tr>
+<td><a href="size_and_material/">size_and_material</a></td>
+<td>Size and material of components</td>
+</tr>
+<tr>
+<td><a href="slab_thickness/">slab_thickness</a></td>
+<td>Slab thickness</td>
+</tr>
+<tr>
+<td><a href="slit_width/">slit_width</a></td>
+<td>Slit width setting</td>
+</tr>
+<tr>
+<td><a href="smearing_broadening/">smearing_broadening</a></td>
+<td>Smearing or broadening parameter</td>
+</tr>
+<tr>
+<td><a href="smearing_method/">smearing_method</a></td>
+<td>Smearing method and width</td>
+</tr>
+<tr>
+<td><a href="smearing_parameter/">smearing_parameter</a></td>
+<td>Smearing/broadening parameter</td>
+</tr>
+<tr>
+<td><a href="software_package/">software_package</a></td>
+<td>Software or package used for simulation</td>
+</tr>
+<tr>
+<td><a href="solvation_model/">solvation_model</a></td>
+<td>Solvation model used</td>
+</tr>
+<tr>
+<td><a href="solvent/">solvent</a></td>
+<td>Solvent used</td>
+</tr>
+<tr>
+<td><a href="solvent_composition/">solvent_composition</a></td>
+<td>Solvent composition</td>
+</tr>
+<tr>
+<td><a href="solvent_delay/">solvent_delay</a></td>
+<td>Solvent delay time</td>
+</tr>
+<tr>
+<td><a href="solvent_quantity/">solvent_quantity</a></td>
+<td>Quantity of solvent</td>
+</tr>
+<tr>
+<td><a href="solver_type/">solver_type</a></td>
+<td>Type of solver used</td>
+</tr>
+<tr>
+<td><a href="sonication_duration/">sonication_duration</a></td>
+<td>Duration of sonication</td>
+</tr>
+<tr>
+<td><a href="sonication_power/">sonication_power</a></td>
+<td>Power of sonication</td>
+</tr>
+<tr>
+<td><a href="spin_polarization/">spin_polarization</a></td>
+<td>Spin polarization setting</td>
+</tr>
+<tr>
+<td><a href="spin_polarized/">spin_polarized</a></td>
+<td>Spin-polarized calculation</td>
+</tr>
+<tr>
+<td><a href="split_ratio/">split_ratio</a></td>
+<td>Split ratio for injection</td>
+</tr>
+<tr>
+<td><a href="spontaneous_polarization/">spontaneous_polarization</a></td>
+<td>Spontaneous polarization magnitude</td>
+</tr>
+<tr>
+<td><a href="spot_size/">spot_size</a></td>
+<td>Spot size for analysis</td>
+</tr>
+<tr>
+<td><a href="spray_voltage/">spray_voltage</a></td>
+<td>Spray voltage for ionization</td>
+</tr>
+<tr>
+<td><a href="step_size/">step_size</a></td>
+<td>Step size for measurements</td>
+</tr>
+<tr>
+<td><a href="step_size_potential/">step_size_potential</a></td>
+<td>Step size for potential</td>
+</tr>
+<tr>
+<td><a href="stirrer_type/">stirrer_type</a></td>
+<td>Type of stirrer used</td>
+</tr>
+<tr>
+<td><a href="stirring_duration/">stirring_duration</a></td>
+<td>Duration of stirring</td>
+</tr>
+<tr>
+<td><a href="stirring_speed/">stirring_speed</a></td>
+<td>Speed of stirring</td>
+</tr>
+<tr>
+<td><a href="storage_conditions/">storage_conditions</a></td>
+<td>Conditions for storage</td>
+</tr>
+<tr>
+<td><a href="strain_applied/">strain_applied</a></td>
+<td>Strain applied</td>
+</tr>
+<tr>
+<td><a href="structure_model/">structure_model</a></td>
+<td>Structure or model used</td>
+</tr>
+<tr>
+<td><a href="substrate/">substrate</a></td>
+<td>Substrate material</td>
+</tr>
+<tr>
+<td><a href="support/">support</a></td>
+<td>Support material</td>
+</tr>
+<tr>
+<td><a href="support_preparation/">support_preparation</a></td>
+<td>Preparation of support material</td>
+</tr>
+<tr>
+<td><a href="surface_coverage/">surface_coverage</a></td>
+<td>Surface coverage of species</td>
+</tr>
+<tr>
+<td><a href="surface_energy/">surface_energy</a></td>
+<td>Surface energy</td>
+</tr>
+<tr>
+<td><a href="surface_termination_method/">surface_termination_method</a></td>
+<td>Surface termination method</td>
+</tr>
+<tr>
+<td><a href="surfactant_template/">surfactant_template</a></td>
+<td>Surfactant template used</td>
+</tr>
+<tr>
+<td><a href="switching_barrier/">switching_barrier</a></td>
+<td>Switching barrier</td>
+</tr>
+<tr>
+<td><a href="synthesis_duration/">synthesis_duration</a></td>
+<td>Duration of synthesis</td>
+</tr>
+<tr>
+<td><a href="synthesis_ph/">synthesis_ph</a></td>
+<td>pH during synthesis</td>
+</tr>
+<tr>
+<td><a href="synthesis_pressure/">synthesis_pressure</a></td>
+<td>Pressure during synthesis</td>
+</tr>
+<tr>
+<td><a href="synthesis_temperature/">synthesis_temperature</a></td>
+<td>Temperature during synthesis</td>
+</tr>
+<tr>
+<td><a href="temperature/">temperature</a></td>
+<td>Temperature</td>
+</tr>
+<tr>
+<td><a href="temperature_dependence/">temperature_dependence</a></td>
+<td>Temperature dependence</td>
+</tr>
+<tr>
+<td><a href="temperature_ramp/">temperature_ramp</a></td>
+<td>Temperature ramp rate</td>
+</tr>
+<tr>
+<td><a href="total_acquisition_time/">total_acquisition_time</a></td>
+<td>Total acquisition time</td>
+</tr>
+<tr>
+<td><a href="total_energy_per_atom/">total_energy_per_atom</a></td>
+<td>Total energy per atom</td>
+</tr>
+<tr>
+<td><a href="trace_ion_detection/">trace_ion_detection</a></td>
+<td>Trace ion detection setting</td>
+</tr>
+<tr>
+<td><a href="vacuum_spacing/">vacuum_spacing</a></td>
+<td>Vacuum spacing</td>
+</tr>
+<tr>
+<td><a href="vessel_type/">vessel_type</a></td>
+<td>Type of vessel used</td>
+</tr>
+<tr>
+<td><a href="vessel_volume/">vessel_volume</a></td>
+<td>Volume of vessel</td>
+</tr>
+<tr>
+<td><a href="working_electrode/">working_electrode</a></td>
+<td>Working electrode used</td>
+</tr>
+<tr>
+<td><a href="xray_source/">xray_source</a></td>
+<td>X-ray source used</td>
+</tr>
+<tr>
+<td><a href="young_modulus/">young_modulus</a></td>
+<td>Young's modulus</td>
+</tr>
+</tbody>
+</table>
+<h2 id="enumerations">Enumerations</h2>
+<table>
+<thead>
+<tr>
+<th>Enumeration</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="CatalysisResearchFieldEnum/">CatalysisResearchFieldEnum</a></td>
+<td>Enumeration of catalysis research fields</td>
+</tr>
+<tr>
+<td><a href="ImpregnationTypeEnum/">ImpregnationTypeEnum</a></td>
+<td>Enumeration of impregnation types</td>
+</tr>
+<tr>
+<td><a href="SampleStateEnum/">SampleStateEnum</a></td>
+<td>Enumeration of sample states</td>
+</tr>
+</tbody>
+</table>
+<h2 id="types">Types</h2>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="Boolean/">Boolean</a></td>
+<td>A binary (true or false) value</td>
+</tr>
+<tr>
+<td><a href="Curie/">Curie</a></td>
+<td>a compact URI</td>
+</tr>
+<tr>
+<td><a href="Date/">Date</a></td>
+<td>a date (year, month and day) in an idealized calendar</td>
+</tr>
+<tr>
+<td><a href="DateOrDatetime/">DateOrDatetime</a></td>
+<td>Either a date or a datetime</td>
+</tr>
+<tr>
+<td><a href="Datetime/">Datetime</a></td>
+<td>The combination of a date and time</td>
+</tr>
+<tr>
+<td><a href="Decimal/">Decimal</a></td>
+<td>A real number with arbitrary precision that conforms to the xsd:decimal speci...</td>
+</tr>
+<tr>
+<td><a href="Double/">Double</a></td>
+<td>A real number that conforms to the xsd:double specification</td>
+</tr>
+<tr>
+<td><a href="Float/">Float</a></td>
+<td>A real number that conforms to the xsd:float specification</td>
+</tr>
+<tr>
+<td><a href="Integer/">Integer</a></td>
+<td>An integer</td>
+</tr>
+<tr>
+<td><a href="Jsonpath/">Jsonpath</a></td>
+<td>A string encoding a JSON Path</td>
+</tr>
+<tr>
+<td><a href="Jsonpointer/">Jsonpointer</a></td>
+<td>A string encoding a JSON Pointer</td>
+</tr>
+<tr>
+<td><a href="Ncname/">Ncname</a></td>
+<td>Prefix part of CURIE</td>
+</tr>
+<tr>
+<td><a href="Nodeidentifier/">Nodeidentifier</a></td>
+<td>A URI, CURIE or BNODE that represents a node in a model</td>
+</tr>
+<tr>
+<td><a href="Objectidentifier/">Objectidentifier</a></td>
+<td>A URI or CURIE that represents an object in the model</td>
+</tr>
+<tr>
+<td><a href="Sparqlpath/">Sparqlpath</a></td>
+<td>A string encoding a SPARQL Property Path</td>
+</tr>
+<tr>
+<td><a href="String/">String</a></td>
+<td>A character string</td>
+</tr>
+<tr>
+<td><a href="Time/">Time</a></td>
+<td>A time object represents a (local) time of day, independent of any particular...</td>
+</tr>
+<tr>
+<td><a href="Uri/">Uri</a></td>
+<td>a complete URI</td>
+</tr>
+<tr>
+<td><a href="Uriorcurie/">Uriorcurie</a></td>
+<td>a URI or a CURIE</td>
+</tr>
+</tbody>
+</table>
+<h2 id="subsets">Subsets</h2>
+<table>
+<thead>
+<tr>
+<th>Subset</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
