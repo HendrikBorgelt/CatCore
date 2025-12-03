@@ -10,13 +10,6 @@ theme:
 
 # for adding extra css/js see https://www.mkdocs.org/user-guide/customizing-your-theme/
 
-markdown_extensions:
-  - attr_list # Necessary for general attribute handling
-  - mdx_truly_sane.markdown_in_html: # Specifically enables Markdown processing in HTML
-      nested_classes:
-        - details
-        - summary
-
 plugins:
   - search
   - mknotebooks:
