@@ -1,0 +1,2311 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://HendrikBorgelt.github.io/CatCore/simulation/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Simulation - CatCore</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/ansi-colours.css">
+    
+      <link rel="stylesheet" href="../css/jupyter-cells.css">
+    
+      <link rel="stylesheet" href="../css/pandas-dataframe.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#simulation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="CatCore" class="md-header__button md-logo" aria-label="CatCore" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CatCore
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Simulation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/HendrikBorgelt/CatCore" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CatCore" class="md-nav__button md-logo" aria-label="CatCore" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    CatCore
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/HendrikBorgelt/CatCore" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main-class" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Main Class
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="simulation">Simulation</h1>
+<p><strong>Description:</strong> The data class 'Simulation' describes the minimum information which should be reported 
+with research data for conducting simulations in the field of catalysis.</p>
+<hr />
+<h2 id="main-class">Main Class</h2>
+<details>
+<summary>### Simulation</summary>
+
+**Description:** The data class 'Simulation' describes the minimum information which should be reported 
+with research data for conducting simulations in the field of catalysis.
+
+**URI:** `catcore:Simulation`
+
+#### Slots (4)
+
+<details>
+<summary><strong>identifier</strong></summary>
+
+**Description:** Unique identifier for the entity
+
+**Range:** string
+
+**Multivalued:** No
+
+**URI:** `catcore:identifier`
+
+</details>
+
+<details>
+<summary><strong>Simulation_software_package</strong></summary>
+
+**Description:** Software or package used for simulation
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:software_package`
+
+</details>
+
+<details>
+<summary><strong>Simulation_simulation_method</strong></summary>
+
+**Description:** Simulation method used
+
+**Range:** SimulationMethod
+
+**Multivalued:** Yes
+
+**URI:** `catcore:simulation_method`
+
+**Range Class Details:**
+
+<details>
+<summary>##### SimulationMethod</summary>
+
+**Abstract Class**
+
+**Description:** Simulation method used
+
+**URI:** `catcore:SimulationMethod`
+
+#### Slots (1)
+
+<details>
+<summary><strong>identifier</strong></summary>
+
+**Description:** Unique identifier for the entity
+
+**Range:** string
+
+**Multivalued:** No
+
+**URI:** `catcore:identifier`
+
+</details>
+
+</details>
+
+**Subclasses of SimulationMethod:**
+
+<details>
+<summary>###### DFT</summary>
+
+**Description:** Density functional theory
+
+**URI:** `catcore:DFT`
+
+#### Slots (7)
+
+<details>
+<summary><strong>identifier</strong></summary>
+
+**Description:** Unique identifier for the entity
+
+**Range:** string
+
+**Multivalued:** No
+
+**URI:** `catcore:identifier`
+
+</details>
+
+<details>
+<summary><strong>exchange_correlation_functional</strong></summary>
+
+**Description:** Exchange-correlation functional used (e.g., PBE, B3LYP)
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:exchange_correlation_functional`
+
+</details>
+
+<details>
+<summary><strong>energy_cutoff</strong></summary>
+
+**Description:** Energy cutoff for plane wave basis
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:energy_cutoff`
+
+**Unit:** eV
+
+</details>
+
+<details>
+<summary><strong>convergence_criteria</strong></summary>
+
+**Description:** Convergence criteria (e.g., energy, force)
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:convergence_criteria`
+
+</details>
+
+<details>
+<summary><strong>dft_u_parameters</strong></summary>
+
+**Description:** DFT+U parameters used
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:dft_u_parameters`
+
+</details>
+
+<details>
+<summary><strong>spin_polarization</strong></summary>
+
+**Description:** Spin polarization setting
+
+**Range:** boolean
+
+**Multivalued:** Yes
+
+**URI:** `catcore:spin_polarization`
+
+</details>
+
+<details>
+<summary><strong>total_energy_per_atom</strong></summary>
+
+**Description:** Total energy per atom
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:total_energy_per_atom`
+
+**Unit:** eV
+
+</details>
+
+</details>
+
+<details>
+<summary>###### MolecularDynamics</summary>
+
+**Description:** Molecular dynamics
+
+**URI:** `NCIT:C18097`
+
+#### Slots (6)
+
+<details>
+<summary><strong>identifier</strong></summary>
+
+**Description:** Unique identifier for the entity
+
+**Range:** string
+
+**Multivalued:** No
+
+**URI:** `catcore:identifier`
+
+</details>
+
+<details>
+<summary><strong>force_field</strong></summary>
+
+**Description:** Force field used
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:force_field`
+
+</details>
+
+<details>
+<summary><strong>simulation_timestep</strong></summary>
+
+**Description:** Time step for simulation
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `APOLLO_SV:00000012`
+
+**Unit:** fs
+
+</details>
+
+<details>
+<summary><strong>simulation_time</strong></summary>
+
+**Description:** Total simulation time
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:simulation_time`
+
+**Unit:** ps
+
+</details>
+
+<details>
+<summary><strong>ensemble_type</strong></summary>
+
+**Description:** Ensemble type (e.g., NVT, NPT)
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:ensemble_type`
+
+</details>
+
+<details>
+<summary><strong>number_of_atoms</strong></summary>
+
+**Description:** Number of atoms in simulation
+
+**Range:** integer
+
+**Multivalued:** Yes
+
+**URI:** `catcore:number_of_atoms`
+
+</details>
+
+</details>
+
+<details>
+<summary>###### Microkinetics</summary>
+
+**Description:** Microkinetics simulation
+
+**URI:** `catcore:Microkinetics`
+
+#### Slots (7)
+
+<details>
+<summary><strong>identifier</strong></summary>
+
+**Description:** Unique identifier for the entity
+
+**Range:** string
+
+**Multivalued:** No
+
+**URI:** `catcore:identifier`
+
+</details>
+
+<details>
+<summary><strong>rate_constants</strong></summary>
+
+**Description:** Rate constants or Arrhenius parameters
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `NCIT:C94967`
+
+</details>
+
+<details>
+<summary><strong>solver_type</strong></summary>
+
+**Description:** Type of solver used
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:solver_type`
+
+</details>
+
+<details>
+<summary><strong>temperature</strong></summary>
+
+**Description:** Temperature
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `AFR:0001584`
+
+**Unit:** Cel
+
+</details>
+
+<details>
+<summary><strong>pressure</strong></summary>
+
+**Description:** Pressure in simulation
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:pressure`
+
+**Unit:** bar
+
+</details>
+
+<details>
+<summary><strong>surface_coverage</strong></summary>
+
+**Description:** Surface coverage of species
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:surface_coverage`
+
+</details>
+
+<details>
+<summary><strong>activation_energy</strong></summary>
+
+**Description:** Activation energy for each step
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:activation_energy`
+
+**Unit:** eV
+
+</details>
+
+</details>
+
+<details>
+<summary>###### MonteCarlo</summary>
+
+**Description:** Monte Carlo simulation
+
+**URI:** `catcore:MonteCarlo`
+
+#### Slots (8)
+
+<details>
+<summary><strong>identifier</strong></summary>
+
+**Description:** Unique identifier for the entity
+
+**Range:** string
+
+**Multivalued:** No
+
+**URI:** `catcore:identifier`
+
+</details>
+
+<details>
+<summary><strong>interaction_potential</strong></summary>
+
+**Description:** Interaction potential used
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:interaction_potential`
+
+</details>
+
+<details>
+<summary><strong>number_of_steps</strong></summary>
+
+**Description:** Number of Monte Carlo steps
+
+**Range:** integer
+
+**Multivalued:** Yes
+
+**URI:** `catcore:number_of_steps`
+
+</details>
+
+<details>
+<summary><strong>temperature</strong></summary>
+
+**Description:** Temperature
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `AFR:0001584`
+
+**Unit:** Cel
+
+</details>
+
+<details>
+<summary><strong>lattice_size_type</strong></summary>
+
+**Description:** Lattice size and type
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:lattice_size_type`
+
+</details>
+
+<details>
+<summary><strong>acceptance_criteria</strong></summary>
+
+**Description:** Acceptance criteria for Monte Carlo moves
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:acceptance_criteria`
+
+</details>
+
+<details>
+<summary><strong>equilibration_steps</strong></summary>
+
+**Description:** Number of equilibration steps
+
+**Range:** integer
+
+**Multivalued:** Yes
+
+**URI:** `catcore:equilibration_steps`
+
+</details>
+
+<details>
+<summary><strong>sampling_interval</strong></summary>
+
+**Description:** Sampling interval for data collection
+
+**Range:** integer
+
+**Multivalued:** Yes
+
+**URI:** `catcore:sampling_interval`
+
+</details>
+
+</details>
+
+</details>
+
+<details>
+<summary><strong>Simulation_calculated_property</strong></summary>
+
+**Description:** Property calculated from simulation
+
+**Range:** CalculatedProperty
+
+**Multivalued:** Yes
+
+**URI:** `catcore:calculated_property`
+
+**Range Class Details:**
+
+<details>
+<summary>##### CalculatedProperty</summary>
+
+**Abstract Class**
+
+**Description:** Property calculated from simulation
+
+**URI:** `catcore:CalculatedProperty`
+
+#### Slots (1)
+
+<details>
+<summary><strong>identifier</strong></summary>
+
+**Description:** Unique identifier for the entity
+
+**Range:** string
+
+**Multivalued:** No
+
+**URI:** `catcore:identifier`
+
+</details>
+
+</details>
+
+**Subclasses of CalculatedProperty:**
+
+<details>
+<summary>###### ThermodynamicStability</summary>
+
+**Description:** Thermodynamic stability property
+
+**URI:** `catcore:ThermodynamicStability`
+
+#### Slots (6)
+
+<details>
+<summary><strong>identifier</strong></summary>
+
+**Description:** Unique identifier for the entity
+
+**Range:** string
+
+**Multivalued:** No
+
+**URI:** `catcore:identifier`
+
+</details>
+
+<details>
+<summary><strong>formation_energy</strong></summary>
+
+**Description:** Formation energy per atom
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:formation_energy`
+
+**Unit:** eV
+
+</details>
+
+<details>
+<summary><strong>reference_energies</strong></summary>
+
+**Description:** Reference elemental energies
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:reference_energies`
+
+</details>
+
+<details>
+<summary><strong>energy_above_hull</strong></summary>
+
+**Description:** Energy above convex hull
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:energy_above_hull`
+
+**Unit:** eV
+
+</details>
+
+<details>
+<summary><strong>phase_diagram_type</strong></summary>
+
+**Description:** Phase diagram type (e.g., binary, ternary)
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:phase_diagram_type`
+
+</details>
+
+<details>
+<summary><strong>competing_phases</strong></summary>
+
+**Description:** Competing phase list
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:competing_phases`
+
+</details>
+
+</details>
+
+<details>
+<summary>###### Piezoelectricity</summary>
+
+**Description:** Piezoelectricity property
+
+**URI:** `catcore:Piezoelectricity`
+
+#### Slots (5)
+
+<details>
+<summary><strong>identifier</strong></summary>
+
+**Description:** Unique identifier for the entity
+
+**Range:** string
+
+**Multivalued:** No
+
+**URI:** `catcore:identifier`
+
+</details>
+
+<details>
+<summary><strong>piezoelectric_tensor</strong></summary>
+
+**Description:** Piezoelectric tensor components
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:piezoelectric_tensor`
+
+</details>
+
+<details>
+<summary><strong>crystal_symmetry</strong></summary>
+
+**Description:** Crystal symmetry
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:crystal_symmetry`
+
+</details>
+
+<details>
+<summary><strong>strain_applied</strong></summary>
+
+**Description:** Strain applied
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:strain_applied`
+
+</details>
+
+<details>
+<summary><strong>ionic_electronic_contributions</strong></summary>
+
+**Description:** Ionic and electronic contributions
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:ionic_electronic_contributions`
+
+</details>
+
+</details>
+
+<details>
+<summary>###### ElasticConstants</summary>
+
+**Description:** Elastic constants property
+
+**URI:** `catcore:ElasticConstants`
+
+#### Slots (6)
+
+<details>
+<summary><strong>identifier</strong></summary>
+
+**Description:** Unique identifier for the entity
+
+**Range:** string
+
+**Multivalued:** No
+
+**URI:** `catcore:identifier`
+
+</details>
+
+<details>
+<summary><strong>elastic_tensor</strong></summary>
+
+**Description:** Elastic tensor components
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:elastic_tensor`
+
+</details>
+
+<details>
+<summary><strong>bulk_modulus</strong></summary>
+
+**Description:** Bulk modulus
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:bulk_modulus`
+
+**Unit:** GPa
+
+</details>
+
+<details>
+<summary><strong>shear_modulus</strong></summary>
+
+**Description:** Shear modulus
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:shear_modulus`
+
+**Unit:** GPa
+
+</details>
+
+<details>
+<summary><strong>poisson_ratio</strong></summary>
+
+**Description:** Poisson's ratio
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:poisson_ratio`
+
+</details>
+
+<details>
+<summary><strong>young_modulus</strong></summary>
+
+**Description:** Young's modulus
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:young_modulus`
+
+**Unit:** GPa
+
+</details>
+
+</details>
+
+<details>
+<summary>###### Surfaces</summary>
+
+**Description:** Surface property
+
+**URI:** `catcore:Surfaces`
+
+#### Slots (6)
+
+<details>
+<summary><strong>identifier</strong></summary>
+
+**Description:** Unique identifier for the entity
+
+**Range:** string
+
+**Multivalued:** No
+
+**URI:** `catcore:identifier`
+
+</details>
+
+<details>
+<summary><strong>surface_energy</strong></summary>
+
+**Description:** Surface energy
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:surface_energy`
+
+**Unit:** J/m2
+
+</details>
+
+<details>
+<summary><strong>miller_indices</strong></summary>
+
+**Description:** Miller indices of surface
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:miller_indices`
+
+</details>
+
+<details>
+<summary><strong>slab_thickness</strong></summary>
+
+**Description:** Slab thickness
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:slab_thickness`
+
+**Unit:** angstrom
+
+</details>
+
+<details>
+<summary><strong>vacuum_spacing</strong></summary>
+
+**Description:** Vacuum spacing
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:vacuum_spacing`
+
+**Unit:** angstrom
+
+</details>
+
+<details>
+<summary><strong>surface_termination_method</strong></summary>
+
+**Description:** Surface termination method
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:surface_termination_method`
+
+</details>
+
+</details>
+
+<details>
+<summary>###### DielectricTensors</summary>
+
+**Description:** Dielectric tensors property
+
+**URI:** `catcore:DielectricTensors`
+
+#### Slots (6)
+
+<details>
+<summary><strong>identifier</strong></summary>
+
+**Description:** Unique identifier for the entity
+
+**Range:** string
+
+**Multivalued:** No
+
+**URI:** `catcore:identifier`
+
+</details>
+
+<details>
+<summary><strong>material_composition</strong></summary>
+
+**Description:** Material composition
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:material_composition`
+
+</details>
+
+<details>
+<summary><strong>crystal_structure</strong></summary>
+
+**Description:** Crystal structure (space group, lattice parameters)
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `SIO:001100`
+
+</details>
+
+<details>
+<summary><strong>energy_cutoff</strong></summary>
+
+**Description:** Energy cutoff for plane wave basis
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:energy_cutoff`
+
+**Unit:** eV
+
+</details>
+
+<details>
+<summary><strong>convergence_criteria</strong></summary>
+
+**Description:** Convergence criteria (e.g., energy, force)
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:convergence_criteria`
+
+</details>
+
+<details>
+<summary><strong>k_point_mesh</strong></summary>
+
+**Description:** k-point mesh for sampling
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:k_point_mesh`
+
+</details>
+
+</details>
+
+<details>
+<summary>###### PhononDispersion</summary>
+
+**Description:** Phonon dispersion property
+
+**URI:** `catcore:PhononDispersion`
+
+#### Slots (7)
+
+<details>
+<summary><strong>identifier</strong></summary>
+
+**Description:** Unique identifier for the entity
+
+**Range:** string
+
+**Multivalued:** No
+
+**URI:** `catcore:identifier`
+
+</details>
+
+<details>
+<summary><strong>material_composition</strong></summary>
+
+**Description:** Material composition
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:material_composition`
+
+</details>
+
+<details>
+<summary><strong>crystal_structure</strong></summary>
+
+**Description:** Crystal structure (space group, lattice parameters)
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `SIO:001100`
+
+</details>
+
+<details>
+<summary><strong>force_constant_method</strong></summary>
+
+**Description:** Force constant calculation method
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:force_constant_method`
+
+</details>
+
+<details>
+<summary><strong>kq_point_mesh</strong></summary>
+
+**Description:** k/q-point mesh for phonons
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:kq_point_mesh`
+
+</details>
+
+<details>
+<summary><strong>smearing_parameter</strong></summary>
+
+**Description:** Smearing/broadening parameter
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:smearing_parameter`
+
+**Unit:** eV
+
+</details>
+
+<details>
+<summary><strong>imaginary_modes</strong></summary>
+
+**Description:** Imaginary modes present
+
+**Range:** boolean
+
+**Multivalued:** Yes
+
+**URI:** `catcore:imaginary_modes`
+
+</details>
+
+</details>
+
+<details>
+<summary>###### EquationsOfState</summary>
+
+**Description:** Equations of state property
+
+**URI:** `catcore:EquationsOfState`
+
+#### Slots (9)
+
+<details>
+<summary><strong>identifier</strong></summary>
+
+**Description:** Unique identifier for the entity
+
+**Range:** string
+
+**Multivalued:** No
+
+**URI:** `catcore:identifier`
+
+</details>
+
+<details>
+<summary><strong>material_composition</strong></summary>
+
+**Description:** Material composition
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:material_composition`
+
+</details>
+
+<details>
+<summary><strong>crystal_structure</strong></summary>
+
+**Description:** Crystal structure (space group, lattice parameters)
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `SIO:001100`
+
+</details>
+
+<details>
+<summary><strong>fit_method</strong></summary>
+
+**Description:** Fit method (e.g., Birch-Murnaghan, Vinet)
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:fit_method`
+
+</details>
+
+<details>
+<summary><strong>energy_cutoff</strong></summary>
+
+**Description:** Energy cutoff for plane wave basis
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:energy_cutoff`
+
+**Unit:** eV
+
+</details>
+
+<details>
+<summary><strong>k_point_mesh</strong></summary>
+
+**Description:** k-point mesh for sampling
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:k_point_mesh`
+
+</details>
+
+<details>
+<summary><strong>bulk_modulus</strong></summary>
+
+**Description:** Bulk modulus
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:bulk_modulus`
+
+**Unit:** GPa
+
+</details>
+
+<details>
+<summary><strong>pressure_derivative</strong></summary>
+
+**Description:** Pressure derivative of bulk modulus
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:pressure_derivative`
+
+</details>
+
+<details>
+<summary><strong>fit_residuals</strong></summary>
+
+**Description:** Residuals of fit
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:fit_residuals`
+
+</details>
+
+</details>
+
+<details>
+<summary>###### AqueousStability</summary>
+
+**Description:** Aqueous stability property
+
+**URI:** `catcore:AqueousStability`
+
+#### Slots (8)
+
+<details>
+<summary><strong>identifier</strong></summary>
+
+**Description:** Unique identifier for the entity
+
+**Range:** string
+
+**Multivalued:** No
+
+**URI:** `catcore:identifier`
+
+</details>
+
+<details>
+<summary><strong>material_composition</strong></summary>
+
+**Description:** Material composition
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:material_composition`
+
+</details>
+
+<details>
+<summary><strong>crystal_structure</strong></summary>
+
+**Description:** Crystal structure (space group, lattice parameters)
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `SIO:001100`
+
+</details>
+
+<details>
+<summary><strong>ph_range</strong></summary>
+
+**Description:** pH range considered
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:ph_range`
+
+</details>
+
+<details>
+<summary><strong>potential_range</strong></summary>
+
+**Description:** Potential range considered
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:potential_range`
+
+</details>
+
+<details>
+<summary><strong>solvation_model</strong></summary>
+
+**Description:** Solvation model used
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:solvation_model`
+
+</details>
+
+<details>
+<summary><strong>ionic_strength</strong></summary>
+
+**Description:** Ionic strength of solution
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:ionic_strength`
+
+**Unit:** mol/L
+
+</details>
+
+<details>
+<summary><strong>temperature</strong></summary>
+
+**Description:** Temperature
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `AFR:0001584`
+
+**Unit:** Cel
+
+</details>
+
+</details>
+
+<details>
+<summary>###### GrainBoundaries</summary>
+
+**Description:** Grain boundaries property
+
+**URI:** `catcore:GrainBoundaries`
+
+#### Slots (9)
+
+<details>
+<summary><strong>identifier</strong></summary>
+
+**Description:** Unique identifier for the entity
+
+**Range:** string
+
+**Multivalued:** No
+
+**URI:** `catcore:identifier`
+
+</details>
+
+<details>
+<summary><strong>material_composition</strong></summary>
+
+**Description:** Material composition
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:material_composition`
+
+</details>
+
+<details>
+<summary><strong>grain_boundary_plane</strong></summary>
+
+**Description:** Grain boundary plane
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:grain_boundary_plane`
+
+</details>
+
+<details>
+<summary><strong>misorientation_angle</strong></summary>
+
+**Description:** Misorientation angle
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:misorientation_angle`
+
+**Unit:** deg
+
+</details>
+
+<details>
+<summary><strong>grain_boundary_energy</strong></summary>
+
+**Description:** Grain boundary energy
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:grain_boundary_energy`
+
+**Unit:** J/m2
+
+</details>
+
+<details>
+<summary><strong>simulation_cell_size</strong></summary>
+
+**Description:** Simulation cell size
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:simulation_cell_size`
+
+</details>
+
+<details>
+<summary><strong>gb_excess_volume</strong></summary>
+
+**Description:** GB excess volume
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:gb_excess_volume`
+
+</details>
+
+<details>
+<summary><strong>gb_structural_units</strong></summary>
+
+**Description:** GB structural units description
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:gb_structural_units`
+
+</details>
+
+<details>
+<summary><strong>charge_defect_segregation</strong></summary>
+
+**Description:** Charge or defect segregation data
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:charge_defect_segregation`
+
+</details>
+
+</details>
+
+<details>
+<summary>###### ElectronicStructure</summary>
+
+**Description:** Electronic structure property
+
+**URI:** `catcore:ElectronicStructure`
+
+#### Slots (9)
+
+<details>
+<summary><strong>identifier</strong></summary>
+
+**Description:** Unique identifier for the entity
+
+**Range:** string
+
+**Multivalued:** No
+
+**URI:** `catcore:identifier`
+
+</details>
+
+<details>
+<summary><strong>material_composition</strong></summary>
+
+**Description:** Material composition
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:material_composition`
+
+</details>
+
+<details>
+<summary><strong>crystal_structure</strong></summary>
+
+**Description:** Crystal structure (space group, lattice parameters)
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `SIO:001100`
+
+</details>
+
+<details>
+<summary><strong>k_point_mesh</strong></summary>
+
+**Description:** k-point mesh for sampling
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:k_point_mesh`
+
+</details>
+
+<details>
+<summary><strong>energy_cutoff</strong></summary>
+
+**Description:** Energy cutoff for plane wave basis
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:energy_cutoff`
+
+**Unit:** eV
+
+</details>
+
+<details>
+<summary><strong>smearing_method</strong></summary>
+
+**Description:** Smearing method and width
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:smearing_method`
+
+</details>
+
+<details>
+<summary><strong>spin_polarized</strong></summary>
+
+**Description:** Spin-polarized calculation
+
+**Range:** boolean
+
+**Multivalued:** Yes
+
+**URI:** `catcore:spin_polarized`
+
+</details>
+
+<details>
+<summary><strong>band_path</strong></summary>
+
+**Description:** Band path used
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:band_path`
+
+</details>
+
+<details>
+<summary><strong>fermi_energy</strong></summary>
+
+**Description:** Fermi energy
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:fermi_energy`
+
+**Unit:** eV
+
+</details>
+
+</details>
+
+<details>
+<summary>###### Ferroelectrics</summary>
+
+**Description:** Ferroelectric property
+
+**URI:** `catcore:Ferroelectrics`
+
+#### Slots (9)
+
+<details>
+<summary><strong>identifier</strong></summary>
+
+**Description:** Unique identifier for the entity
+
+**Range:** string
+
+**Multivalued:** No
+
+**URI:** `catcore:identifier`
+
+</details>
+
+<details>
+<summary><strong>material_composition</strong></summary>
+
+**Description:** Material composition
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:material_composition`
+
+</details>
+
+<details>
+<summary><strong>crystal_structure</strong></summary>
+
+**Description:** Crystal structure (space group, lattice parameters)
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `SIO:001100`
+
+</details>
+
+<details>
+<summary><strong>polarization_direction</strong></summary>
+
+**Description:** Polarization direction
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:polarization_direction`
+
+</details>
+
+<details>
+<summary><strong>spontaneous_polarization</strong></summary>
+
+**Description:** Spontaneous polarization magnitude
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:spontaneous_polarization`
+
+**Unit:** uC/cm2
+
+</details>
+
+<details>
+<summary><strong>reference_structure</strong></summary>
+
+**Description:** Reference paraelectric structure
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:reference_structure`
+
+</details>
+
+<details>
+<summary><strong>switching_barrier</strong></summary>
+
+**Description:** Switching barrier
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:switching_barrier`
+
+**Unit:** eV
+
+</details>
+
+<details>
+<summary><strong>coercive_field</strong></summary>
+
+**Description:** Coercive field
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:coercive_field`
+
+**Unit:** kV/cm
+
+</details>
+
+<details>
+<summary><strong>temperature_dependence</strong></summary>
+
+**Description:** Temperature dependence
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:temperature_dependence`
+
+</details>
+
+</details>
+
+<details>
+<summary>###### BandGap</summary>
+
+**Description:** Band gap property
+
+**URI:** `catcore:BandGap`
+
+#### Slots (9)
+
+<details>
+<summary><strong>identifier</strong></summary>
+
+**Description:** Unique identifier for the entity
+
+**Range:** string
+
+**Multivalued:** No
+
+**URI:** `catcore:identifier`
+
+</details>
+
+<details>
+<summary><strong>material_sample</strong></summary>
+
+**Description:** Material sample
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `voc4cat:0005056`
+
+</details>
+
+<details>
+<summary><strong>structure_model</strong></summary>
+
+**Description:** Structure or model used
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:structure_model`
+
+</details>
+
+<details>
+<summary><strong>k_point_mesh</strong></summary>
+
+**Description:** k-point mesh for sampling
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:k_point_mesh`
+
+</details>
+
+<details>
+<summary><strong>smearing_broadening</strong></summary>
+
+**Description:** Smearing or broadening parameter
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:smearing_broadening`
+
+**Unit:** eV
+
+</details>
+
+<details>
+<summary><strong>direct_indirect</strong></summary>
+
+**Description:** Direct or indirect band gap
+
+**Range:** string
+
+**Multivalued:** Yes
+
+**URI:** `catcore:direct_indirect`
+
+</details>
+
+<details>
+<summary><strong>experimental_reference</strong></summary>
+
+**Description:** Experimental reference value
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:experimental_reference`
+
+**Unit:** eV
+
+</details>
+
+<details>
+<summary><strong>gw_hybrid_correction</strong></summary>
+
+**Description:** GW or hybrid correction used
+
+**Range:** boolean
+
+**Multivalued:** Yes
+
+**URI:** `catcore:gw_hybrid_correction`
+
+</details>
+
+<details>
+<summary><strong>excitonic_correction</strong></summary>
+
+**Description:** Excitonic correction applied
+
+**Range:** float
+
+**Multivalued:** Yes
+
+**URI:** `catcore:excitonic_correction`
+
+**Unit:** eV
+
+</details>
+
+</details>
+
+</details>
+
+#### Slot Usage
+
+- **software_package**: Required
+- **simulation_method**: Required
+- **calculated_property**: Required
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
