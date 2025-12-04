@@ -16,7 +16,6 @@ plugins:
       execute: false
   - mermaid2:
       version: 11.4.1
-  - glightbox
   # TODO rebuild docs on schema change (https://github.com/dalito/linkml-project-copier/issues/39)
   # - gen-files:
   #     scripts:
