@@ -20,6 +20,9 @@ prefixes:
   NCIT: http://purl.obolibrary.org/obo/NCIT_
   nmrCV: 'http://nmrML.org/nmrCV#NMR:'
   linkml: https://w3id.org/linkml/
+  AFRL: http://purl.allotrope.org/ontologies/role#AFRL_
+  APOLLO_SV: http://purl.obolibrary.org/obo/APOLLO_SV_
+  SIO: http://semanticscience.org/resource/SIO_
 
 default_prefix: catcore
 default_range: string
