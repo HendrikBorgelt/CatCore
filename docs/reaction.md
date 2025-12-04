@@ -16,7 +16,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **URI:** [`catcore:catalyst_quantity`](catcore:catalyst_quantity)
 
-**Schema Reference:** [catalyst_quantity](/elements/catalyst_quantity.md)
+**Schema Reference:** [catalyst_quantity](elements/catalyst_quantity.md)
 
 **Unit:** g
 
@@ -31,7 +31,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **URI:** [`voc4cat:0007018`](voc4cat:0007018)
 
-**Schema Reference:** [reactor_design_type](/elements/reactor_design_type.md)
+**Schema Reference:** [reactor_design_type](elements/reactor_design_type.md)
 
 **Range Class Details:**
 
@@ -42,7 +42,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **Description:** Type of reactor design used
 
-**Schema Reference:** [ReactorDesignType](/elements/ReactorDesignType.md)
+**Schema Reference:** [ReactorDesignType](elements/ReactorDesignType.md)
 
 </details>
 
@@ -55,7 +55,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **URI:** [`voc4cat:0000193`](voc4cat:0000193)
 
-**Schema Reference:** [ElectrochemicalReactor](/elements/ElectrochemicalReactor.md)
+**Schema Reference:** [ElectrochemicalReactor](elements/ElectrochemicalReactor.md)
 
 </details>
 
@@ -66,7 +66,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **URI:** [`voc4cat:0007019`](voc4cat:0007019)
 
-**Schema Reference:** [CSTR](/elements/CSTR.md)
+**Schema Reference:** [CSTR](elements/CSTR.md)
 
 </details>
 
@@ -77,7 +77,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **URI:** [`voc4cat:0007102`](voc4cat:0007102)
 
-**Schema Reference:** [PlugFlowReactor](/elements/PlugFlowReactor.md)
+**Schema Reference:** [PlugFlowReactor](elements/PlugFlowReactor.md)
 
 </details>
 
@@ -88,7 +88,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **URI:** [`NCIT:C93052`](NCIT:C93052)
 
-**Schema Reference:** [Autoclave](/elements/Autoclave.md)
+**Schema Reference:** [Autoclave](elements/Autoclave.md)
 
 </details>
 
@@ -99,7 +99,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **URI:** [`catcore:SlurryReactor`](catcore:SlurryReactor)
 
-**Schema Reference:** [SlurryReactor](/elements/SlurryReactor.md)
+**Schema Reference:** [SlurryReactor](elements/SlurryReactor.md)
 
 </details>
 
@@ -110,7 +110,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **URI:** [`voc4cat:0000234`](voc4cat:0000234)
 
-**Schema Reference:** [Microreactor](/elements/Microreactor.md)
+**Schema Reference:** [Microreactor](elements/Microreactor.md)
 
 </details>
 
@@ -121,7 +121,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **URI:** [`catcore:FixedBedReactor`](catcore:FixedBedReactor)
 
-**Schema Reference:** [FixedBedReactor](/elements/FixedBedReactor.md)
+**Schema Reference:** [FixedBedReactor](elements/FixedBedReactor.md)
 
 </details>
 
@@ -132,7 +132,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **URI:** [`catcore:FluidizedBedReactor`](catcore:FluidizedBedReactor)
 
-**Schema Reference:** [FluidizedBedReactor](/elements/FluidizedBedReactor.md)
+**Schema Reference:** [FluidizedBedReactor](elements/FluidizedBedReactor.md)
 
 **Slots**
 
@@ -145,7 +145,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **URI:** [`catcore:gas_distributor_type`](catcore:gas_distributor_type)
 
-**Schema Reference:** [gas_distributor_type](/elements/gas_distributor_type.md)
+**Schema Reference:** [gas_distributor_type](elements/gas_distributor_type.md)
 
 </details>
 
@@ -158,7 +158,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **URI:** [`catcore:bed_expansion_height`](catcore:bed_expansion_height)
 
-**Schema Reference:** [bed_expansion_height](/elements/bed_expansion_height.md)
+**Schema Reference:** [bed_expansion_height](elements/bed_expansion_height.md)
 
 **Unit:** cm
 
@@ -171,7 +171,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **Range:** string
 
-**Schema Reference:** [bubble_size_distribution](/elements/bubble_size_distribution.md)
+**Schema Reference:** [bubble_size_distribution](elements/bubble_size_distribution.md)
 
 </details>
 
@@ -188,7 +188,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **URI:** [`voc4cat:0000101`](voc4cat:0000101)
 
-**Schema Reference:** [reactant](/elements/reactant.md)
+**Schema Reference:** [reactant](elements/reactant.md)
 
 </details>
 
@@ -201,7 +201,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **URI:** [`voc4cat:0000142`](voc4cat:0000142)
 
-**Schema Reference:** [operation_parameters](/elements/operation_parameters.md)
+**Schema Reference:** [operation_parameters](elements/operation_parameters.md)
 
 **Range Class Details:**
 
@@ -210,7 +210,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **Description:** Operation parameters for the reaction
 
-**Schema Reference:** [OperationParameters](/elements/OperationParameters.md)
+**Schema Reference:** [OperationParameters](elements/OperationParameters.md)
 
 **Slots**
 
@@ -223,7 +223,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **URI:** [`voc4cat:0007032`](voc4cat:0007032)
 
-**Schema Reference:** [reactor_temperature_range](/elements/reactor_temperature_range.md)
+**Schema Reference:** [reactor_temperature_range](elements/reactor_temperature_range.md)
 
 </details>
 
@@ -236,7 +236,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **URI:** [`catcore:atmosphere`](catcore:atmosphere)
 
-**Schema Reference:** [atmosphere](/elements/atmosphere.md)
+**Schema Reference:** [atmosphere](elements/atmosphere.md)
 
 </details>
 
@@ -249,7 +249,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **URI:** [`voc4cat:0000118`](voc4cat:0000118)
 
-**Schema Reference:** [experiment_pressure](/elements/experiment_pressure.md)
+**Schema Reference:** [experiment_pressure](elements/experiment_pressure.md)
 
 **Unit:** bar
 
@@ -264,7 +264,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **URI:** [`catcore:feed_composition_range`](catcore:feed_composition_range)
 
-**Schema Reference:** [feed_composition_range](/elements/feed_composition_range.md)
+**Schema Reference:** [feed_composition_range](elements/feed_composition_range.md)
 
 </details>
 
@@ -277,7 +277,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **URI:** [`AFR:0002455`](AFR:0002455)
 
-**Schema Reference:** [experiment_duration](/elements/experiment_duration.md)
+**Schema Reference:** [experiment_duration](elements/experiment_duration.md)
 
 **Unit:** h
 
@@ -296,7 +296,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **URI:** [`voc4cat:0000129`](voc4cat:0000129)
 
-**Schema Reference:** [product_identification_method](/elements/product_identification_method.md)
+**Schema Reference:** [product_identification_method](elements/product_identification_method.md)
 
 **Range Class Details:**
 
@@ -307,7 +307,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **Description:** Method used for product identification
 
-**Schema Reference:** [ProductIdentificationMethod](/elements/ProductIdentificationMethod.md)
+**Schema Reference:** [ProductIdentificationMethod](elements/ProductIdentificationMethod.md)
 
 </details>
 
@@ -322,7 +322,7 @@ with research data concerning the reaction for which the catalyst is applied.
 
 **URI:** [`voc4cat:0007014`](voc4cat:0007014)
 
-**Schema Reference:** [catalyst_type](/elements/catalyst_type.md)
+**Schema Reference:** [catalyst_type](elements/catalyst_type.md)
 
 </details>
 

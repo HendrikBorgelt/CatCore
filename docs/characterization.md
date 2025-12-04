@@ -16,7 +16,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0000187`](voc4cat:0000187)
 
-**Schema Reference:** [equipment](/elements/equipment.md)
+**Schema Reference:** [equipment](elements/equipment.md)
 
 </details>
 
@@ -29,7 +29,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0000066`](voc4cat:0000066)
 
-**Schema Reference:** [characterization_technique](/elements/characterization_technique.md)
+**Schema Reference:** [characterization_technique](elements/characterization_technique.md)
 
 **Range Class Details:**
 
@@ -40,7 +40,7 @@ reported with research data to describe the nature of the catalyst.
 
 **Description:** Characterization technique used for catalyst analysis
 
-**Schema Reference:** [CharacterizationTechnique](/elements/CharacterizationTechnique.md)
+**Schema Reference:** [CharacterizationTechnique](elements/CharacterizationTechnique.md)
 
 </details>
 
@@ -53,7 +53,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`CHMO:0000158`](CHMO:0000158)
 
-**Schema Reference:** [PowderXRD](/elements/PowderXRD.md)
+**Schema Reference:** [PowderXRD](elements/PowderXRD.md)
 
 **Slots**
 
@@ -66,7 +66,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`OBI:0001138`](OBI:0001138)
 
-**Schema Reference:** [xray_source](/elements/xray_source.md)
+**Schema Reference:** [xray_source](elements/xray_source.md)
 
 </details>
 
@@ -79,7 +79,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:atmosphere`](catcore:atmosphere)
 
-**Schema Reference:** [atmosphere](/elements/atmosphere.md)
+**Schema Reference:** [atmosphere](elements/atmosphere.md)
 
 </details>
 
@@ -92,7 +92,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0000108`](voc4cat:0000108)
 
-**Schema Reference:** [operation_mode](/elements/operation_mode.md)
+**Schema Reference:** [operation_mode](elements/operation_mode.md)
 
 </details>
 
@@ -105,7 +105,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:minimum_2theta`](catcore:minimum_2theta)
 
-**Schema Reference:** [minimum_2theta](/elements/minimum_2theta.md)
+**Schema Reference:** [minimum_2theta](elements/minimum_2theta.md)
 
 **Unit:** deg
 
@@ -120,7 +120,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:maximum_2theta`](catcore:maximum_2theta)
 
-**Schema Reference:** [maximum_2theta](/elements/maximum_2theta.md)
+**Schema Reference:** [maximum_2theta](elements/maximum_2theta.md)
 
 **Unit:** deg
 
@@ -135,7 +135,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0000950`](AFR:0000950)
 
-**Schema Reference:** [step_size](/elements/step_size.md)
+**Schema Reference:** [step_size](elements/step_size.md)
 
 </details>
 
@@ -148,7 +148,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`CHMO:0002120`](CHMO:0002120)
 
-**Schema Reference:** [monochromator](/elements/monochromator.md)
+**Schema Reference:** [monochromator](elements/monochromator.md)
 
 </details>
 
@@ -161,7 +161,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0001584`](AFR:0001584)
 
-**Schema Reference:** [temperature](/elements/temperature.md)
+**Schema Reference:** [temperature](elements/temperature.md)
 
 **Unit:** Cel
 
@@ -176,7 +176,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:sample_spinning_speed`](catcore:sample_spinning_speed)
 
-**Schema Reference:** [sample_spinning_speed](/elements/sample_spinning_speed.md)
+**Schema Reference:** [sample_spinning_speed](elements/sample_spinning_speed.md)
 
 **Unit:** rpm
 
@@ -191,7 +191,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0002455`](AFR:0002455)
 
-**Schema Reference:** [experiment_duration](/elements/experiment_duration.md)
+**Schema Reference:** [experiment_duration](elements/experiment_duration.md)
 
 **Unit:** h
 
@@ -206,7 +206,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0000286`](voc4cat:0000286)
 
-**Schema Reference:** [XRayAbsorptionSpectroscopy](/elements/XRayAbsorptionSpectroscopy.md)
+**Schema Reference:** [XRayAbsorptionSpectroscopy](elements/XRayAbsorptionSpectroscopy.md)
 
 **Slots**
 
@@ -219,7 +219,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0000108`](voc4cat:0000108)
 
-**Schema Reference:** [operation_mode](/elements/operation_mode.md)
+**Schema Reference:** [operation_mode](elements/operation_mode.md)
 
 </details>
 
@@ -232,7 +232,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:element_analyzed`](catcore:element_analyzed)
 
-**Schema Reference:** [element_analyzed](/elements/element_analyzed.md)
+**Schema Reference:** [element_analyzed](elements/element_analyzed.md)
 
 </details>
 
@@ -245,7 +245,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:absorption_edge`](catcore:absorption_edge)
 
-**Schema Reference:** [absorption_edge](/elements/absorption_edge.md)
+**Schema Reference:** [absorption_edge](elements/absorption_edge.md)
 
 </details>
 
@@ -258,7 +258,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`CHMO:0002120`](CHMO:0002120)
 
-**Schema Reference:** [monochromator](/elements/monochromator.md)
+**Schema Reference:** [monochromator](elements/monochromator.md)
 
 </details>
 
@@ -271,7 +271,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:minimum_energy`](catcore:minimum_energy)
 
-**Schema Reference:** [minimum_energy](/elements/minimum_energy.md)
+**Schema Reference:** [minimum_energy](elements/minimum_energy.md)
 
 **Unit:** eV
 
@@ -286,7 +286,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:maximum_energy`](catcore:maximum_energy)
 
-**Schema Reference:** [maximum_energy](/elements/maximum_energy.md)
+**Schema Reference:** [maximum_energy](elements/maximum_energy.md)
 
 **Unit:** eV
 
@@ -301,7 +301,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0000950`](AFR:0000950)
 
-**Schema Reference:** [energy_resolution](/elements/energy_resolution.md)
+**Schema Reference:** [energy_resolution](elements/energy_resolution.md)
 
 **Unit:** eV
 
@@ -316,7 +316,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0001584`](AFR:0001584)
 
-**Schema Reference:** [temperature](/elements/temperature.md)
+**Schema Reference:** [temperature](elements/temperature.md)
 
 **Unit:** Cel
 
@@ -331,7 +331,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:beamline_source`](catcore:beamline_source)
 
-**Schema Reference:** [beamline_source](/elements/beamline_source.md)
+**Schema Reference:** [beamline_source](elements/beamline_source.md)
 
 </details>
 
@@ -344,7 +344,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:noise_of_measurement`](catcore:noise_of_measurement)
 
-**Schema Reference:** [noise_of_measurement](/elements/noise_of_measurement.md)
+**Schema Reference:** [noise_of_measurement](elements/noise_of_measurement.md)
 
 </details>
 
@@ -357,7 +357,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:number_of_cycles`](catcore:number_of_cycles)
 
-**Schema Reference:** [number_of_cycles](/elements/number_of_cycles.md)
+**Schema Reference:** [number_of_cycles](elements/number_of_cycles.md)
 
 </details>
 
@@ -370,7 +370,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:InfraredSpectroscopy`](catcore:InfraredSpectroscopy)
 
-**Schema Reference:** [InfraredSpectroscopy](/elements/InfraredSpectroscopy.md)
+**Schema Reference:** [InfraredSpectroscopy](elements/InfraredSpectroscopy.md)
 
 **Slots**
 
@@ -383,7 +383,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0000108`](voc4cat:0000108)
 
-**Schema Reference:** [operation_mode](/elements/operation_mode.md)
+**Schema Reference:** [operation_mode](elements/operation_mode.md)
 
 </details>
 
@@ -396,7 +396,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:minimum_wavenumber`](catcore:minimum_wavenumber)
 
-**Schema Reference:** [minimum_wavenumber](/elements/minimum_wavenumber.md)
+**Schema Reference:** [minimum_wavenumber](elements/minimum_wavenumber.md)
 
 **Unit:** cm-1
 
@@ -411,7 +411,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:maximum_wavenumber`](catcore:maximum_wavenumber)
 
-**Schema Reference:** [maximum_wavenumber](/elements/maximum_wavenumber.md)
+**Schema Reference:** [maximum_wavenumber](elements/maximum_wavenumber.md)
 
 **Unit:** cm-1
 
@@ -426,7 +426,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0000950`](AFR:0000950)
 
-**Schema Reference:** [step_size](/elements/step_size.md)
+**Schema Reference:** [step_size](elements/step_size.md)
 
 </details>
 
@@ -439,7 +439,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0001584`](AFR:0001584)
 
-**Schema Reference:** [temperature](/elements/temperature.md)
+**Schema Reference:** [temperature](elements/temperature.md)
 
 **Unit:** Cel
 
@@ -454,7 +454,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFP:0003721`](AFP:0003721)
 
-**Schema Reference:** [background_correction](/elements/background_correction.md)
+**Schema Reference:** [background_correction](elements/background_correction.md)
 
 </details>
 
@@ -467,7 +467,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0003051`](AFR:0003051)
 
-**Schema Reference:** [number_of_scans](/elements/number_of_scans.md)
+**Schema Reference:** [number_of_scans](elements/number_of_scans.md)
 
 </details>
 
@@ -480,7 +480,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:atmosphere`](catcore:atmosphere)
 
-**Schema Reference:** [atmosphere](/elements/atmosphere.md)
+**Schema Reference:** [atmosphere](elements/atmosphere.md)
 
 </details>
 
@@ -493,7 +493,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0000069`](voc4cat:0000069)
 
-**Schema Reference:** [RamanSpectroscopy](/elements/RamanSpectroscopy.md)
+**Schema Reference:** [RamanSpectroscopy](elements/RamanSpectroscopy.md)
 
 **Slots**
 
@@ -506,7 +506,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0001594`](AFR:0001594)
 
-**Schema Reference:** [excitation_laser_wavelength](/elements/excitation_laser_wavelength.md)
+**Schema Reference:** [excitation_laser_wavelength](elements/excitation_laser_wavelength.md)
 
 **Unit:** nm
 
@@ -521,7 +521,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0001595`](AFR:0001595)
 
-**Schema Reference:** [excitation_laser_power](/elements/excitation_laser_power.md)
+**Schema Reference:** [excitation_laser_power](elements/excitation_laser_power.md)
 
 **Unit:** mW
 
@@ -536,7 +536,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0002226`](AFR:0002226)
 
-**Schema Reference:** [magnification_setting](/elements/magnification_setting.md)
+**Schema Reference:** [magnification_setting](elements/magnification_setting.md)
 
 </details>
 
@@ -549,7 +549,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0001671`](AFR:0001671)
 
-**Schema Reference:** [integration_time](/elements/integration_time.md)
+**Schema Reference:** [integration_time](elements/integration_time.md)
 
 **Unit:** s
 
@@ -564,7 +564,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0003051`](AFR:0003051)
 
-**Schema Reference:** [number_of_scans](/elements/number_of_scans.md)
+**Schema Reference:** [number_of_scans](elements/number_of_scans.md)
 
 </details>
 
@@ -577,7 +577,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:atmosphere`](catcore:atmosphere)
 
-**Schema Reference:** [atmosphere](/elements/atmosphere.md)
+**Schema Reference:** [atmosphere](elements/atmosphere.md)
 
 </details>
 
@@ -590,7 +590,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0001584`](AFR:0001584)
 
-**Schema Reference:** [temperature](/elements/temperature.md)
+**Schema Reference:** [temperature](elements/temperature.md)
 
 **Unit:** Cel
 
@@ -605,7 +605,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:filter_or_grating`](catcore:filter_or_grating)
 
-**Schema Reference:** [filter_or_grating](/elements/filter_or_grating.md)
+**Schema Reference:** [filter_or_grating](elements/filter_or_grating.md)
 
 </details>
 
@@ -618,7 +618,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`CHMO:0000497`](CHMO:0000497)
 
-**Schema Reference:** [GCMS](/elements/GCMS.md)
+**Schema Reference:** [GCMS](elements/GCMS.md)
 
 **Slots**
 
@@ -631,7 +631,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:external_standard`](catcore:external_standard)
 
-**Schema Reference:** [external_standard](/elements/external_standard.md)
+**Schema Reference:** [external_standard](elements/external_standard.md)
 
 </details>
 
@@ -644,7 +644,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:internal_standard`](catcore:internal_standard)
 
-**Schema Reference:** [internal_standard](/elements/internal_standard.md)
+**Schema Reference:** [internal_standard](elements/internal_standard.md)
 
 </details>
 
@@ -657,7 +657,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0002026`](AFR:0002026)
 
-**Schema Reference:** [column_type](/elements/column_type.md)
+**Schema Reference:** [column_type](elements/column_type.md)
 
 </details>
 
@@ -670,7 +670,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:carrier_gas`](catcore:carrier_gas)
 
-**Schema Reference:** [carrier_gas](/elements/carrier_gas.md)
+**Schema Reference:** [carrier_gas](elements/carrier_gas.md)
 
 </details>
 
@@ -683,7 +683,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:carrier_gas_purity`](catcore:carrier_gas_purity)
 
-**Schema Reference:** [carrier_gas_purity](/elements/carrier_gas_purity.md)
+**Schema Reference:** [carrier_gas_purity](elements/carrier_gas_purity.md)
 
 </details>
 
@@ -696,7 +696,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:inlet_temperature`](catcore:inlet_temperature)
 
-**Schema Reference:** [inlet_temperature](/elements/inlet_temperature.md)
+**Schema Reference:** [inlet_temperature](elements/inlet_temperature.md)
 
 **Unit:** Cel
 
@@ -711,7 +711,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:minimum_oven_temperature`](catcore:minimum_oven_temperature)
 
-**Schema Reference:** [minimum_oven_temperature](/elements/minimum_oven_temperature.md)
+**Schema Reference:** [minimum_oven_temperature](elements/minimum_oven_temperature.md)
 
 **Unit:** Cel
 
@@ -726,7 +726,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:maximum_oven_temperature`](catcore:maximum_oven_temperature)
 
-**Schema Reference:** [maximum_oven_temperature](/elements/maximum_oven_temperature.md)
+**Schema Reference:** [maximum_oven_temperature](elements/maximum_oven_temperature.md)
 
 **Unit:** Cel
 
@@ -741,7 +741,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:heating_ramp`](catcore:heating_ramp)
 
-**Schema Reference:** [heating_ramp](/elements/heating_ramp.md)
+**Schema Reference:** [heating_ramp](elements/heating_ramp.md)
 
 **Unit:** Cel/min
 
@@ -756,7 +756,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:heating_procedure`](catcore:heating_procedure)
 
-**Schema Reference:** [heating_procedure](/elements/heating_procedure.md)
+**Schema Reference:** [heating_procedure](elements/heating_procedure.md)
 
 </details>
 
@@ -769,7 +769,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:acquisition_mode`](catcore:acquisition_mode)
 
-**Schema Reference:** [acquisition_mode](/elements/acquisition_mode.md)
+**Schema Reference:** [acquisition_mode](elements/acquisition_mode.md)
 
 </details>
 
@@ -782,7 +782,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:solvent_delay`](catcore:solvent_delay)
 
-**Schema Reference:** [solvent_delay](/elements/solvent_delay.md)
+**Schema Reference:** [solvent_delay](elements/solvent_delay.md)
 
 **Unit:** min
 
@@ -797,7 +797,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:trace_ion_detection`](catcore:trace_ion_detection)
 
-**Schema Reference:** [trace_ion_detection](/elements/trace_ion_detection.md)
+**Schema Reference:** [trace_ion_detection](elements/trace_ion_detection.md)
 
 </details>
 
@@ -810,7 +810,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0002652`](AFR:0002652)
 
-**Schema Reference:** [mz_minimum](/elements/mz_minimum.md)
+**Schema Reference:** [mz_minimum](elements/mz_minimum.md)
 
 </details>
 
@@ -823,7 +823,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0002653`](AFR:0002653)
 
-**Schema Reference:** [mz_maximum](/elements/mz_maximum.md)
+**Schema Reference:** [mz_maximum](elements/mz_maximum.md)
 
 </details>
 
@@ -836,7 +836,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:split_ratio`](catcore:split_ratio)
 
-**Schema Reference:** [split_ratio](/elements/split_ratio.md)
+**Schema Reference:** [split_ratio](elements/split_ratio.md)
 
 </details>
 
@@ -849,7 +849,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0001577`](AFR:0001577)
 
-**Schema Reference:** [injection_volume](/elements/injection_volume.md)
+**Schema Reference:** [injection_volume](elements/injection_volume.md)
 
 **Unit:** uL
 
@@ -864,7 +864,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0000073`](voc4cat:0000073)
 
-**Schema Reference:** [NMRSpectroscopy](/elements/NMRSpectroscopy.md)
+**Schema Reference:** [NMRSpectroscopy](elements/NMRSpectroscopy.md)
 
 **Slots**
 
@@ -877,7 +877,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:nucleus`](catcore:nucleus)
 
-**Schema Reference:** [nucleus](/elements/nucleus.md)
+**Schema Reference:** [nucleus](elements/nucleus.md)
 
 </details>
 
@@ -890,7 +890,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0007246`](voc4cat:0007246)
 
-**Schema Reference:** [solvent](/elements/solvent.md)
+**Schema Reference:** [solvent](elements/solvent.md)
 
 </details>
 
@@ -903,7 +903,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`nmrCV:1400026`](nmrCV:1400026)
 
-**Schema Reference:** [irradiation_frequency](/elements/irradiation_frequency.md)
+**Schema Reference:** [irradiation_frequency](elements/irradiation_frequency.md)
 
 **Unit:** MHz
 
@@ -918,7 +918,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0001584`](AFR:0001584)
 
-**Schema Reference:** [temperature](/elements/temperature.md)
+**Schema Reference:** [temperature](elements/temperature.md)
 
 **Unit:** Cel
 
@@ -933,7 +933,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`nmrCV:1400037`](nmrCV:1400037)
 
-**Schema Reference:** [nmr_pulse_sequence](/elements/nmr_pulse_sequence.md)
+**Schema Reference:** [nmr_pulse_sequence](elements/nmr_pulse_sequence.md)
 
 </details>
 
@@ -946,7 +946,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`nmrCV:1400132`](nmrCV:1400132)
 
-**Schema Reference:** [nmr_sample_tube](/elements/nmr_sample_tube.md)
+**Schema Reference:** [nmr_sample_tube](elements/nmr_sample_tube.md)
 
 </details>
 
@@ -959,7 +959,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0003051`](AFR:0003051)
 
-**Schema Reference:** [number_of_scans](/elements/number_of_scans.md)
+**Schema Reference:** [number_of_scans](elements/number_of_scans.md)
 
 </details>
 
@@ -972,7 +972,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:atmosphere`](catcore:atmosphere)
 
-**Schema Reference:** [atmosphere](/elements/atmosphere.md)
+**Schema Reference:** [atmosphere](elements/atmosphere.md)
 
 </details>
 
@@ -985,7 +985,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0000078`](voc4cat:0000078)
 
-**Schema Reference:** [TransmissionElectronMicroscopy](/elements/TransmissionElectronMicroscopy.md)
+**Schema Reference:** [TransmissionElectronMicroscopy](elements/TransmissionElectronMicroscopy.md)
 
 **Slots**
 
@@ -998,7 +998,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0000108`](voc4cat:0000108)
 
-**Schema Reference:** [operation_mode](/elements/operation_mode.md)
+**Schema Reference:** [operation_mode](elements/operation_mode.md)
 
 </details>
 
@@ -1011,7 +1011,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:gun_type`](catcore:gun_type)
 
-**Schema Reference:** [gun_type](/elements/gun_type.md)
+**Schema Reference:** [gun_type](elements/gun_type.md)
 
 </details>
 
@@ -1024,7 +1024,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:acceleration_voltage`](catcore:acceleration_voltage)
 
-**Schema Reference:** [acceleration_voltage](/elements/acceleration_voltage.md)
+**Schema Reference:** [acceleration_voltage](elements/acceleration_voltage.md)
 
 **Unit:** kV
 
@@ -1039,7 +1039,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0002226`](AFR:0002226)
 
-**Schema Reference:** [magnification_setting](/elements/magnification_setting.md)
+**Schema Reference:** [magnification_setting](elements/magnification_setting.md)
 
 </details>
 
@@ -1052,7 +1052,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`CHMO:0000267`](CHMO:0000267)
 
-**Schema Reference:** [ICPAES](/elements/ICPAES.md)
+**Schema Reference:** [ICPAES](elements/ICPAES.md)
 
 **Slots**
 
@@ -1065,7 +1065,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:element_analyzed`](catcore:element_analyzed)
 
-**Schema Reference:** [element_analyzed](/elements/element_analyzed.md)
+**Schema Reference:** [element_analyzed](elements/element_analyzed.md)
 
 </details>
 
@@ -1078,7 +1078,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:calibration_method`](catcore:calibration_method)
 
-**Schema Reference:** [calibration_method](/elements/calibration_method.md)
+**Schema Reference:** [calibration_method](elements/calibration_method.md)
 
 </details>
 
@@ -1091,7 +1091,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`NCIT:C105701`](NCIT:C105701)
 
-**Schema Reference:** [detection_limit](/elements/detection_limit.md)
+**Schema Reference:** [detection_limit](elements/detection_limit.md)
 
 </details>
 
@@ -1104,7 +1104,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:matrix_effect_correction`](catcore:matrix_effect_correction)
 
-**Schema Reference:** [matrix_effect_correction](/elements/matrix_effect_correction.md)
+**Schema Reference:** [matrix_effect_correction](elements/matrix_effect_correction.md)
 
 </details>
 
@@ -1117,7 +1117,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0000075`](voc4cat:0000075)
 
-**Schema Reference:** [ScanningElectronMicroscopy](/elements/ScanningElectronMicroscopy.md)
+**Schema Reference:** [ScanningElectronMicroscopy](elements/ScanningElectronMicroscopy.md)
 
 **Slots**
 
@@ -1130,7 +1130,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:gun_type`](catcore:gun_type)
 
-**Schema Reference:** [gun_type](/elements/gun_type.md)
+**Schema Reference:** [gun_type](elements/gun_type.md)
 
 </details>
 
@@ -1143,7 +1143,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:acceleration_voltage`](catcore:acceleration_voltage)
 
-**Schema Reference:** [acceleration_voltage](/elements/acceleration_voltage.md)
+**Schema Reference:** [acceleration_voltage](elements/acceleration_voltage.md)
 
 **Unit:** kV
 
@@ -1158,7 +1158,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:image_resolution`](catcore:image_resolution)
 
-**Schema Reference:** [image_resolution](/elements/image_resolution.md)
+**Schema Reference:** [image_resolution](elements/image_resolution.md)
 
 **Unit:** nm
 
@@ -1173,7 +1173,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:field_emitter`](catcore:field_emitter)
 
-**Schema Reference:** [field_emitter](/elements/field_emitter.md)
+**Schema Reference:** [field_emitter](elements/field_emitter.md)
 
 </details>
 
@@ -1186,7 +1186,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`CHMO:0000690`](CHMO:0000690)
 
-**Schema Reference:** [Thermogravimetry](/elements/Thermogravimetry.md)
+**Schema Reference:** [Thermogravimetry](elements/Thermogravimetry.md)
 
 **Slots**
 
@@ -1199,7 +1199,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0000108`](voc4cat:0000108)
 
-**Schema Reference:** [operation_mode](/elements/operation_mode.md)
+**Schema Reference:** [operation_mode](elements/operation_mode.md)
 
 </details>
 
@@ -1212,7 +1212,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:atmosphere`](catcore:atmosphere)
 
-**Schema Reference:** [atmosphere](/elements/atmosphere.md)
+**Schema Reference:** [atmosphere](elements/atmosphere.md)
 
 </details>
 
@@ -1225,7 +1225,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`NCIT:C164644`](NCIT:C164644)
 
-**Schema Reference:** [initial_temperature](/elements/initial_temperature.md)
+**Schema Reference:** [initial_temperature](elements/initial_temperature.md)
 
 **Unit:** Cel
 
@@ -1240,7 +1240,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`NCIT:C164644`](NCIT:C164644)
 
-**Schema Reference:** [final_temperature](/elements/final_temperature.md)
+**Schema Reference:** [final_temperature](elements/final_temperature.md)
 
 **Unit:** Cel
 
@@ -1255,7 +1255,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:heating_rate`](catcore:heating_rate)
 
-**Schema Reference:** [heating_rate](/elements/heating_rate.md)
+**Schema Reference:** [heating_rate](elements/heating_rate.md)
 
 **Unit:** Cel/min
 
@@ -1270,7 +1270,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:heating_procedure`](catcore:heating_procedure)
 
-**Schema Reference:** [heating_procedure](/elements/heating_procedure.md)
+**Schema Reference:** [heating_procedure](elements/heating_procedure.md)
 
 </details>
 
@@ -1283,7 +1283,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0007038`](voc4cat:0007038)
 
-**Schema Reference:** [sample_mass](/elements/sample_mass.md)
+**Schema Reference:** [sample_mass](elements/sample_mass.md)
 
 **Unit:** mg
 
@@ -1298,7 +1298,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`CHMO:0000404`](CHMO:0000404)
 
-**Schema Reference:** [XPS](/elements/XPS.md)
+**Schema Reference:** [XPS](elements/XPS.md)
 
 **Slots**
 
@@ -1311,7 +1311,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`OBI:0001138`](OBI:0001138)
 
-**Schema Reference:** [xray_source](/elements/xray_source.md)
+**Schema Reference:** [xray_source](elements/xray_source.md)
 
 </details>
 
@@ -1324,7 +1324,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:total_acquisition_time`](catcore:total_acquisition_time)
 
-**Schema Reference:** [total_acquisition_time](/elements/total_acquisition_time.md)
+**Schema Reference:** [total_acquisition_time](elements/total_acquisition_time.md)
 
 **Unit:** s
 
@@ -1339,7 +1339,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0003051`](AFR:0003051)
 
-**Schema Reference:** [number_of_scans](/elements/number_of_scans.md)
+**Schema Reference:** [number_of_scans](elements/number_of_scans.md)
 
 </details>
 
@@ -1352,7 +1352,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:spot_size`](catcore:spot_size)
 
-**Schema Reference:** [spot_size](/elements/spot_size.md)
+**Schema Reference:** [spot_size](elements/spot_size.md)
 
 **Unit:** mm
 
@@ -1367,7 +1367,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0000108`](voc4cat:0000108)
 
-**Schema Reference:** [lense_mode](/elements/lense_mode.md)
+**Schema Reference:** [lense_mode](elements/lense_mode.md)
 
 </details>
 
@@ -1380,7 +1380,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:minimum_energy`](catcore:minimum_energy)
 
-**Schema Reference:** [minimum_energy](/elements/minimum_energy.md)
+**Schema Reference:** [minimum_energy](elements/minimum_energy.md)
 
 **Unit:** eV
 
@@ -1395,7 +1395,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:maximum_energy`](catcore:maximum_energy)
 
-**Schema Reference:** [maximum_energy](/elements/maximum_energy.md)
+**Schema Reference:** [maximum_energy](elements/maximum_energy.md)
 
 **Unit:** eV
 
@@ -1410,7 +1410,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0000950`](AFR:0000950)
 
-**Schema Reference:** [step_size](/elements/step_size.md)
+**Schema Reference:** [step_size](elements/step_size.md)
 
 </details>
 
@@ -1423,7 +1423,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:pass_energy`](catcore:pass_energy)
 
-**Schema Reference:** [pass_energy](/elements/pass_energy.md)
+**Schema Reference:** [pass_energy](elements/pass_energy.md)
 
 **Unit:** eV
 
@@ -1438,7 +1438,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:charge_compensation`](catcore:charge_compensation)
 
-**Schema Reference:** [charge_compensation](/elements/charge_compensation.md)
+**Schema Reference:** [charge_compensation](elements/charge_compensation.md)
 
 </details>
 
@@ -1451,7 +1451,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:atmosphere`](catcore:atmosphere)
 
-**Schema Reference:** [atmosphere](/elements/atmosphere.md)
+**Schema Reference:** [atmosphere](elements/atmosphere.md)
 
 </details>
 
@@ -1464,7 +1464,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:BET`](catcore:BET)
 
-**Schema Reference:** [BET](/elements/BET.md)
+**Schema Reference:** [BET](elements/BET.md)
 
 **Slots**
 
@@ -1477,7 +1477,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:adsorbate_gas`](catcore:adsorbate_gas)
 
-**Schema Reference:** [adsorbate_gas](/elements/adsorbate_gas.md)
+**Schema Reference:** [adsorbate_gas](elements/adsorbate_gas.md)
 
 </details>
 
@@ -1490,7 +1490,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:degassing_temperature`](catcore:degassing_temperature)
 
-**Schema Reference:** [degassing_temperature](/elements/degassing_temperature.md)
+**Schema Reference:** [degassing_temperature](elements/degassing_temperature.md)
 
 **Unit:** Cel
 
@@ -1505,7 +1505,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:measurement_temperature`](catcore:measurement_temperature)
 
-**Schema Reference:** [measurement_temperature](/elements/measurement_temperature.md)
+**Schema Reference:** [measurement_temperature](elements/measurement_temperature.md)
 
 **Unit:** K
 
@@ -1520,7 +1520,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:pore_size_distribution_method`](catcore:pore_size_distribution_method)
 
-**Schema Reference:** [pore_size_distribution_method](/elements/pore_size_distribution_method.md)
+**Schema Reference:** [pore_size_distribution_method](elements/pore_size_distribution_method.md)
 
 </details>
 
@@ -1533,7 +1533,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0007038`](voc4cat:0007038)
 
-**Schema Reference:** [sample_mass](/elements/sample_mass.md)
+**Schema Reference:** [sample_mass](elements/sample_mass.md)
 
 **Unit:** mg
 
@@ -1548,7 +1548,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`CHMO:0001075`](CHMO:0001075)
 
-**Schema Reference:** [ElementalAnalysis](/elements/ElementalAnalysis.md)
+**Schema Reference:** [ElementalAnalysis](elements/ElementalAnalysis.md)
 
 **Slots**
 
@@ -1561,7 +1561,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:elements_analyzed`](catcore:elements_analyzed)
 
-**Schema Reference:** [elements_analyzed](/elements/elements_analyzed.md)
+**Schema Reference:** [elements_analyzed](elements/elements_analyzed.md)
 
 </details>
 
@@ -1574,7 +1574,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:combustion_temperature`](catcore:combustion_temperature)
 
-**Schema Reference:** [combustion_temperature](/elements/combustion_temperature.md)
+**Schema Reference:** [combustion_temperature](elements/combustion_temperature.md)
 
 **Unit:** Cel
 
@@ -1589,7 +1589,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:carrier_gas`](catcore:carrier_gas)
 
-**Schema Reference:** [carrier_gas](/elements/carrier_gas.md)
+**Schema Reference:** [carrier_gas](elements/carrier_gas.md)
 
 </details>
 
@@ -1602,7 +1602,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0000079`](voc4cat:0000079)
 
-**Schema Reference:** [UVVisSpectroscopy](/elements/UVVisSpectroscopy.md)
+**Schema Reference:** [UVVisSpectroscopy](elements/UVVisSpectroscopy.md)
 
 **Slots**
 
@@ -1615,7 +1615,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:minimum_wavelength`](catcore:minimum_wavelength)
 
-**Schema Reference:** [minimum_wavelength](/elements/minimum_wavelength.md)
+**Schema Reference:** [minimum_wavelength](elements/minimum_wavelength.md)
 
 **Unit:** nm
 
@@ -1630,7 +1630,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:maximum_wavelength`](catcore:maximum_wavelength)
 
-**Schema Reference:** [maximum_wavelength](/elements/maximum_wavelength.md)
+**Schema Reference:** [maximum_wavelength](elements/maximum_wavelength.md)
 
 **Unit:** nm
 
@@ -1645,7 +1645,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFQ:0000268`](AFQ:0000268)
 
-**Schema Reference:** [path_length](/elements/path_length.md)
+**Schema Reference:** [path_length](elements/path_length.md)
 
 **Unit:** cm
 
@@ -1660,7 +1660,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0007246`](voc4cat:0007246)
 
-**Schema Reference:** [solvent](/elements/solvent.md)
+**Schema Reference:** [solvent](elements/solvent.md)
 
 </details>
 
@@ -1673,7 +1673,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0007244`](voc4cat:0007244)
 
-**Schema Reference:** [concentration](/elements/concentration.md)
+**Schema Reference:** [concentration](elements/concentration.md)
 
 **Unit:** mol/L
 
@@ -1688,7 +1688,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`CHMO:0000645`](CHMO:0000645)
 
-**Schema Reference:** [DRIFTS](/elements/DRIFTS.md)
+**Schema Reference:** [DRIFTS](elements/DRIFTS.md)
 
 **Slots**
 
@@ -1701,7 +1701,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:adsorption_gas`](catcore:adsorption_gas)
 
-**Schema Reference:** [adsorption_gas](/elements/adsorption_gas.md)
+**Schema Reference:** [adsorption_gas](elements/adsorption_gas.md)
 
 </details>
 
@@ -1714,7 +1714,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:atmosphere`](catcore:atmosphere)
 
-**Schema Reference:** [atmosphere](/elements/atmosphere.md)
+**Schema Reference:** [atmosphere](elements/atmosphere.md)
 
 </details>
 
@@ -1727,7 +1727,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:flow_rate`](catcore:flow_rate)
 
-**Schema Reference:** [flow_rate](/elements/flow_rate.md)
+**Schema Reference:** [flow_rate](elements/flow_rate.md)
 
 **Unit:** mL/min
 
@@ -1742,7 +1742,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:diluting_reference`](catcore:diluting_reference)
 
-**Schema Reference:** [diluting_reference](/elements/diluting_reference.md)
+**Schema Reference:** [diluting_reference](elements/diluting_reference.md)
 
 </details>
 
@@ -1755,7 +1755,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:ratio_reference_sample`](catcore:ratio_reference_sample)
 
-**Schema Reference:** [ratio_reference_sample](/elements/ratio_reference_sample.md)
+**Schema Reference:** [ratio_reference_sample](elements/ratio_reference_sample.md)
 
 </details>
 
@@ -1768,7 +1768,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0000950`](AFR:0000950)
 
-**Schema Reference:** [step_size](/elements/step_size.md)
+**Schema Reference:** [step_size](elements/step_size.md)
 
 </details>
 
@@ -1781,7 +1781,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:resolution`](catcore:resolution)
 
-**Schema Reference:** [resolution](/elements/resolution.md)
+**Schema Reference:** [resolution](elements/resolution.md)
 
 **Unit:** cm-1
 
@@ -1796,7 +1796,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:background_correction_method`](catcore:background_correction_method)
 
-**Schema Reference:** [background_correction_method](/elements/background_correction_method.md)
+**Schema Reference:** [background_correction_method](elements/background_correction_method.md)
 
 </details>
 
@@ -1809,7 +1809,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0001584`](AFR:0001584)
 
-**Schema Reference:** [temperature](/elements/temperature.md)
+**Schema Reference:** [temperature](elements/temperature.md)
 
 **Unit:** Cel
 
@@ -1824,7 +1824,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0003051`](AFR:0003051)
 
-**Schema Reference:** [number_of_scans](/elements/number_of_scans.md)
+**Schema Reference:** [number_of_scans](elements/number_of_scans.md)
 
 </details>
 
@@ -1837,7 +1837,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`CHMO:0000025`](CHMO:0000025)
 
-**Schema Reference:** [CyclicVoltammetry](/elements/CyclicVoltammetry.md)
+**Schema Reference:** [CyclicVoltammetry](elements/CyclicVoltammetry.md)
 
 **Slots**
 
@@ -1850,7 +1850,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0007213`](voc4cat:0007213)
 
-**Schema Reference:** [scan_rate](/elements/scan_rate.md)
+**Schema Reference:** [scan_rate](elements/scan_rate.md)
 
 **Unit:** mV/s
 
@@ -1865,7 +1865,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:minimum_potential`](catcore:minimum_potential)
 
-**Schema Reference:** [minimum_potential](/elements/minimum_potential.md)
+**Schema Reference:** [minimum_potential](elements/minimum_potential.md)
 
 **Unit:** V
 
@@ -1880,7 +1880,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:maximum_potential`](catcore:maximum_potential)
 
-**Schema Reference:** [maximum_potential](/elements/maximum_potential.md)
+**Schema Reference:** [maximum_potential](elements/maximum_potential.md)
 
 **Unit:** V
 
@@ -1895,7 +1895,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0007218`](voc4cat:0007218)
 
-**Schema Reference:** [step_size_potential](/elements/step_size_potential.md)
+**Schema Reference:** [step_size_potential](elements/step_size_potential.md)
 
 **Unit:** mV
 
@@ -1910,7 +1910,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:electrolyte_composition`](catcore:electrolyte_composition)
 
-**Schema Reference:** [electrolyte_composition](/elements/electrolyte_composition.md)
+**Schema Reference:** [electrolyte_composition](elements/electrolyte_composition.md)
 
 </details>
 
@@ -1923,7 +1923,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:electrolyte_concentration`](catcore:electrolyte_concentration)
 
-**Schema Reference:** [electrolyte_concentration](/elements/electrolyte_concentration.md)
+**Schema Reference:** [electrolyte_concentration](elements/electrolyte_concentration.md)
 
 **Unit:** mol/L
 
@@ -1938,7 +1938,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0007204`](voc4cat:0007204)
 
-**Schema Reference:** [reference_electrode](/elements/reference_electrode.md)
+**Schema Reference:** [reference_electrode](elements/reference_electrode.md)
 
 </details>
 
@@ -1951,7 +1951,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:number_of_cycles`](catcore:number_of_cycles)
 
-**Schema Reference:** [number_of_cycles](/elements/number_of_cycles.md)
+**Schema Reference:** [number_of_cycles](elements/number_of_cycles.md)
 
 </details>
 
@@ -1964,7 +1964,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0007202`](voc4cat:0007202)
 
-**Schema Reference:** [working_electrode](/elements/working_electrode.md)
+**Schema Reference:** [working_electrode](elements/working_electrode.md)
 
 </details>
 
@@ -1977,7 +1977,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0007203`](voc4cat:0007203)
 
-**Schema Reference:** [counter_electrode](/elements/counter_electrode.md)
+**Schema Reference:** [counter_electrode](elements/counter_electrode.md)
 
 </details>
 
@@ -1990,7 +1990,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:atmosphere`](catcore:atmosphere)
 
-**Schema Reference:** [atmosphere](/elements/atmosphere.md)
+**Schema Reference:** [atmosphere](elements/atmosphere.md)
 
 </details>
 
@@ -2003,7 +2003,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0001584`](AFR:0001584)
 
-**Schema Reference:** [temperature](/elements/temperature.md)
+**Schema Reference:** [temperature](elements/temperature.md)
 
 **Unit:** Cel
 
@@ -2018,7 +2018,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`CHMO:0000167`](CHMO:0000167)
 
-**Schema Reference:** [DynamicLightScattering](/elements/DynamicLightScattering.md)
+**Schema Reference:** [DynamicLightScattering](elements/DynamicLightScattering.md)
 
 **Slots**
 
@@ -2031,7 +2031,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0007246`](voc4cat:0007246)
 
-**Schema Reference:** [solvent](/elements/solvent.md)
+**Schema Reference:** [solvent](elements/solvent.md)
 
 </details>
 
@@ -2044,7 +2044,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0007244`](voc4cat:0007244)
 
-**Schema Reference:** [concentration](/elements/concentration.md)
+**Schema Reference:** [concentration](elements/concentration.md)
 
 **Unit:** mol/L
 
@@ -2059,7 +2059,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0000176`](voc4cat:0000176)
 
-**Schema Reference:** [light_wavelength](/elements/light_wavelength.md)
+**Schema Reference:** [light_wavelength](elements/light_wavelength.md)
 
 **Unit:** nm
 
@@ -2074,7 +2074,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:scattering_angle`](catcore:scattering_angle)
 
-**Schema Reference:** [scattering_angle](/elements/scattering_angle.md)
+**Schema Reference:** [scattering_angle](elements/scattering_angle.md)
 
 **Unit:** deg
 
@@ -2089,7 +2089,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:refractive_index`](catcore:refractive_index)
 
-**Schema Reference:** [refractive_index](/elements/refractive_index.md)
+**Schema Reference:** [refractive_index](elements/refractive_index.md)
 
 </details>
 
@@ -2102,7 +2102,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0001584`](AFR:0001584)
 
-**Schema Reference:** [temperature](/elements/temperature.md)
+**Schema Reference:** [temperature](elements/temperature.md)
 
 **Unit:** Cel
 
@@ -2117,7 +2117,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:dispersant`](catcore:dispersant)
 
-**Schema Reference:** [dispersant](/elements/dispersant.md)
+**Schema Reference:** [dispersant](elements/dispersant.md)
 
 </details>
 
@@ -2130,7 +2130,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:measurement_duration`](catcore:measurement_duration)
 
-**Schema Reference:** [measurement_duration](/elements/measurement_duration.md)
+**Schema Reference:** [measurement_duration](elements/measurement_duration.md)
 
 **Unit:** s
 
@@ -2145,7 +2145,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`CHMO:0000482`](CHMO:0000482)
 
-**Schema Reference:** [ESI_MS](/elements/ESI_MS.md)
+**Schema Reference:** [ESI_MS](elements/ESI_MS.md)
 
 **Slots**
 
@@ -2158,7 +2158,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0000108`](voc4cat:0000108)
 
-**Schema Reference:** [operation_mode](/elements/operation_mode.md)
+**Schema Reference:** [operation_mode](elements/operation_mode.md)
 
 </details>
 
@@ -2171,7 +2171,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0002652`](AFR:0002652)
 
-**Schema Reference:** [mz_minimum](/elements/mz_minimum.md)
+**Schema Reference:** [mz_minimum](elements/mz_minimum.md)
 
 </details>
 
@@ -2184,7 +2184,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0002653`](AFR:0002653)
 
-**Schema Reference:** [mz_maximum](/elements/mz_maximum.md)
+**Schema Reference:** [mz_maximum](elements/mz_maximum.md)
 
 </details>
 
@@ -2197,7 +2197,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`CHMO:0002792`](CHMO:0002792)
 
-**Schema Reference:** [spray_voltage](/elements/spray_voltage.md)
+**Schema Reference:** [spray_voltage](elements/spray_voltage.md)
 
 **Unit:** kV
 
@@ -2212,7 +2212,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:capillary_temperature`](catcore:capillary_temperature)
 
-**Schema Reference:** [capillary_temperature](/elements/capillary_temperature.md)
+**Schema Reference:** [capillary_temperature](elements/capillary_temperature.md)
 
 **Unit:** Cel
 
@@ -2227,7 +2227,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0007246`](voc4cat:0007246)
 
-**Schema Reference:** [solvent_composition](/elements/solvent_composition.md)
+**Schema Reference:** [solvent_composition](elements/solvent_composition.md)
 
 </details>
 
@@ -2240,7 +2240,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:flow_rate`](catcore:flow_rate)
 
-**Schema Reference:** [flow_rate](/elements/flow_rate.md)
+**Schema Reference:** [flow_rate](elements/flow_rate.md)
 
 **Unit:** mL/min
 
@@ -2255,7 +2255,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:carrier_gas`](catcore:carrier_gas)
 
-**Schema Reference:** [carrier_gas](/elements/carrier_gas.md)
+**Schema Reference:** [carrier_gas](elements/carrier_gas.md)
 
 </details>
 
@@ -2268,7 +2268,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0007244`](voc4cat:0007244)
 
-**Schema Reference:** [concentration](/elements/concentration.md)
+**Schema Reference:** [concentration](elements/concentration.md)
 
 **Unit:** mol/L
 
@@ -2283,7 +2283,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:PhotoluminescenceSpectroscopy`](catcore:PhotoluminescenceSpectroscopy)
 
-**Schema Reference:** [PhotoluminescenceSpectroscopy](/elements/PhotoluminescenceSpectroscopy.md)
+**Schema Reference:** [PhotoluminescenceSpectroscopy](elements/PhotoluminescenceSpectroscopy.md)
 
 **Slots**
 
@@ -2296,7 +2296,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0002479`](AFR:0002479)
 
-**Schema Reference:** [excitation_wavelength](/elements/excitation_wavelength.md)
+**Schema Reference:** [excitation_wavelength](elements/excitation_wavelength.md)
 
 **Unit:** nm
 
@@ -2311,7 +2311,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`NCIT:C204101`](NCIT:C204101)
 
-**Schema Reference:** [emission_wavelength](/elements/emission_wavelength.md)
+**Schema Reference:** [emission_wavelength](elements/emission_wavelength.md)
 
 **Unit:** nm
 
@@ -2326,7 +2326,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:optical_filter`](catcore:optical_filter)
 
-**Schema Reference:** [optical_filter](/elements/optical_filter.md)
+**Schema Reference:** [optical_filter](elements/optical_filter.md)
 
 </details>
 
@@ -2339,7 +2339,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0001584`](AFR:0001584)
 
-**Schema Reference:** [temperature](/elements/temperature.md)
+**Schema Reference:** [temperature](elements/temperature.md)
 
 **Unit:** Cel
 
@@ -2354,7 +2354,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:emission_range`](catcore:emission_range)
 
-**Schema Reference:** [emission_range](/elements/emission_range.md)
+**Schema Reference:** [emission_range](elements/emission_range.md)
 
 </details>
 
@@ -2367,7 +2367,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:slit_width`](catcore:slit_width)
 
-**Schema Reference:** [slit_width](/elements/slit_width.md)
+**Schema Reference:** [slit_width](elements/slit_width.md)
 
 **Unit:** nm
 
@@ -2382,7 +2382,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0000950`](AFR:0000950)
 
-**Schema Reference:** [step_size](/elements/step_size.md)
+**Schema Reference:** [step_size](elements/step_size.md)
 
 </details>
 
@@ -2395,7 +2395,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0001671`](AFR:0001671)
 
-**Schema Reference:** [integration_time](/elements/integration_time.md)
+**Schema Reference:** [integration_time](elements/integration_time.md)
 
 **Unit:** s
 
@@ -2410,7 +2410,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:PhotoluminescenceLifetime`](catcore:PhotoluminescenceLifetime)
 
-**Schema Reference:** [PhotoluminescenceLifetime](/elements/PhotoluminescenceLifetime.md)
+**Schema Reference:** [PhotoluminescenceLifetime](elements/PhotoluminescenceLifetime.md)
 
 **Slots**
 
@@ -2423,7 +2423,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0002479`](AFR:0002479)
 
-**Schema Reference:** [excitation_wavelength](/elements/excitation_wavelength.md)
+**Schema Reference:** [excitation_wavelength](elements/excitation_wavelength.md)
 
 **Unit:** nm
 
@@ -2438,7 +2438,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`NCIT:C204101`](NCIT:C204101)
 
-**Schema Reference:** [emission_wavelength](/elements/emission_wavelength.md)
+**Schema Reference:** [emission_wavelength](elements/emission_wavelength.md)
 
 **Unit:** nm
 
@@ -2453,7 +2453,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:optical_filter`](catcore:optical_filter)
 
-**Schema Reference:** [optical_filter](/elements/optical_filter.md)
+**Schema Reference:** [optical_filter](elements/optical_filter.md)
 
 </details>
 
@@ -2466,7 +2466,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0001584`](AFR:0001584)
 
-**Schema Reference:** [temperature](/elements/temperature.md)
+**Schema Reference:** [temperature](elements/temperature.md)
 
 **Unit:** Cel
 
@@ -2481,7 +2481,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:lifetime_fitting_model`](catcore:lifetime_fitting_model)
 
-**Schema Reference:** [lifetime_fitting_model](/elements/lifetime_fitting_model.md)
+**Schema Reference:** [lifetime_fitting_model](elements/lifetime_fitting_model.md)
 
 </details>
 
@@ -2494,7 +2494,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:number_of_shots`](catcore:number_of_shots)
 
-**Schema Reference:** [number_of_shots](/elements/number_of_shots.md)
+**Schema Reference:** [number_of_shots](elements/number_of_shots.md)
 
 </details>
 
@@ -2507,7 +2507,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFP:0000843`](AFP:0000843)
 
-**Schema Reference:** [SizeExclusionChromatography](/elements/SizeExclusionChromatography.md)
+**Schema Reference:** [SizeExclusionChromatography](elements/SizeExclusionChromatography.md)
 
 **Slots**
 
@@ -2520,7 +2520,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0002026`](AFR:0002026)
 
-**Schema Reference:** [column_type](/elements/column_type.md)
+**Schema Reference:** [column_type](elements/column_type.md)
 
 </details>
 
@@ -2533,7 +2533,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0001584`](AFR:0001584)
 
-**Schema Reference:** [temperature](/elements/temperature.md)
+**Schema Reference:** [temperature](elements/temperature.md)
 
 **Unit:** Cel
 
@@ -2548,7 +2548,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFRL:0000011`](AFRL:0000011)
 
-**Schema Reference:** [eluent](/elements/eluent.md)
+**Schema Reference:** [eluent](elements/eluent.md)
 
 </details>
 
@@ -2561,7 +2561,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:flow_rate`](catcore:flow_rate)
 
-**Schema Reference:** [flow_rate](/elements/flow_rate.md)
+**Schema Reference:** [flow_rate](elements/flow_rate.md)
 
 **Unit:** mL/min
 
@@ -2576,7 +2576,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:calibration_standard`](catcore:calibration_standard)
 
-**Schema Reference:** [calibration_standard](/elements/calibration_standard.md)
+**Schema Reference:** [calibration_standard](elements/calibration_standard.md)
 
 </details>
 
@@ -2589,7 +2589,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0001577`](AFR:0001577)
 
-**Schema Reference:** [injection_volume](/elements/injection_volume.md)
+**Schema Reference:** [injection_volume](elements/injection_volume.md)
 
 **Unit:** uL
 
@@ -2604,7 +2604,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`CHMO:0000796`](CHMO:0000796)
 
-**Schema Reference:** [HPLC_MS](/elements/HPLC_MS.md)
+**Schema Reference:** [HPLC_MS](elements/HPLC_MS.md)
 
 **Slots**
 
@@ -2617,7 +2617,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0002026`](AFR:0002026)
 
-**Schema Reference:** [column_type](/elements/column_type.md)
+**Schema Reference:** [column_type](elements/column_type.md)
 
 </details>
 
@@ -2630,7 +2630,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFRL:0000011`](AFRL:0000011)
 
-**Schema Reference:** [eluent](/elements/eluent.md)
+**Schema Reference:** [eluent](elements/eluent.md)
 
 </details>
 
@@ -2643,7 +2643,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:gradient_program`](catcore:gradient_program)
 
-**Schema Reference:** [gradient_program](/elements/gradient_program.md)
+**Schema Reference:** [gradient_program](elements/gradient_program.md)
 
 </details>
 
@@ -2656,7 +2656,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:ionization_mode`](catcore:ionization_mode)
 
-**Schema Reference:** [ionization_mode](/elements/ionization_mode.md)
+**Schema Reference:** [ionization_mode](elements/ionization_mode.md)
 
 </details>
 
@@ -2669,7 +2669,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0001584`](AFR:0001584)
 
-**Schema Reference:** [temperature](/elements/temperature.md)
+**Schema Reference:** [temperature](elements/temperature.md)
 
 **Unit:** Cel
 
@@ -2684,7 +2684,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:flow_rate`](catcore:flow_rate)
 
-**Schema Reference:** [flow_rate](/elements/flow_rate.md)
+**Schema Reference:** [flow_rate](elements/flow_rate.md)
 
 **Unit:** mL/min
 
@@ -2699,7 +2699,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0001577`](AFR:0001577)
 
-**Schema Reference:** [injection_volume](/elements/injection_volume.md)
+**Schema Reference:** [injection_volume](elements/injection_volume.md)
 
 **Unit:** uL
 
@@ -2714,7 +2714,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:external_standard`](catcore:external_standard)
 
-**Schema Reference:** [external_standard](/elements/external_standard.md)
+**Schema Reference:** [external_standard](elements/external_standard.md)
 
 </details>
 
@@ -2727,7 +2727,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:internal_standard`](catcore:internal_standard)
 
-**Schema Reference:** [internal_standard](/elements/internal_standard.md)
+**Schema Reference:** [internal_standard](elements/internal_standard.md)
 
 </details>
 
@@ -2740,7 +2740,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`CHMO:0000852`](CHMO:0000852)
 
-**Schema Reference:** [SingleCrystalXRD](/elements/SingleCrystalXRD.md)
+**Schema Reference:** [SingleCrystalXRD](elements/SingleCrystalXRD.md)
 
 **Slots**
 
@@ -2753,7 +2753,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`OBI:0001138`](OBI:0001138)
 
-**Schema Reference:** [xray_source](/elements/xray_source.md)
+**Schema Reference:** [xray_source](elements/xray_source.md)
 
 </details>
 
@@ -2766,7 +2766,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0001584`](AFR:0001584)
 
-**Schema Reference:** [temperature](/elements/temperature.md)
+**Schema Reference:** [temperature](elements/temperature.md)
 
 **Unit:** Cel
 
@@ -2781,7 +2781,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`CHMO:0000309`](CHMO:0000309)
 
-**Schema Reference:** [EDX](/elements/EDX.md)
+**Schema Reference:** [EDX](elements/EDX.md)
 
 **Slots**
 
@@ -2794,7 +2794,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:primary_energy`](catcore:primary_energy)
 
-**Schema Reference:** [primary_energy](/elements/primary_energy.md)
+**Schema Reference:** [primary_energy](elements/primary_energy.md)
 
 **Unit:** keV
 
@@ -2809,7 +2809,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:counting_time`](catcore:counting_time)
 
-**Schema Reference:** [counting_time](/elements/counting_time.md)
+**Schema Reference:** [counting_time](elements/counting_time.md)
 
 **Unit:** s
 
@@ -2824,7 +2824,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:resolution`](catcore:resolution)
 
-**Schema Reference:** [resolution](/elements/resolution.md)
+**Schema Reference:** [resolution](elements/resolution.md)
 
 **Unit:** cm-1
 
@@ -2839,7 +2839,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:calibration_method`](catcore:calibration_method)
 
-**Schema Reference:** [calibration_method](/elements/calibration_method.md)
+**Schema Reference:** [calibration_method](elements/calibration_method.md)
 
 </details>
 
@@ -2852,7 +2852,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`CHMO:0002907`](CHMO:0002907)
 
-**Schema Reference:** [TPO](/elements/TPO.md)
+**Schema Reference:** [TPO](elements/TPO.md)
 
 **Slots**
 
@@ -2865,7 +2865,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:oxidizing_gas_composition`](catcore:oxidizing_gas_composition)
 
-**Schema Reference:** [oxidizing_gas_composition](/elements/oxidizing_gas_composition.md)
+**Schema Reference:** [oxidizing_gas_composition](elements/oxidizing_gas_composition.md)
 
 </details>
 
@@ -2878,7 +2878,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:heating_rate`](catcore:heating_rate)
 
-**Schema Reference:** [heating_rate](/elements/heating_rate.md)
+**Schema Reference:** [heating_rate](elements/heating_rate.md)
 
 **Unit:** Cel/min
 
@@ -2893,7 +2893,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:minimum_temperature`](catcore:minimum_temperature)
 
-**Schema Reference:** [minimum_temperature](/elements/minimum_temperature.md)
+**Schema Reference:** [minimum_temperature](elements/minimum_temperature.md)
 
 **Unit:** Cel
 
@@ -2908,7 +2908,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:maximum_temperature`](catcore:maximum_temperature)
 
-**Schema Reference:** [maximum_temperature](/elements/maximum_temperature.md)
+**Schema Reference:** [maximum_temperature](elements/maximum_temperature.md)
 
 **Unit:** Cel
 
@@ -2923,7 +2923,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`CHMO:0002908`](CHMO:0002908)
 
-**Schema Reference:** [TPR](/elements/TPR.md)
+**Schema Reference:** [TPR](elements/TPR.md)
 
 **Slots**
 
@@ -2936,7 +2936,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:reducing_gas_composition`](catcore:reducing_gas_composition)
 
-**Schema Reference:** [reducing_gas_composition](/elements/reducing_gas_composition.md)
+**Schema Reference:** [reducing_gas_composition](elements/reducing_gas_composition.md)
 
 </details>
 
@@ -2949,7 +2949,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:heating_rate`](catcore:heating_rate)
 
-**Schema Reference:** [heating_rate](/elements/heating_rate.md)
+**Schema Reference:** [heating_rate](elements/heating_rate.md)
 
 **Unit:** Cel/min
 
@@ -2964,7 +2964,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:minimum_temperature`](catcore:minimum_temperature)
 
-**Schema Reference:** [minimum_temperature](/elements/minimum_temperature.md)
+**Schema Reference:** [minimum_temperature](elements/minimum_temperature.md)
 
 **Unit:** Cel
 
@@ -2979,7 +2979,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:maximum_temperature`](catcore:maximum_temperature)
 
-**Schema Reference:** [maximum_temperature](/elements/maximum_temperature.md)
+**Schema Reference:** [maximum_temperature](elements/maximum_temperature.md)
 
 **Unit:** Cel
 
@@ -2994,7 +2994,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:ConductivityMeasurement`](catcore:ConductivityMeasurement)
 
-**Schema Reference:** [ConductivityMeasurement](/elements/ConductivityMeasurement.md)
+**Schema Reference:** [ConductivityMeasurement](elements/ConductivityMeasurement.md)
 
 **Slots**
 
@@ -3007,7 +3007,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0001584`](AFR:0001584)
 
-**Schema Reference:** [temperature](/elements/temperature.md)
+**Schema Reference:** [temperature](elements/temperature.md)
 
 **Unit:** Cel
 
@@ -3022,7 +3022,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:electrode_configuration`](catcore:electrode_configuration)
 
-**Schema Reference:** [electrode_configuration](/elements/electrode_configuration.md)
+**Schema Reference:** [electrode_configuration](elements/electrode_configuration.md)
 
 </details>
 
@@ -3035,7 +3035,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0007239`](voc4cat:0007239)
 
-**Schema Reference:** [frequency](/elements/frequency.md)
+**Schema Reference:** [frequency](elements/frequency.md)
 
 **Unit:** Hz
 
@@ -3050,7 +3050,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:ac_dc_mode`](catcore:ac_dc_mode)
 
-**Schema Reference:** [ac_dc_mode](/elements/ac_dc_mode.md)
+**Schema Reference:** [ac_dc_mode](elements/ac_dc_mode.md)
 
 </details>
 
@@ -3063,7 +3063,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:sample_geometry`](catcore:sample_geometry)
 
-**Schema Reference:** [sample_geometry](/elements/sample_geometry.md)
+**Schema Reference:** [sample_geometry](elements/sample_geometry.md)
 
 </details>
 
@@ -3080,7 +3080,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:sample_state`](catcore:sample_state)
 
-**Schema Reference:** [sample_state](/elements/sample_state.md)
+**Schema Reference:** [sample_state](elements/sample_state.md)
 
 </details>
 
@@ -3093,7 +3093,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`catcore:sample_description`](catcore:sample_description)
 
-**Schema Reference:** [sample_description](/elements/sample_description.md)
+**Schema Reference:** [sample_description](elements/sample_description.md)
 
 </details>
 
@@ -3106,7 +3106,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFR:0000317`](AFR:0000317)
 
-**Schema Reference:** [detector_type](/elements/detector_type.md)
+**Schema Reference:** [detector_type](elements/detector_type.md)
 
 </details>
 
@@ -3119,7 +3119,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`AFP:0001159`](AFP:0001159)
 
-**Schema Reference:** [sample_preparation](/elements/sample_preparation.md)
+**Schema Reference:** [sample_preparation](elements/sample_preparation.md)
 
 </details>
 
@@ -3132,7 +3132,7 @@ reported with research data to describe the nature of the catalyst.
 
 **URI:** [`voc4cat:0000122`](voc4cat:0000122)
 
-**Schema Reference:** [sample_pretreatment](/elements/sample_pretreatment.md)
+**Schema Reference:** [sample_pretreatment](elements/sample_pretreatment.md)
 
 </details>
 

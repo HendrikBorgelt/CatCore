@@ -16,7 +16,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:software_package`](catcore:software_package)
 
-**Schema Reference:** [software_package](/elements/software_package.md)
+**Schema Reference:** [software_package](elements/software_package.md)
 
 </details>
 
@@ -29,7 +29,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:simulation_method`](catcore:simulation_method)
 
-**Schema Reference:** [simulation_method](/elements/simulation_method.md)
+**Schema Reference:** [simulation_method](elements/simulation_method.md)
 
 **Range Class Details:**
 
@@ -40,7 +40,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **Description:** Simulation method used
 
-**Schema Reference:** [SimulationMethod](/elements/SimulationMethod.md)
+**Schema Reference:** [SimulationMethod](elements/SimulationMethod.md)
 
 </details>
 
@@ -53,7 +53,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:DFT`](catcore:DFT)
 
-**Schema Reference:** [DFT](/elements/DFT.md)
+**Schema Reference:** [DFT](elements/DFT.md)
 
 **Slots**
 
@@ -66,7 +66,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:exchange_correlation_functional`](catcore:exchange_correlation_functional)
 
-**Schema Reference:** [exchange_correlation_functional](/elements/exchange_correlation_functional.md)
+**Schema Reference:** [exchange_correlation_functional](elements/exchange_correlation_functional.md)
 
 </details>
 
@@ -79,7 +79,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:energy_cutoff`](catcore:energy_cutoff)
 
-**Schema Reference:** [energy_cutoff](/elements/energy_cutoff.md)
+**Schema Reference:** [energy_cutoff](elements/energy_cutoff.md)
 
 **Unit:** eV
 
@@ -94,7 +94,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:convergence_criteria`](catcore:convergence_criteria)
 
-**Schema Reference:** [convergence_criteria](/elements/convergence_criteria.md)
+**Schema Reference:** [convergence_criteria](elements/convergence_criteria.md)
 
 </details>
 
@@ -107,7 +107,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:dft_u_parameters`](catcore:dft_u_parameters)
 
-**Schema Reference:** [dft_u_parameters](/elements/dft_u_parameters.md)
+**Schema Reference:** [dft_u_parameters](elements/dft_u_parameters.md)
 
 </details>
 
@@ -120,7 +120,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:spin_polarization`](catcore:spin_polarization)
 
-**Schema Reference:** [spin_polarization](/elements/spin_polarization.md)
+**Schema Reference:** [spin_polarization](elements/spin_polarization.md)
 
 </details>
 
@@ -133,7 +133,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:total_energy_per_atom`](catcore:total_energy_per_atom)
 
-**Schema Reference:** [total_energy_per_atom](/elements/total_energy_per_atom.md)
+**Schema Reference:** [total_energy_per_atom](elements/total_energy_per_atom.md)
 
 **Unit:** eV
 
@@ -148,7 +148,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`NCIT:C18097`](NCIT:C18097)
 
-**Schema Reference:** [MolecularDynamics](/elements/MolecularDynamics.md)
+**Schema Reference:** [MolecularDynamics](elements/MolecularDynamics.md)
 
 **Slots**
 
@@ -161,7 +161,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:force_field`](catcore:force_field)
 
-**Schema Reference:** [force_field](/elements/force_field.md)
+**Schema Reference:** [force_field](elements/force_field.md)
 
 </details>
 
@@ -174,7 +174,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`APOLLO_SV:00000012`](APOLLO_SV:00000012)
 
-**Schema Reference:** [simulation_timestep](/elements/simulation_timestep.md)
+**Schema Reference:** [simulation_timestep](elements/simulation_timestep.md)
 
 **Unit:** fs
 
@@ -189,7 +189,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:simulation_time`](catcore:simulation_time)
 
-**Schema Reference:** [simulation_time](/elements/simulation_time.md)
+**Schema Reference:** [simulation_time](elements/simulation_time.md)
 
 **Unit:** ps
 
@@ -204,7 +204,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:ensemble_type`](catcore:ensemble_type)
 
-**Schema Reference:** [ensemble_type](/elements/ensemble_type.md)
+**Schema Reference:** [ensemble_type](elements/ensemble_type.md)
 
 </details>
 
@@ -217,7 +217,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:number_of_atoms`](catcore:number_of_atoms)
 
-**Schema Reference:** [number_of_atoms](/elements/number_of_atoms.md)
+**Schema Reference:** [number_of_atoms](elements/number_of_atoms.md)
 
 </details>
 
@@ -230,7 +230,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:Microkinetics`](catcore:Microkinetics)
 
-**Schema Reference:** [Microkinetics](/elements/Microkinetics.md)
+**Schema Reference:** [Microkinetics](elements/Microkinetics.md)
 
 **Slots**
 
@@ -243,7 +243,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`NCIT:C94967`](NCIT:C94967)
 
-**Schema Reference:** [rate_constants](/elements/rate_constants.md)
+**Schema Reference:** [rate_constants](elements/rate_constants.md)
 
 </details>
 
@@ -256,7 +256,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:solver_type`](catcore:solver_type)
 
-**Schema Reference:** [solver_type](/elements/solver_type.md)
+**Schema Reference:** [solver_type](elements/solver_type.md)
 
 </details>
 
@@ -269,7 +269,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`AFR:0001584`](AFR:0001584)
 
-**Schema Reference:** [temperature](/elements/temperature.md)
+**Schema Reference:** [temperature](elements/temperature.md)
 
 **Unit:** Cel
 
@@ -284,7 +284,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:pressure`](catcore:pressure)
 
-**Schema Reference:** [pressure](/elements/pressure.md)
+**Schema Reference:** [pressure](elements/pressure.md)
 
 **Unit:** bar
 
@@ -299,7 +299,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:surface_coverage`](catcore:surface_coverage)
 
-**Schema Reference:** [surface_coverage](/elements/surface_coverage.md)
+**Schema Reference:** [surface_coverage](elements/surface_coverage.md)
 
 </details>
 
@@ -312,7 +312,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:activation_energy`](catcore:activation_energy)
 
-**Schema Reference:** [activation_energy](/elements/activation_energy.md)
+**Schema Reference:** [activation_energy](elements/activation_energy.md)
 
 **Unit:** eV
 
@@ -327,7 +327,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:MonteCarlo`](catcore:MonteCarlo)
 
-**Schema Reference:** [MonteCarlo](/elements/MonteCarlo.md)
+**Schema Reference:** [MonteCarlo](elements/MonteCarlo.md)
 
 **Slots**
 
@@ -340,7 +340,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:interaction_potential`](catcore:interaction_potential)
 
-**Schema Reference:** [interaction_potential](/elements/interaction_potential.md)
+**Schema Reference:** [interaction_potential](elements/interaction_potential.md)
 
 </details>
 
@@ -353,7 +353,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:number_of_steps`](catcore:number_of_steps)
 
-**Schema Reference:** [number_of_steps](/elements/number_of_steps.md)
+**Schema Reference:** [number_of_steps](elements/number_of_steps.md)
 
 </details>
 
@@ -366,7 +366,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`AFR:0001584`](AFR:0001584)
 
-**Schema Reference:** [temperature](/elements/temperature.md)
+**Schema Reference:** [temperature](elements/temperature.md)
 
 **Unit:** Cel
 
@@ -381,7 +381,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:lattice_size_type`](catcore:lattice_size_type)
 
-**Schema Reference:** [lattice_size_type](/elements/lattice_size_type.md)
+**Schema Reference:** [lattice_size_type](elements/lattice_size_type.md)
 
 </details>
 
@@ -394,7 +394,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:acceptance_criteria`](catcore:acceptance_criteria)
 
-**Schema Reference:** [acceptance_criteria](/elements/acceptance_criteria.md)
+**Schema Reference:** [acceptance_criteria](elements/acceptance_criteria.md)
 
 </details>
 
@@ -407,7 +407,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:equilibration_steps`](catcore:equilibration_steps)
 
-**Schema Reference:** [equilibration_steps](/elements/equilibration_steps.md)
+**Schema Reference:** [equilibration_steps](elements/equilibration_steps.md)
 
 </details>
 
@@ -420,7 +420,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:sampling_interval`](catcore:sampling_interval)
 
-**Schema Reference:** [sampling_interval](/elements/sampling_interval.md)
+**Schema Reference:** [sampling_interval](elements/sampling_interval.md)
 
 </details>
 
@@ -437,7 +437,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:calculated_property`](catcore:calculated_property)
 
-**Schema Reference:** [calculated_property](/elements/calculated_property.md)
+**Schema Reference:** [calculated_property](elements/calculated_property.md)
 
 **Range Class Details:**
 
@@ -448,7 +448,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **Description:** Property calculated from simulation
 
-**Schema Reference:** [CalculatedProperty](/elements/CalculatedProperty.md)
+**Schema Reference:** [CalculatedProperty](elements/CalculatedProperty.md)
 
 </details>
 
@@ -461,7 +461,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:ThermodynamicStability`](catcore:ThermodynamicStability)
 
-**Schema Reference:** [ThermodynamicStability](/elements/ThermodynamicStability.md)
+**Schema Reference:** [ThermodynamicStability](elements/ThermodynamicStability.md)
 
 **Slots**
 
@@ -474,7 +474,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:formation_energy`](catcore:formation_energy)
 
-**Schema Reference:** [formation_energy](/elements/formation_energy.md)
+**Schema Reference:** [formation_energy](elements/formation_energy.md)
 
 **Unit:** eV
 
@@ -489,7 +489,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:reference_energies`](catcore:reference_energies)
 
-**Schema Reference:** [reference_energies](/elements/reference_energies.md)
+**Schema Reference:** [reference_energies](elements/reference_energies.md)
 
 </details>
 
@@ -502,7 +502,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:energy_above_hull`](catcore:energy_above_hull)
 
-**Schema Reference:** [energy_above_hull](/elements/energy_above_hull.md)
+**Schema Reference:** [energy_above_hull](elements/energy_above_hull.md)
 
 **Unit:** eV
 
@@ -517,7 +517,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:phase_diagram_type`](catcore:phase_diagram_type)
 
-**Schema Reference:** [phase_diagram_type](/elements/phase_diagram_type.md)
+**Schema Reference:** [phase_diagram_type](elements/phase_diagram_type.md)
 
 </details>
 
@@ -530,7 +530,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:competing_phases`](catcore:competing_phases)
 
-**Schema Reference:** [competing_phases](/elements/competing_phases.md)
+**Schema Reference:** [competing_phases](elements/competing_phases.md)
 
 </details>
 
@@ -543,7 +543,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:Piezoelectricity`](catcore:Piezoelectricity)
 
-**Schema Reference:** [Piezoelectricity](/elements/Piezoelectricity.md)
+**Schema Reference:** [Piezoelectricity](elements/Piezoelectricity.md)
 
 **Slots**
 
@@ -556,7 +556,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:piezoelectric_tensor`](catcore:piezoelectric_tensor)
 
-**Schema Reference:** [piezoelectric_tensor](/elements/piezoelectric_tensor.md)
+**Schema Reference:** [piezoelectric_tensor](elements/piezoelectric_tensor.md)
 
 </details>
 
@@ -569,7 +569,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:crystal_symmetry`](catcore:crystal_symmetry)
 
-**Schema Reference:** [crystal_symmetry](/elements/crystal_symmetry.md)
+**Schema Reference:** [crystal_symmetry](elements/crystal_symmetry.md)
 
 </details>
 
@@ -582,7 +582,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:strain_applied`](catcore:strain_applied)
 
-**Schema Reference:** [strain_applied](/elements/strain_applied.md)
+**Schema Reference:** [strain_applied](elements/strain_applied.md)
 
 </details>
 
@@ -595,7 +595,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:ionic_electronic_contributions`](catcore:ionic_electronic_contributions)
 
-**Schema Reference:** [ionic_electronic_contributions](/elements/ionic_electronic_contributions.md)
+**Schema Reference:** [ionic_electronic_contributions](elements/ionic_electronic_contributions.md)
 
 </details>
 
@@ -608,7 +608,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:ElasticConstants`](catcore:ElasticConstants)
 
-**Schema Reference:** [ElasticConstants](/elements/ElasticConstants.md)
+**Schema Reference:** [ElasticConstants](elements/ElasticConstants.md)
 
 **Slots**
 
@@ -621,7 +621,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:elastic_tensor`](catcore:elastic_tensor)
 
-**Schema Reference:** [elastic_tensor](/elements/elastic_tensor.md)
+**Schema Reference:** [elastic_tensor](elements/elastic_tensor.md)
 
 </details>
 
@@ -634,7 +634,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:bulk_modulus`](catcore:bulk_modulus)
 
-**Schema Reference:** [bulk_modulus](/elements/bulk_modulus.md)
+**Schema Reference:** [bulk_modulus](elements/bulk_modulus.md)
 
 **Unit:** GPa
 
@@ -649,7 +649,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:shear_modulus`](catcore:shear_modulus)
 
-**Schema Reference:** [shear_modulus](/elements/shear_modulus.md)
+**Schema Reference:** [shear_modulus](elements/shear_modulus.md)
 
 **Unit:** GPa
 
@@ -664,7 +664,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:poisson_ratio`](catcore:poisson_ratio)
 
-**Schema Reference:** [poisson_ratio](/elements/poisson_ratio.md)
+**Schema Reference:** [poisson_ratio](elements/poisson_ratio.md)
 
 </details>
 
@@ -677,7 +677,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:young_modulus`](catcore:young_modulus)
 
-**Schema Reference:** [young_modulus](/elements/young_modulus.md)
+**Schema Reference:** [young_modulus](elements/young_modulus.md)
 
 **Unit:** GPa
 
@@ -692,7 +692,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:Surfaces`](catcore:Surfaces)
 
-**Schema Reference:** [Surfaces](/elements/Surfaces.md)
+**Schema Reference:** [Surfaces](elements/Surfaces.md)
 
 **Slots**
 
@@ -705,7 +705,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:surface_energy`](catcore:surface_energy)
 
-**Schema Reference:** [surface_energy](/elements/surface_energy.md)
+**Schema Reference:** [surface_energy](elements/surface_energy.md)
 
 **Unit:** J/m2
 
@@ -720,7 +720,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:miller_indices`](catcore:miller_indices)
 
-**Schema Reference:** [miller_indices](/elements/miller_indices.md)
+**Schema Reference:** [miller_indices](elements/miller_indices.md)
 
 </details>
 
@@ -733,7 +733,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:slab_thickness`](catcore:slab_thickness)
 
-**Schema Reference:** [slab_thickness](/elements/slab_thickness.md)
+**Schema Reference:** [slab_thickness](elements/slab_thickness.md)
 
 **Unit:** angstrom
 
@@ -748,7 +748,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:vacuum_spacing`](catcore:vacuum_spacing)
 
-**Schema Reference:** [vacuum_spacing](/elements/vacuum_spacing.md)
+**Schema Reference:** [vacuum_spacing](elements/vacuum_spacing.md)
 
 **Unit:** angstrom
 
@@ -763,7 +763,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:surface_termination_method`](catcore:surface_termination_method)
 
-**Schema Reference:** [surface_termination_method](/elements/surface_termination_method.md)
+**Schema Reference:** [surface_termination_method](elements/surface_termination_method.md)
 
 </details>
 
@@ -776,7 +776,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:DielectricTensors`](catcore:DielectricTensors)
 
-**Schema Reference:** [DielectricTensors](/elements/DielectricTensors.md)
+**Schema Reference:** [DielectricTensors](elements/DielectricTensors.md)
 
 **Slots**
 
@@ -789,7 +789,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:material_composition`](catcore:material_composition)
 
-**Schema Reference:** [material_composition](/elements/material_composition.md)
+**Schema Reference:** [material_composition](elements/material_composition.md)
 
 </details>
 
@@ -802,7 +802,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`SIO:001100`](SIO:001100)
 
-**Schema Reference:** [crystal_structure](/elements/crystal_structure.md)
+**Schema Reference:** [crystal_structure](elements/crystal_structure.md)
 
 </details>
 
@@ -815,7 +815,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:energy_cutoff`](catcore:energy_cutoff)
 
-**Schema Reference:** [energy_cutoff](/elements/energy_cutoff.md)
+**Schema Reference:** [energy_cutoff](elements/energy_cutoff.md)
 
 **Unit:** eV
 
@@ -830,7 +830,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:convergence_criteria`](catcore:convergence_criteria)
 
-**Schema Reference:** [convergence_criteria](/elements/convergence_criteria.md)
+**Schema Reference:** [convergence_criteria](elements/convergence_criteria.md)
 
 </details>
 
@@ -843,7 +843,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:k_point_mesh`](catcore:k_point_mesh)
 
-**Schema Reference:** [k_point_mesh](/elements/k_point_mesh.md)
+**Schema Reference:** [k_point_mesh](elements/k_point_mesh.md)
 
 </details>
 
@@ -856,7 +856,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:PhononDispersion`](catcore:PhononDispersion)
 
-**Schema Reference:** [PhononDispersion](/elements/PhononDispersion.md)
+**Schema Reference:** [PhononDispersion](elements/PhononDispersion.md)
 
 **Slots**
 
@@ -869,7 +869,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:material_composition`](catcore:material_composition)
 
-**Schema Reference:** [material_composition](/elements/material_composition.md)
+**Schema Reference:** [material_composition](elements/material_composition.md)
 
 </details>
 
@@ -882,7 +882,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`SIO:001100`](SIO:001100)
 
-**Schema Reference:** [crystal_structure](/elements/crystal_structure.md)
+**Schema Reference:** [crystal_structure](elements/crystal_structure.md)
 
 </details>
 
@@ -895,7 +895,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:force_constant_method`](catcore:force_constant_method)
 
-**Schema Reference:** [force_constant_method](/elements/force_constant_method.md)
+**Schema Reference:** [force_constant_method](elements/force_constant_method.md)
 
 </details>
 
@@ -908,7 +908,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:kq_point_mesh`](catcore:kq_point_mesh)
 
-**Schema Reference:** [kq_point_mesh](/elements/kq_point_mesh.md)
+**Schema Reference:** [kq_point_mesh](elements/kq_point_mesh.md)
 
 </details>
 
@@ -921,7 +921,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:smearing_parameter`](catcore:smearing_parameter)
 
-**Schema Reference:** [smearing_parameter](/elements/smearing_parameter.md)
+**Schema Reference:** [smearing_parameter](elements/smearing_parameter.md)
 
 **Unit:** eV
 
@@ -936,7 +936,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:imaginary_modes`](catcore:imaginary_modes)
 
-**Schema Reference:** [imaginary_modes](/elements/imaginary_modes.md)
+**Schema Reference:** [imaginary_modes](elements/imaginary_modes.md)
 
 </details>
 
@@ -949,7 +949,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:EquationsOfState`](catcore:EquationsOfState)
 
-**Schema Reference:** [EquationsOfState](/elements/EquationsOfState.md)
+**Schema Reference:** [EquationsOfState](elements/EquationsOfState.md)
 
 **Slots**
 
@@ -962,7 +962,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:material_composition`](catcore:material_composition)
 
-**Schema Reference:** [material_composition](/elements/material_composition.md)
+**Schema Reference:** [material_composition](elements/material_composition.md)
 
 </details>
 
@@ -975,7 +975,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`SIO:001100`](SIO:001100)
 
-**Schema Reference:** [crystal_structure](/elements/crystal_structure.md)
+**Schema Reference:** [crystal_structure](elements/crystal_structure.md)
 
 </details>
 
@@ -988,7 +988,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:fit_method`](catcore:fit_method)
 
-**Schema Reference:** [fit_method](/elements/fit_method.md)
+**Schema Reference:** [fit_method](elements/fit_method.md)
 
 </details>
 
@@ -1001,7 +1001,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:energy_cutoff`](catcore:energy_cutoff)
 
-**Schema Reference:** [energy_cutoff](/elements/energy_cutoff.md)
+**Schema Reference:** [energy_cutoff](elements/energy_cutoff.md)
 
 **Unit:** eV
 
@@ -1016,7 +1016,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:k_point_mesh`](catcore:k_point_mesh)
 
-**Schema Reference:** [k_point_mesh](/elements/k_point_mesh.md)
+**Schema Reference:** [k_point_mesh](elements/k_point_mesh.md)
 
 </details>
 
@@ -1029,7 +1029,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:bulk_modulus`](catcore:bulk_modulus)
 
-**Schema Reference:** [bulk_modulus](/elements/bulk_modulus.md)
+**Schema Reference:** [bulk_modulus](elements/bulk_modulus.md)
 
 **Unit:** GPa
 
@@ -1044,7 +1044,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:pressure_derivative`](catcore:pressure_derivative)
 
-**Schema Reference:** [pressure_derivative](/elements/pressure_derivative.md)
+**Schema Reference:** [pressure_derivative](elements/pressure_derivative.md)
 
 </details>
 
@@ -1057,7 +1057,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:fit_residuals`](catcore:fit_residuals)
 
-**Schema Reference:** [fit_residuals](/elements/fit_residuals.md)
+**Schema Reference:** [fit_residuals](elements/fit_residuals.md)
 
 </details>
 
@@ -1070,7 +1070,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:AqueousStability`](catcore:AqueousStability)
 
-**Schema Reference:** [AqueousStability](/elements/AqueousStability.md)
+**Schema Reference:** [AqueousStability](elements/AqueousStability.md)
 
 **Slots**
 
@@ -1083,7 +1083,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:material_composition`](catcore:material_composition)
 
-**Schema Reference:** [material_composition](/elements/material_composition.md)
+**Schema Reference:** [material_composition](elements/material_composition.md)
 
 </details>
 
@@ -1096,7 +1096,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`SIO:001100`](SIO:001100)
 
-**Schema Reference:** [crystal_structure](/elements/crystal_structure.md)
+**Schema Reference:** [crystal_structure](elements/crystal_structure.md)
 
 </details>
 
@@ -1109,7 +1109,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:ph_range`](catcore:ph_range)
 
-**Schema Reference:** [ph_range](/elements/ph_range.md)
+**Schema Reference:** [ph_range](elements/ph_range.md)
 
 </details>
 
@@ -1122,7 +1122,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:potential_range`](catcore:potential_range)
 
-**Schema Reference:** [potential_range](/elements/potential_range.md)
+**Schema Reference:** [potential_range](elements/potential_range.md)
 
 </details>
 
@@ -1135,7 +1135,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:solvation_model`](catcore:solvation_model)
 
-**Schema Reference:** [solvation_model](/elements/solvation_model.md)
+**Schema Reference:** [solvation_model](elements/solvation_model.md)
 
 </details>
 
@@ -1148,7 +1148,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:ionic_strength`](catcore:ionic_strength)
 
-**Schema Reference:** [ionic_strength](/elements/ionic_strength.md)
+**Schema Reference:** [ionic_strength](elements/ionic_strength.md)
 
 **Unit:** mol/L
 
@@ -1163,7 +1163,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`AFR:0001584`](AFR:0001584)
 
-**Schema Reference:** [temperature](/elements/temperature.md)
+**Schema Reference:** [temperature](elements/temperature.md)
 
 **Unit:** Cel
 
@@ -1178,7 +1178,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:GrainBoundaries`](catcore:GrainBoundaries)
 
-**Schema Reference:** [GrainBoundaries](/elements/GrainBoundaries.md)
+**Schema Reference:** [GrainBoundaries](elements/GrainBoundaries.md)
 
 **Slots**
 
@@ -1191,7 +1191,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:material_composition`](catcore:material_composition)
 
-**Schema Reference:** [material_composition](/elements/material_composition.md)
+**Schema Reference:** [material_composition](elements/material_composition.md)
 
 </details>
 
@@ -1204,7 +1204,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:grain_boundary_plane`](catcore:grain_boundary_plane)
 
-**Schema Reference:** [grain_boundary_plane](/elements/grain_boundary_plane.md)
+**Schema Reference:** [grain_boundary_plane](elements/grain_boundary_plane.md)
 
 </details>
 
@@ -1217,7 +1217,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:misorientation_angle`](catcore:misorientation_angle)
 
-**Schema Reference:** [misorientation_angle](/elements/misorientation_angle.md)
+**Schema Reference:** [misorientation_angle](elements/misorientation_angle.md)
 
 **Unit:** deg
 
@@ -1232,7 +1232,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:grain_boundary_energy`](catcore:grain_boundary_energy)
 
-**Schema Reference:** [grain_boundary_energy](/elements/grain_boundary_energy.md)
+**Schema Reference:** [grain_boundary_energy](elements/grain_boundary_energy.md)
 
 **Unit:** J/m2
 
@@ -1247,7 +1247,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:simulation_cell_size`](catcore:simulation_cell_size)
 
-**Schema Reference:** [simulation_cell_size](/elements/simulation_cell_size.md)
+**Schema Reference:** [simulation_cell_size](elements/simulation_cell_size.md)
 
 </details>
 
@@ -1260,7 +1260,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:gb_excess_volume`](catcore:gb_excess_volume)
 
-**Schema Reference:** [gb_excess_volume](/elements/gb_excess_volume.md)
+**Schema Reference:** [gb_excess_volume](elements/gb_excess_volume.md)
 
 </details>
 
@@ -1273,7 +1273,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:gb_structural_units`](catcore:gb_structural_units)
 
-**Schema Reference:** [gb_structural_units](/elements/gb_structural_units.md)
+**Schema Reference:** [gb_structural_units](elements/gb_structural_units.md)
 
 </details>
 
@@ -1286,7 +1286,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:charge_defect_segregation`](catcore:charge_defect_segregation)
 
-**Schema Reference:** [charge_defect_segregation](/elements/charge_defect_segregation.md)
+**Schema Reference:** [charge_defect_segregation](elements/charge_defect_segregation.md)
 
 </details>
 
@@ -1299,7 +1299,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:ElectronicStructure`](catcore:ElectronicStructure)
 
-**Schema Reference:** [ElectronicStructure](/elements/ElectronicStructure.md)
+**Schema Reference:** [ElectronicStructure](elements/ElectronicStructure.md)
 
 **Slots**
 
@@ -1312,7 +1312,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:material_composition`](catcore:material_composition)
 
-**Schema Reference:** [material_composition](/elements/material_composition.md)
+**Schema Reference:** [material_composition](elements/material_composition.md)
 
 </details>
 
@@ -1325,7 +1325,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`SIO:001100`](SIO:001100)
 
-**Schema Reference:** [crystal_structure](/elements/crystal_structure.md)
+**Schema Reference:** [crystal_structure](elements/crystal_structure.md)
 
 </details>
 
@@ -1338,7 +1338,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:k_point_mesh`](catcore:k_point_mesh)
 
-**Schema Reference:** [k_point_mesh](/elements/k_point_mesh.md)
+**Schema Reference:** [k_point_mesh](elements/k_point_mesh.md)
 
 </details>
 
@@ -1351,7 +1351,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:energy_cutoff`](catcore:energy_cutoff)
 
-**Schema Reference:** [energy_cutoff](/elements/energy_cutoff.md)
+**Schema Reference:** [energy_cutoff](elements/energy_cutoff.md)
 
 **Unit:** eV
 
@@ -1366,7 +1366,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:smearing_method`](catcore:smearing_method)
 
-**Schema Reference:** [smearing_method](/elements/smearing_method.md)
+**Schema Reference:** [smearing_method](elements/smearing_method.md)
 
 </details>
 
@@ -1379,7 +1379,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:spin_polarized`](catcore:spin_polarized)
 
-**Schema Reference:** [spin_polarized](/elements/spin_polarized.md)
+**Schema Reference:** [spin_polarized](elements/spin_polarized.md)
 
 </details>
 
@@ -1392,7 +1392,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:band_path`](catcore:band_path)
 
-**Schema Reference:** [band_path](/elements/band_path.md)
+**Schema Reference:** [band_path](elements/band_path.md)
 
 </details>
 
@@ -1405,7 +1405,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:fermi_energy`](catcore:fermi_energy)
 
-**Schema Reference:** [fermi_energy](/elements/fermi_energy.md)
+**Schema Reference:** [fermi_energy](elements/fermi_energy.md)
 
 **Unit:** eV
 
@@ -1420,7 +1420,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:Ferroelectrics`](catcore:Ferroelectrics)
 
-**Schema Reference:** [Ferroelectrics](/elements/Ferroelectrics.md)
+**Schema Reference:** [Ferroelectrics](elements/Ferroelectrics.md)
 
 **Slots**
 
@@ -1433,7 +1433,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:material_composition`](catcore:material_composition)
 
-**Schema Reference:** [material_composition](/elements/material_composition.md)
+**Schema Reference:** [material_composition](elements/material_composition.md)
 
 </details>
 
@@ -1446,7 +1446,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`SIO:001100`](SIO:001100)
 
-**Schema Reference:** [crystal_structure](/elements/crystal_structure.md)
+**Schema Reference:** [crystal_structure](elements/crystal_structure.md)
 
 </details>
 
@@ -1459,7 +1459,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:polarization_direction`](catcore:polarization_direction)
 
-**Schema Reference:** [polarization_direction](/elements/polarization_direction.md)
+**Schema Reference:** [polarization_direction](elements/polarization_direction.md)
 
 </details>
 
@@ -1472,7 +1472,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:spontaneous_polarization`](catcore:spontaneous_polarization)
 
-**Schema Reference:** [spontaneous_polarization](/elements/spontaneous_polarization.md)
+**Schema Reference:** [spontaneous_polarization](elements/spontaneous_polarization.md)
 
 **Unit:** uC/cm2
 
@@ -1487,7 +1487,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:reference_structure`](catcore:reference_structure)
 
-**Schema Reference:** [reference_structure](/elements/reference_structure.md)
+**Schema Reference:** [reference_structure](elements/reference_structure.md)
 
 </details>
 
@@ -1500,7 +1500,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:switching_barrier`](catcore:switching_barrier)
 
-**Schema Reference:** [switching_barrier](/elements/switching_barrier.md)
+**Schema Reference:** [switching_barrier](elements/switching_barrier.md)
 
 **Unit:** eV
 
@@ -1515,7 +1515,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:coercive_field`](catcore:coercive_field)
 
-**Schema Reference:** [coercive_field](/elements/coercive_field.md)
+**Schema Reference:** [coercive_field](elements/coercive_field.md)
 
 **Unit:** kV/cm
 
@@ -1530,7 +1530,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:temperature_dependence`](catcore:temperature_dependence)
 
-**Schema Reference:** [temperature_dependence](/elements/temperature_dependence.md)
+**Schema Reference:** [temperature_dependence](elements/temperature_dependence.md)
 
 </details>
 
@@ -1543,7 +1543,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:BandGap`](catcore:BandGap)
 
-**Schema Reference:** [BandGap](/elements/BandGap.md)
+**Schema Reference:** [BandGap](elements/BandGap.md)
 
 **Slots**
 
@@ -1556,7 +1556,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`voc4cat:0005056`](voc4cat:0005056)
 
-**Schema Reference:** [material_sample](/elements/material_sample.md)
+**Schema Reference:** [material_sample](elements/material_sample.md)
 
 </details>
 
@@ -1569,7 +1569,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:structure_model`](catcore:structure_model)
 
-**Schema Reference:** [structure_model](/elements/structure_model.md)
+**Schema Reference:** [structure_model](elements/structure_model.md)
 
 </details>
 
@@ -1582,7 +1582,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:k_point_mesh`](catcore:k_point_mesh)
 
-**Schema Reference:** [k_point_mesh](/elements/k_point_mesh.md)
+**Schema Reference:** [k_point_mesh](elements/k_point_mesh.md)
 
 </details>
 
@@ -1595,7 +1595,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:smearing_broadening`](catcore:smearing_broadening)
 
-**Schema Reference:** [smearing_broadening](/elements/smearing_broadening.md)
+**Schema Reference:** [smearing_broadening](elements/smearing_broadening.md)
 
 **Unit:** eV
 
@@ -1610,7 +1610,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:direct_indirect`](catcore:direct_indirect)
 
-**Schema Reference:** [direct_indirect](/elements/direct_indirect.md)
+**Schema Reference:** [direct_indirect](elements/direct_indirect.md)
 
 </details>
 
@@ -1623,7 +1623,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:experimental_reference`](catcore:experimental_reference)
 
-**Schema Reference:** [experimental_reference](/elements/experimental_reference.md)
+**Schema Reference:** [experimental_reference](elements/experimental_reference.md)
 
 **Unit:** eV
 
@@ -1638,7 +1638,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:gw_hybrid_correction`](catcore:gw_hybrid_correction)
 
-**Schema Reference:** [gw_hybrid_correction](/elements/gw_hybrid_correction.md)
+**Schema Reference:** [gw_hybrid_correction](elements/gw_hybrid_correction.md)
 
 </details>
 
@@ -1651,7 +1651,7 @@ with research data for conducting simulations in the field of catalysis.
 
 **URI:** [`catcore:excitonic_correction`](catcore:excitonic_correction)
 
-**Schema Reference:** [excitonic_correction](/elements/excitonic_correction.md)
+**Schema Reference:** [excitonic_correction](elements/excitonic_correction.md)
 
 **Unit:** eV
 
