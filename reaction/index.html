@@ -11,6 +11,10 @@
         <link rel="canonical" href="https://HendrikBorgelt.github.io/CatCore/reaction/">
       
       
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../characterization/">
       
       
         
@@ -250,6 +254,232 @@
       
   
   
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Documentation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reaction
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reaction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#slots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slots
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../characterization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Characterization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../synthesis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Synthesis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../simulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Simulation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
   
   
     <li class="md-nav__item">
@@ -360,21 +590,43 @@
 <h1 id="reaction">Reaction</h1>
 <p>The data class 'Reaction' describes the minimum information which should be reported 
 with research data concerning the reaction for which the catalyst is applied.</p>
-<p><strong>Schema Reference:</strong> <a href="https://w3id.org/nfdi4cat/catcore/elements/Reaction">Reaction</a></p>
 <h2 id="slots">Slots</h2>
+<p>Fields for Metadata which should be described when using this Metadata Aspect.</p>
+<ul>
+<li>
+<p><strong>Description:</strong>A short description for Comprehension purposes</p>
+</li>
+<li>
+<p><strong>Range:</strong> Further Aspects which are Important for describing a certain aspect</p>
+</li>
+<li>
+<p><strong>Cardinality:</strong> A description how often it is allowed and how important it is to describe a certain aspect</p>
+</li>
+<li>
+<p><strong>Range:</strong> Further Aspects which are Important for describing a certain aspect</p>
+</li>
+<li>
+<p><strong>CURIE:</strong> The Abbreviated form of a URI, where the Prefix, e.g. voc4cat, described to which terminology a Concept belong. The Links are fully implemented here. For reusing these CURIE's you need to substitute the prefix against the URI for it.</p>
+</li>
+<li>
+<p><strong>Schema Reference:</strong> A Link to the native LinkML Documentation on which this metadatacatalog and strucutre is based upon</p>
+</li>
+</ul>
 <details>
-<summary><strong>catalyst quantity (Required, Multivalued)</strong></summary>
+<summary><strong>catalyst quantity</strong> (Required, Multivalued)</summary>
 <p><strong>Description:</strong> Quantity of catalyst used</p>
 <p><strong>Range:</strong> float</p>
-<p><strong>URI:</strong> <a href="https://w3id.org/nfdi4cat/catcore/catalyst_quantity"><code>catcore:catalyst_quantity</code></a></p>
+<p><strong>Cardinality:</strong>  (Required, Multivalued)</p>
+<p><strong>CURIE:</strong> <a href="https://w3id.org/nfdi4cat/catcore/catalyst_quantity"><code>catcore:catalyst_quantity</code></a></p>
 <p><strong>Schema Reference:</strong> <a href="../elements/catalyst_quantity/">catalyst_quantity</a></p>
 <p><strong>Unit:</strong> g</p>
 </details>
 <details>
-<summary><strong>reactor design type (Required, Multivalued)</strong></summary>
+<summary><strong>reactor design type</strong> (Required, Multivalued)</summary>
 <p><strong>Description:</strong> Type of reactor design</p>
 <p><strong>Range:</strong> ReactorDesignType</p>
-<p><strong>URI:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0007018"><code>voc4cat:0007018</code></a></p>
+<p><strong>Cardinality:</strong>  (Required, Multivalued)</p>
+<p><strong>CURIE:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0007018"><code>voc4cat:0007018</code></a></p>
 <p><strong>Schema Reference:</strong> <a href="../elements/reactor_design_type/">reactor_design_type</a></p>
 <p><strong>Range Class Details:</strong></p>
 <details>
@@ -383,90 +635,95 @@ with research data concerning the reaction for which the catalyst is applied.</p
 <p><strong>Description:</strong> Type of reactor design used</p>
 <p><strong>Schema Reference:</strong> <a href="../elements/ReactorDesignType/">ReactorDesignType</a></p>
 </details>
-<p><strong>Subclasses of ReactorDesignType:</strong></p>
+<p><strong>Possible Subclasses / Enumerations of ReactorDesignType:</strong></p>
 <details>
 <summary><strong>ElectrochemicalReactor</strong></summary>
 <p><strong>Description:</strong> Electrochemical reactor</p>
-<p><strong>URI:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0000193"><code>voc4cat:0000193</code></a></p>
+<p><strong>CURIE:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0000193"><code>voc4cat:0000193</code></a></p>
 <p><strong>Schema Reference:</strong> <a href="../elements/ElectrochemicalReactor/">ElectrochemicalReactor</a></p>
 </details>
 <details>
 <summary><strong>CSTR</strong></summary>
 <p><strong>Description:</strong> Continuous stirred tank reactor</p>
-<p><strong>URI:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0007019"><code>voc4cat:0007019</code></a></p>
+<p><strong>CURIE:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0007019"><code>voc4cat:0007019</code></a></p>
 <p><strong>Schema Reference:</strong> <a href="../elements/CSTR/">CSTR</a></p>
 </details>
 <details>
 <summary><strong>PlugFlowReactor</strong></summary>
 <p><strong>Description:</strong> Plug flow reactor model</p>
-<p><strong>URI:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0007102"><code>voc4cat:0007102</code></a></p>
+<p><strong>CURIE:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0007102"><code>voc4cat:0007102</code></a></p>
 <p><strong>Schema Reference:</strong> <a href="../elements/PlugFlowReactor/">PlugFlowReactor</a></p>
 </details>
 <details>
 <summary><strong>Autoclave</strong></summary>
 <p><strong>Description:</strong> Autoclave reactor</p>
-<p><strong>URI:</strong> <a href="http://purl.obolibrary.org/obo/NCIT_C93052"><code>NCIT:C93052</code></a></p>
+<p><strong>CURIE:</strong> <a href="http://purl.obolibrary.org/obo/NCIT_C93052"><code>NCIT:C93052</code></a></p>
 <p><strong>Schema Reference:</strong> <a href="../elements/Autoclave/">Autoclave</a></p>
 </details>
 <details>
 <summary><strong>SlurryReactor</strong></summary>
 <p><strong>Description:</strong> Slurry reactor</p>
-<p><strong>URI:</strong> <a href="https://w3id.org/nfdi4cat/catcore/SlurryReactor"><code>catcore:SlurryReactor</code></a></p>
+<p><strong>CURIE:</strong> <a href="https://w3id.org/nfdi4cat/catcore/SlurryReactor"><code>catcore:SlurryReactor</code></a></p>
 <p><strong>Schema Reference:</strong> <a href="../elements/SlurryReactor/">SlurryReactor</a></p>
 </details>
 <details>
 <summary><strong>Microreactor</strong></summary>
 <p><strong>Description:</strong> Microreactor</p>
-<p><strong>URI:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0000234"><code>voc4cat:0000234</code></a></p>
+<p><strong>CURIE:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0000234"><code>voc4cat:0000234</code></a></p>
 <p><strong>Schema Reference:</strong> <a href="../elements/Microreactor/">Microreactor</a></p>
 </details>
 <details>
 <summary><strong>FixedBedReactor</strong></summary>
 <p><strong>Description:</strong> Fixed bed reactor</p>
-<p><strong>URI:</strong> <a href="https://w3id.org/nfdi4cat/catcore/FixedBedReactor"><code>catcore:FixedBedReactor</code></a></p>
+<p><strong>CURIE:</strong> <a href="https://w3id.org/nfdi4cat/catcore/FixedBedReactor"><code>catcore:FixedBedReactor</code></a></p>
 <p><strong>Schema Reference:</strong> <a href="../elements/FixedBedReactor/">FixedBedReactor</a></p>
 </details>
 <details>
 <summary><strong>FluidizedBedReactor</strong></summary>
 <p><strong>Description:</strong> Fluidized bed reactor</p>
-<p><strong>URI:</strong> <a href="https://w3id.org/nfdi4cat/catcore/FluidizedBedReactor"><code>catcore:FluidizedBedReactor</code></a></p>
+<p><strong>CURIE:</strong> <a href="https://w3id.org/nfdi4cat/catcore/FluidizedBedReactor"><code>catcore:FluidizedBedReactor</code></a></p>
 <p><strong>Schema Reference:</strong> <a href="../elements/FluidizedBedReactor/">FluidizedBedReactor</a></p>
 <p><strong>Slots</strong></p>
 <details>
-<summary><strong>gas distributor type (Optional, Multivalued)</strong></summary>
+<summary><strong>gas distributor type</strong> (Optional, Multivalued)</summary>
 <p><strong>Description:</strong> Type of gas distributor</p>
 <p><strong>Range:</strong> string</p>
-<p><strong>URI:</strong> <a href="https://w3id.org/nfdi4cat/catcore/gas_distributor_type"><code>catcore:gas_distributor_type</code></a></p>
+<p><strong>Cardinality:</strong>  (Optional, Multivalued)</p>
+<p><strong>CURIE:</strong> <a href="https://w3id.org/nfdi4cat/catcore/gas_distributor_type"><code>catcore:gas_distributor_type</code></a></p>
 <p><strong>Schema Reference:</strong> <a href="../elements/gas_distributor_type/">gas_distributor_type</a></p>
 </details>
 <details>
-<summary><strong>bed expansion height (Optional, Multivalued)</strong></summary>
+<summary><strong>bed expansion height</strong> (Optional, Multivalued)</summary>
 <p><strong>Description:</strong> Bed expansion height</p>
 <p><strong>Range:</strong> float</p>
-<p><strong>URI:</strong> <a href="https://w3id.org/nfdi4cat/catcore/bed_expansion_height"><code>catcore:bed_expansion_height</code></a></p>
+<p><strong>Cardinality:</strong>  (Optional, Multivalued)</p>
+<p><strong>CURIE:</strong> <a href="https://w3id.org/nfdi4cat/catcore/bed_expansion_height"><code>catcore:bed_expansion_height</code></a></p>
 <p><strong>Schema Reference:</strong> <a href="../elements/bed_expansion_height/">bed_expansion_height</a></p>
 <p><strong>Unit:</strong> cm</p>
 </details>
 <details>
-<summary><strong>bubble size distribution (Optional)</strong></summary>
+<summary><strong>bubble size distribution</strong> (Optional)</summary>
 <p><strong>Description:</strong> No description available</p>
 <p><strong>Range:</strong> string</p>
+<p><strong>Cardinality:</strong>  (Optional)</p>
 <p><strong>Schema Reference:</strong> <a href="../elements/bubble_size_distribution/">bubble_size_distribution</a></p>
 </details>
 </details>
 </details>
 <details>
-<summary><strong>reactant (Required, Multivalued)</strong></summary>
+<summary><strong>reactant</strong> (Required, Multivalued)</summary>
 <p><strong>Description:</strong> Reactant used in the reaction</p>
 <p><strong>Range:</strong> string</p>
-<p><strong>URI:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0000101"><code>voc4cat:0000101</code></a></p>
+<p><strong>Cardinality:</strong>  (Required, Multivalued)</p>
+<p><strong>CURIE:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0000101"><code>voc4cat:0000101</code></a></p>
 <p><strong>Schema Reference:</strong> <a href="../elements/reactant/">reactant</a></p>
 </details>
 <details>
-<summary><strong>operation parameters (Required, Multivalued)</strong></summary>
+<summary><strong>operation parameters</strong> (Required, Multivalued)</summary>
 <p><strong>Description:</strong> Operation parameters for the reaction</p>
 <p><strong>Range:</strong> OperationParameters</p>
-<p><strong>URI:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0000142"><code>voc4cat:0000142</code></a></p>
+<p><strong>Cardinality:</strong>  (Required, Multivalued)</p>
+<p><strong>CURIE:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0000142"><code>voc4cat:0000142</code></a></p>
 <p><strong>Schema Reference:</strong> <a href="../elements/operation_parameters/">operation_parameters</a></p>
 <p><strong>Range Class Details:</strong></p>
 <details>
@@ -475,49 +732,55 @@ with research data concerning the reaction for which the catalyst is applied.</p
 <p><strong>Schema Reference:</strong> <a href="../elements/OperationParameters/">OperationParameters</a></p>
 <p><strong>Slots</strong></p>
 <details>
-<summary><strong>reactor temperature range (Optional, Multivalued)</strong></summary>
+<summary><strong>reactor temperature range</strong> (Optional, Multivalued)</summary>
 <p><strong>Description:</strong> Temperature range in reactor</p>
 <p><strong>Range:</strong> string</p>
-<p><strong>URI:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0007032"><code>voc4cat:0007032</code></a></p>
+<p><strong>Cardinality:</strong>  (Optional, Multivalued)</p>
+<p><strong>CURIE:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0007032"><code>voc4cat:0007032</code></a></p>
 <p><strong>Schema Reference:</strong> <a href="../elements/reactor_temperature_range/">reactor_temperature_range</a></p>
 </details>
 <details>
-<summary><strong>atmosphere (Optional, Multivalued)</strong></summary>
+<summary><strong>atmosphere</strong> (Optional, Multivalued)</summary>
 <p><strong>Description:</strong> Atmospheric conditions</p>
 <p><strong>Range:</strong> string</p>
-<p><strong>URI:</strong> <a href="https://w3id.org/nfdi4cat/catcore/atmosphere"><code>catcore:atmosphere</code></a></p>
+<p><strong>Cardinality:</strong>  (Optional, Multivalued)</p>
+<p><strong>CURIE:</strong> <a href="https://w3id.org/nfdi4cat/catcore/atmosphere"><code>catcore:atmosphere</code></a></p>
 <p><strong>Schema Reference:</strong> <a href="../elements/atmosphere/">atmosphere</a></p>
 </details>
 <details>
-<summary><strong>experiment pressure (Optional, Multivalued)</strong></summary>
+<summary><strong>experiment pressure</strong> (Optional, Multivalued)</summary>
 <p><strong>Description:</strong> Pressure during experiment</p>
 <p><strong>Range:</strong> float</p>
-<p><strong>URI:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0000118"><code>voc4cat:0000118</code></a></p>
+<p><strong>Cardinality:</strong>  (Optional, Multivalued)</p>
+<p><strong>CURIE:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0000118"><code>voc4cat:0000118</code></a></p>
 <p><strong>Schema Reference:</strong> <a href="../elements/experiment_pressure/">experiment_pressure</a></p>
 <p><strong>Unit:</strong> bar</p>
 </details>
 <details>
-<summary><strong>feed composition range (Optional, Multivalued)</strong></summary>
+<summary><strong>feed composition range</strong> (Optional, Multivalued)</summary>
 <p><strong>Description:</strong> Range of feed composition</p>
 <p><strong>Range:</strong> string</p>
-<p><strong>URI:</strong> <a href="https://w3id.org/nfdi4cat/catcore/feed_composition_range"><code>catcore:feed_composition_range</code></a></p>
+<p><strong>Cardinality:</strong>  (Optional, Multivalued)</p>
+<p><strong>CURIE:</strong> <a href="https://w3id.org/nfdi4cat/catcore/feed_composition_range"><code>catcore:feed_composition_range</code></a></p>
 <p><strong>Schema Reference:</strong> <a href="../elements/feed_composition_range/">feed_composition_range</a></p>
 </details>
 <details>
-<summary><strong>experiment duration (Optional, Multivalued)</strong></summary>
+<summary><strong>experiment duration</strong> (Optional, Multivalued)</summary>
 <p><strong>Description:</strong> Duration of the experiment</p>
 <p><strong>Range:</strong> float</p>
-<p><strong>URI:</strong> <a href="http://purl.allotrope.org/ontologies/result#AFR_0002455"><code>AFR:0002455</code></a></p>
+<p><strong>Cardinality:</strong>  (Optional, Multivalued)</p>
+<p><strong>CURIE:</strong> <a href="http://purl.allotrope.org/ontologies/result#AFR_0002455"><code>AFR:0002455</code></a></p>
 <p><strong>Schema Reference:</strong> <a href="../elements/experiment_duration/">experiment_duration</a></p>
 <p><strong>Unit:</strong> h</p>
 </details>
 </details>
 </details>
 <details>
-<summary><strong>product identification method (Required, Multivalued)</strong></summary>
+<summary><strong>product identification method</strong> (Required, Multivalued)</summary>
 <p><strong>Description:</strong> Method used for product identification</p>
 <p><strong>Range:</strong> ProductIdentificationMethod</p>
-<p><strong>URI:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0000129"><code>voc4cat:0000129</code></a></p>
+<p><strong>Cardinality:</strong>  (Required, Multivalued)</p>
+<p><strong>CURIE:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0000129"><code>voc4cat:0000129</code></a></p>
 <p><strong>Schema Reference:</strong> <a href="../elements/product_identification_method/">product_identification_method</a></p>
 <p><strong>Range Class Details:</strong></p>
 <details>
@@ -528,12 +791,22 @@ with research data concerning the reaction for which the catalyst is applied.</p
 </details>
 </details>
 <details>
-<summary><strong>catalyst type (Recommended, Multivalued)</strong></summary>
+<summary><strong>catalyst type</strong> (Recommended, Multivalued)</summary>
 <p><strong>Description:</strong> Type of catalyst</p>
 <p><strong>Range:</strong> string</p>
-<p><strong>URI:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0007014"><code>voc4cat:0007014</code></a></p>
+<p><strong>Cardinality:</strong>  (Recommended, Multivalued)</p>
+<p><strong>CURIE:</strong> <a href="https://w3id.org/nfdi4cat/voc4cat_0007014"><code>voc4cat:0007014</code></a></p>
 <p><strong>Schema Reference:</strong> <a href="../elements/catalyst_type/">catalyst_type</a></p>
 </details>
+<p><iframe
+    src="assets/chart_reaction.html"
+    width="100%"
+    height= "800vh"
+    style="border: 2px solid #5C88DA; background-color: #F0F8FF;
+    "
+    allowfullscreen
+></iframe>
+</p>
 
 
 
