@@ -44,6 +44,8 @@
       
     
     
+      <link rel="stylesheet" href="../stylesheets/no-details-box.css">
+    
       <link rel="stylesheet" href="../css/ansi-colours.css">
     
       <link rel="stylesheet" href="../css/jupyter-cells.css">
@@ -325,10 +327,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#main-class" class="md-nav__link">
+  <a href="#slots" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Main Class
+        Slots
       
     </span>
   </a>
@@ -356,1899 +358,897 @@
 
 
 <h1 id="simulation">Simulation</h1>
-<p><strong>Description:</strong> The data class 'Simulation' describes the minimum information which should be reported 
+<p>The data class 'Simulation' describes the minimum information which should be reported 
 with research data for conducting simulations in the field of catalysis.</p>
-<hr />
-<h2 id="main-class">Main Class</h2>
-<details>
-<summary>### Simulation</summary>
-
-**Description:** The data class 'Simulation' describes the minimum information which should be reported 
-with research data for conducting simulations in the field of catalysis.
-
-**URI:** `catcore:Simulation`
-
-#### Slots (4)
-
-<details>
-<summary><strong>identifier</strong></summary>
-
-**Description:** Unique identifier for the entity
-
-**Range:** string
-
-**Multivalued:** No
-
-**URI:** `catcore:identifier`
-
-</details>
-
-<details>
-<summary><strong>Simulation_software_package</strong></summary>
-
-**Description:** Software or package used for simulation
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:software_package`
-
-</details>
-
-<details>
-<summary><strong>Simulation_simulation_method</strong></summary>
-
-**Description:** Simulation method used
-
-**Range:** SimulationMethod
-
-**Multivalued:** Yes
-
-**URI:** `catcore:simulation_method`
-
-**Range Class Details:**
-
-<details>
-<summary>##### SimulationMethod</summary>
-
-**Abstract Class**
-
-**Description:** Simulation method used
-
-**URI:** `catcore:SimulationMethod`
-
-#### Slots (1)
-
-<details>
-<summary><strong>identifier</strong></summary>
-
-**Description:** Unique identifier for the entity
-
-**Range:** string
-
-**Multivalued:** No
-
-**URI:** `catcore:identifier`
-
-</details>
-
-</details>
-
-**Subclasses of SimulationMethod:**
-
-<details>
-<summary>###### DFT</summary>
-
-**Description:** Density functional theory
-
-**URI:** `catcore:DFT`
-
-#### Slots (7)
-
-<details>
-<summary><strong>identifier</strong></summary>
-
-**Description:** Unique identifier for the entity
-
-**Range:** string
-
-**Multivalued:** No
-
-**URI:** `catcore:identifier`
-
-</details>
-
-<details>
-<summary><strong>exchange_correlation_functional</strong></summary>
-
-**Description:** Exchange-correlation functional used (e.g., PBE, B3LYP)
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:exchange_correlation_functional`
-
-</details>
-
-<details>
-<summary><strong>energy_cutoff</strong></summary>
-
-**Description:** Energy cutoff for plane wave basis
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:energy_cutoff`
-
-**Unit:** eV
-
-</details>
-
-<details>
-<summary><strong>convergence_criteria</strong></summary>
-
-**Description:** Convergence criteria (e.g., energy, force)
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:convergence_criteria`
-
-</details>
-
-<details>
-<summary><strong>dft_u_parameters</strong></summary>
-
-**Description:** DFT+U parameters used
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:dft_u_parameters`
-
-</details>
-
-<details>
-<summary><strong>spin_polarization</strong></summary>
-
-**Description:** Spin polarization setting
-
-**Range:** boolean
-
-**Multivalued:** Yes
-
-**URI:** `catcore:spin_polarization`
-
-</details>
-
-<details>
-<summary><strong>total_energy_per_atom</strong></summary>
-
-**Description:** Total energy per atom
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:total_energy_per_atom`
-
-**Unit:** eV
-
-</details>
-
-</details>
-
-<details>
-<summary>###### MolecularDynamics</summary>
-
-**Description:** Molecular dynamics
-
-**URI:** `NCIT:C18097`
-
-#### Slots (6)
-
-<details>
-<summary><strong>identifier</strong></summary>
-
-**Description:** Unique identifier for the entity
-
-**Range:** string
-
-**Multivalued:** No
-
-**URI:** `catcore:identifier`
-
-</details>
-
-<details>
-<summary><strong>force_field</strong></summary>
-
-**Description:** Force field used
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:force_field`
-
-</details>
-
-<details>
-<summary><strong>simulation_timestep</strong></summary>
-
-**Description:** Time step for simulation
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `APOLLO_SV:00000012`
-
-**Unit:** fs
-
-</details>
-
-<details>
-<summary><strong>simulation_time</strong></summary>
-
-**Description:** Total simulation time
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:simulation_time`
-
-**Unit:** ps
-
-</details>
-
-<details>
-<summary><strong>ensemble_type</strong></summary>
-
-**Description:** Ensemble type (e.g., NVT, NPT)
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:ensemble_type`
-
-</details>
-
-<details>
-<summary><strong>number_of_atoms</strong></summary>
-
-**Description:** Number of atoms in simulation
-
-**Range:** integer
-
-**Multivalued:** Yes
-
-**URI:** `catcore:number_of_atoms`
-
-</details>
-
-</details>
-
-<details>
-<summary>###### Microkinetics</summary>
-
-**Description:** Microkinetics simulation
-
-**URI:** `catcore:Microkinetics`
-
-#### Slots (7)
-
-<details>
-<summary><strong>identifier</strong></summary>
-
-**Description:** Unique identifier for the entity
-
-**Range:** string
-
-**Multivalued:** No
-
-**URI:** `catcore:identifier`
-
-</details>
-
-<details>
-<summary><strong>rate_constants</strong></summary>
-
-**Description:** Rate constants or Arrhenius parameters
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `NCIT:C94967`
-
-</details>
-
-<details>
-<summary><strong>solver_type</strong></summary>
-
-**Description:** Type of solver used
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:solver_type`
-
-</details>
-
-<details>
-<summary><strong>temperature</strong></summary>
-
-**Description:** Temperature
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `AFR:0001584`
-
-**Unit:** Cel
-
-</details>
-
-<details>
-<summary><strong>pressure</strong></summary>
-
-**Description:** Pressure in simulation
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:pressure`
-
-**Unit:** bar
-
-</details>
-
-<details>
-<summary><strong>surface_coverage</strong></summary>
-
-**Description:** Surface coverage of species
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:surface_coverage`
-
-</details>
-
-<details>
-<summary><strong>activation_energy</strong></summary>
-
-**Description:** Activation energy for each step
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:activation_energy`
-
-**Unit:** eV
-
-</details>
-
-</details>
-
-<details>
-<summary>###### MonteCarlo</summary>
-
-**Description:** Monte Carlo simulation
-
-**URI:** `catcore:MonteCarlo`
-
-#### Slots (8)
-
-<details>
-<summary><strong>identifier</strong></summary>
-
-**Description:** Unique identifier for the entity
-
-**Range:** string
-
-**Multivalued:** No
-
-**URI:** `catcore:identifier`
-
-</details>
-
-<details>
-<summary><strong>interaction_potential</strong></summary>
-
-**Description:** Interaction potential used
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:interaction_potential`
-
-</details>
-
-<details>
-<summary><strong>number_of_steps</strong></summary>
-
-**Description:** Number of Monte Carlo steps
-
-**Range:** integer
-
-**Multivalued:** Yes
-
-**URI:** `catcore:number_of_steps`
-
-</details>
-
-<details>
-<summary><strong>temperature</strong></summary>
-
-**Description:** Temperature
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `AFR:0001584`
-
-**Unit:** Cel
-
-</details>
-
-<details>
-<summary><strong>lattice_size_type</strong></summary>
-
-**Description:** Lattice size and type
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:lattice_size_type`
-
-</details>
-
-<details>
-<summary><strong>acceptance_criteria</strong></summary>
-
-**Description:** Acceptance criteria for Monte Carlo moves
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:acceptance_criteria`
-
-</details>
-
-<details>
-<summary><strong>equilibration_steps</strong></summary>
-
-**Description:** Number of equilibration steps
-
-**Range:** integer
-
-**Multivalued:** Yes
-
-**URI:** `catcore:equilibration_steps`
-
-</details>
-
-<details>
-<summary><strong>sampling_interval</strong></summary>
-
-**Description:** Sampling interval for data collection
-
-**Range:** integer
-
-**Multivalued:** Yes
-
-**URI:** `catcore:sampling_interval`
-
-</details>
-
-</details>
-
-</details>
-
-<details>
-<summary><strong>Simulation_calculated_property</strong></summary>
-
-**Description:** Property calculated from simulation
-
-**Range:** CalculatedProperty
-
-**Multivalued:** Yes
-
-**URI:** `catcore:calculated_property`
-
-**Range Class Details:**
-
-<details>
-<summary>##### CalculatedProperty</summary>
-
-**Abstract Class**
-
-**Description:** Property calculated from simulation
-
-**URI:** `catcore:CalculatedProperty`
-
-#### Slots (1)
-
-<details>
-<summary><strong>identifier</strong></summary>
-
-**Description:** Unique identifier for the entity
-
-**Range:** string
-
-**Multivalued:** No
-
-**URI:** `catcore:identifier`
-
-</details>
-
-</details>
-
-**Subclasses of CalculatedProperty:**
-
-<details>
-<summary>###### ThermodynamicStability</summary>
-
-**Description:** Thermodynamic stability property
-
-**URI:** `catcore:ThermodynamicStability`
-
-#### Slots (6)
-
-<details>
-<summary><strong>identifier</strong></summary>
-
-**Description:** Unique identifier for the entity
-
-**Range:** string
-
-**Multivalued:** No
-
-**URI:** `catcore:identifier`
-
-</details>
-
-<details>
-<summary><strong>formation_energy</strong></summary>
-
-**Description:** Formation energy per atom
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:formation_energy`
-
-**Unit:** eV
-
-</details>
-
-<details>
-<summary><strong>reference_energies</strong></summary>
-
-**Description:** Reference elemental energies
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:reference_energies`
-
-</details>
-
-<details>
-<summary><strong>energy_above_hull</strong></summary>
-
-**Description:** Energy above convex hull
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:energy_above_hull`
-
-**Unit:** eV
-
-</details>
-
-<details>
-<summary><strong>phase_diagram_type</strong></summary>
-
-**Description:** Phase diagram type (e.g., binary, ternary)
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:phase_diagram_type`
-
-</details>
-
-<details>
-<summary><strong>competing_phases</strong></summary>
-
-**Description:** Competing phase list
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:competing_phases`
-
-</details>
-
-</details>
-
-<details>
-<summary>###### Piezoelectricity</summary>
-
-**Description:** Piezoelectricity property
-
-**URI:** `catcore:Piezoelectricity`
-
-#### Slots (5)
-
-<details>
-<summary><strong>identifier</strong></summary>
-
-**Description:** Unique identifier for the entity
-
-**Range:** string
-
-**Multivalued:** No
-
-**URI:** `catcore:identifier`
-
-</details>
-
-<details>
-<summary><strong>piezoelectric_tensor</strong></summary>
-
-**Description:** Piezoelectric tensor components
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:piezoelectric_tensor`
-
-</details>
-
-<details>
-<summary><strong>crystal_symmetry</strong></summary>
-
-**Description:** Crystal symmetry
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:crystal_symmetry`
-
-</details>
-
-<details>
-<summary><strong>strain_applied</strong></summary>
-
-**Description:** Strain applied
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:strain_applied`
-
-</details>
-
-<details>
-<summary><strong>ionic_electronic_contributions</strong></summary>
-
-**Description:** Ionic and electronic contributions
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:ionic_electronic_contributions`
-
-</details>
-
-</details>
-
-<details>
-<summary>###### ElasticConstants</summary>
-
-**Description:** Elastic constants property
-
-**URI:** `catcore:ElasticConstants`
-
-#### Slots (6)
-
-<details>
-<summary><strong>identifier</strong></summary>
-
-**Description:** Unique identifier for the entity
-
-**Range:** string
-
-**Multivalued:** No
-
-**URI:** `catcore:identifier`
-
-</details>
-
-<details>
-<summary><strong>elastic_tensor</strong></summary>
-
-**Description:** Elastic tensor components
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:elastic_tensor`
-
-</details>
-
-<details>
-<summary><strong>bulk_modulus</strong></summary>
-
-**Description:** Bulk modulus
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:bulk_modulus`
-
-**Unit:** GPa
-
-</details>
-
-<details>
-<summary><strong>shear_modulus</strong></summary>
-
-**Description:** Shear modulus
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:shear_modulus`
-
-**Unit:** GPa
-
-</details>
-
-<details>
-<summary><strong>poisson_ratio</strong></summary>
-
-**Description:** Poisson's ratio
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:poisson_ratio`
-
-</details>
-
-<details>
-<summary><strong>young_modulus</strong></summary>
-
-**Description:** Young's modulus
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:young_modulus`
-
-**Unit:** GPa
-
-</details>
-
-</details>
-
-<details>
-<summary>###### Surfaces</summary>
-
-**Description:** Surface property
-
-**URI:** `catcore:Surfaces`
-
-#### Slots (6)
-
-<details>
-<summary><strong>identifier</strong></summary>
-
-**Description:** Unique identifier for the entity
-
-**Range:** string
-
-**Multivalued:** No
-
-**URI:** `catcore:identifier`
-
-</details>
-
-<details>
-<summary><strong>surface_energy</strong></summary>
-
-**Description:** Surface energy
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:surface_energy`
-
-**Unit:** J/m2
-
-</details>
-
-<details>
-<summary><strong>miller_indices</strong></summary>
-
-**Description:** Miller indices of surface
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:miller_indices`
-
-</details>
-
-<details>
-<summary><strong>slab_thickness</strong></summary>
-
-**Description:** Slab thickness
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:slab_thickness`
-
-**Unit:** angstrom
-
-</details>
-
-<details>
-<summary><strong>vacuum_spacing</strong></summary>
-
-**Description:** Vacuum spacing
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:vacuum_spacing`
-
-**Unit:** angstrom
-
-</details>
-
-<details>
-<summary><strong>surface_termination_method</strong></summary>
-
-**Description:** Surface termination method
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:surface_termination_method`
-
-</details>
-
-</details>
-
-<details>
-<summary>###### DielectricTensors</summary>
-
-**Description:** Dielectric tensors property
-
-**URI:** `catcore:DielectricTensors`
-
-#### Slots (6)
-
-<details>
-<summary><strong>identifier</strong></summary>
-
-**Description:** Unique identifier for the entity
-
-**Range:** string
-
-**Multivalued:** No
-
-**URI:** `catcore:identifier`
-
-</details>
-
-<details>
-<summary><strong>material_composition</strong></summary>
-
-**Description:** Material composition
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:material_composition`
-
-</details>
-
-<details>
-<summary><strong>crystal_structure</strong></summary>
-
-**Description:** Crystal structure (space group, lattice parameters)
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `SIO:001100`
-
-</details>
-
-<details>
-<summary><strong>energy_cutoff</strong></summary>
-
-**Description:** Energy cutoff for plane wave basis
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:energy_cutoff`
-
-**Unit:** eV
-
-</details>
-
-<details>
-<summary><strong>convergence_criteria</strong></summary>
-
-**Description:** Convergence criteria (e.g., energy, force)
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:convergence_criteria`
-
-</details>
-
-<details>
-<summary><strong>k_point_mesh</strong></summary>
-
-**Description:** k-point mesh for sampling
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:k_point_mesh`
-
-</details>
-
-</details>
-
-<details>
-<summary>###### PhononDispersion</summary>
-
-**Description:** Phonon dispersion property
-
-**URI:** `catcore:PhononDispersion`
-
-#### Slots (7)
-
-<details>
-<summary><strong>identifier</strong></summary>
-
-**Description:** Unique identifier for the entity
-
-**Range:** string
-
-**Multivalued:** No
-
-**URI:** `catcore:identifier`
-
-</details>
-
-<details>
-<summary><strong>material_composition</strong></summary>
-
-**Description:** Material composition
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:material_composition`
-
-</details>
-
-<details>
-<summary><strong>crystal_structure</strong></summary>
-
-**Description:** Crystal structure (space group, lattice parameters)
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `SIO:001100`
-
-</details>
-
-<details>
-<summary><strong>force_constant_method</strong></summary>
-
-**Description:** Force constant calculation method
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:force_constant_method`
-
-</details>
-
-<details>
-<summary><strong>kq_point_mesh</strong></summary>
-
-**Description:** k/q-point mesh for phonons
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:kq_point_mesh`
-
-</details>
-
-<details>
-<summary><strong>smearing_parameter</strong></summary>
-
-**Description:** Smearing/broadening parameter
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:smearing_parameter`
-
-**Unit:** eV
-
-</details>
-
-<details>
-<summary><strong>imaginary_modes</strong></summary>
-
-**Description:** Imaginary modes present
-
-**Range:** boolean
-
-**Multivalued:** Yes
-
-**URI:** `catcore:imaginary_modes`
-
-</details>
-
-</details>
-
-<details>
-<summary>###### EquationsOfState</summary>
-
-**Description:** Equations of state property
-
-**URI:** `catcore:EquationsOfState`
-
-#### Slots (9)
-
-<details>
-<summary><strong>identifier</strong></summary>
-
-**Description:** Unique identifier for the entity
-
-**Range:** string
-
-**Multivalued:** No
-
-**URI:** `catcore:identifier`
-
-</details>
-
-<details>
-<summary><strong>material_composition</strong></summary>
-
-**Description:** Material composition
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:material_composition`
-
-</details>
-
-<details>
-<summary><strong>crystal_structure</strong></summary>
-
-**Description:** Crystal structure (space group, lattice parameters)
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `SIO:001100`
-
-</details>
-
-<details>
-<summary><strong>fit_method</strong></summary>
-
-**Description:** Fit method (e.g., Birch-Murnaghan, Vinet)
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:fit_method`
-
-</details>
-
-<details>
-<summary><strong>energy_cutoff</strong></summary>
-
-**Description:** Energy cutoff for plane wave basis
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:energy_cutoff`
-
-**Unit:** eV
-
-</details>
-
-<details>
-<summary><strong>k_point_mesh</strong></summary>
-
-**Description:** k-point mesh for sampling
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:k_point_mesh`
-
-</details>
-
-<details>
-<summary><strong>bulk_modulus</strong></summary>
-
-**Description:** Bulk modulus
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:bulk_modulus`
-
-**Unit:** GPa
-
-</details>
-
-<details>
-<summary><strong>pressure_derivative</strong></summary>
-
-**Description:** Pressure derivative of bulk modulus
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:pressure_derivative`
-
-</details>
-
-<details>
-<summary><strong>fit_residuals</strong></summary>
-
-**Description:** Residuals of fit
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:fit_residuals`
-
-</details>
-
-</details>
-
-<details>
-<summary>###### AqueousStability</summary>
-
-**Description:** Aqueous stability property
-
-**URI:** `catcore:AqueousStability`
-
-#### Slots (8)
-
-<details>
-<summary><strong>identifier</strong></summary>
-
-**Description:** Unique identifier for the entity
-
-**Range:** string
-
-**Multivalued:** No
-
-**URI:** `catcore:identifier`
-
-</details>
-
-<details>
-<summary><strong>material_composition</strong></summary>
-
-**Description:** Material composition
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:material_composition`
-
-</details>
-
-<details>
-<summary><strong>crystal_structure</strong></summary>
-
-**Description:** Crystal structure (space group, lattice parameters)
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `SIO:001100`
-
-</details>
-
-<details>
-<summary><strong>ph_range</strong></summary>
-
-**Description:** pH range considered
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:ph_range`
-
-</details>
-
-<details>
-<summary><strong>potential_range</strong></summary>
-
-**Description:** Potential range considered
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:potential_range`
-
-</details>
-
-<details>
-<summary><strong>solvation_model</strong></summary>
-
-**Description:** Solvation model used
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:solvation_model`
-
-</details>
-
-<details>
-<summary><strong>ionic_strength</strong></summary>
-
-**Description:** Ionic strength of solution
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:ionic_strength`
-
-**Unit:** mol/L
-
-</details>
-
-<details>
-<summary><strong>temperature</strong></summary>
-
-**Description:** Temperature
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `AFR:0001584`
-
-**Unit:** Cel
-
-</details>
-
-</details>
-
-<details>
-<summary>###### GrainBoundaries</summary>
-
-**Description:** Grain boundaries property
-
-**URI:** `catcore:GrainBoundaries`
-
-#### Slots (9)
-
-<details>
-<summary><strong>identifier</strong></summary>
-
-**Description:** Unique identifier for the entity
-
-**Range:** string
-
-**Multivalued:** No
-
-**URI:** `catcore:identifier`
-
-</details>
-
-<details>
-<summary><strong>material_composition</strong></summary>
-
-**Description:** Material composition
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:material_composition`
-
-</details>
-
-<details>
-<summary><strong>grain_boundary_plane</strong></summary>
-
-**Description:** Grain boundary plane
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:grain_boundary_plane`
-
-</details>
-
-<details>
-<summary><strong>misorientation_angle</strong></summary>
-
-**Description:** Misorientation angle
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:misorientation_angle`
-
-**Unit:** deg
-
-</details>
-
-<details>
-<summary><strong>grain_boundary_energy</strong></summary>
-
-**Description:** Grain boundary energy
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:grain_boundary_energy`
-
-**Unit:** J/m2
-
-</details>
-
-<details>
-<summary><strong>simulation_cell_size</strong></summary>
-
-**Description:** Simulation cell size
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:simulation_cell_size`
-
-</details>
-
-<details>
-<summary><strong>gb_excess_volume</strong></summary>
-
-**Description:** GB excess volume
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:gb_excess_volume`
-
-</details>
-
-<details>
-<summary><strong>gb_structural_units</strong></summary>
-
-**Description:** GB structural units description
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:gb_structural_units`
-
-</details>
-
-<details>
-<summary><strong>charge_defect_segregation</strong></summary>
-
-**Description:** Charge or defect segregation data
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:charge_defect_segregation`
-
-</details>
-
-</details>
-
-<details>
-<summary>###### ElectronicStructure</summary>
-
-**Description:** Electronic structure property
-
-**URI:** `catcore:ElectronicStructure`
-
-#### Slots (9)
-
-<details>
-<summary><strong>identifier</strong></summary>
-
-**Description:** Unique identifier for the entity
-
-**Range:** string
-
-**Multivalued:** No
-
-**URI:** `catcore:identifier`
-
-</details>
-
-<details>
-<summary><strong>material_composition</strong></summary>
-
-**Description:** Material composition
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:material_composition`
-
-</details>
-
-<details>
-<summary><strong>crystal_structure</strong></summary>
-
-**Description:** Crystal structure (space group, lattice parameters)
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `SIO:001100`
-
-</details>
-
-<details>
-<summary><strong>k_point_mesh</strong></summary>
-
-**Description:** k-point mesh for sampling
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:k_point_mesh`
-
-</details>
-
-<details>
-<summary><strong>energy_cutoff</strong></summary>
-
-**Description:** Energy cutoff for plane wave basis
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:energy_cutoff`
-
-**Unit:** eV
-
-</details>
-
-<details>
-<summary><strong>smearing_method</strong></summary>
-
-**Description:** Smearing method and width
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:smearing_method`
-
-</details>
-
-<details>
-<summary><strong>spin_polarized</strong></summary>
-
-**Description:** Spin-polarized calculation
-
-**Range:** boolean
-
-**Multivalued:** Yes
-
-**URI:** `catcore:spin_polarized`
-
-</details>
-
-<details>
-<summary><strong>band_path</strong></summary>
-
-**Description:** Band path used
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:band_path`
-
-</details>
-
-<details>
-<summary><strong>fermi_energy</strong></summary>
-
-**Description:** Fermi energy
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:fermi_energy`
-
-**Unit:** eV
-
-</details>
-
-</details>
-
-<details>
-<summary>###### Ferroelectrics</summary>
-
-**Description:** Ferroelectric property
-
-**URI:** `catcore:Ferroelectrics`
-
-#### Slots (9)
-
-<details>
-<summary><strong>identifier</strong></summary>
-
-**Description:** Unique identifier for the entity
-
-**Range:** string
-
-**Multivalued:** No
-
-**URI:** `catcore:identifier`
-
-</details>
-
-<details>
-<summary><strong>material_composition</strong></summary>
-
-**Description:** Material composition
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:material_composition`
-
-</details>
-
-<details>
-<summary><strong>crystal_structure</strong></summary>
-
-**Description:** Crystal structure (space group, lattice parameters)
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `SIO:001100`
-
-</details>
-
-<details>
-<summary><strong>polarization_direction</strong></summary>
-
-**Description:** Polarization direction
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:polarization_direction`
-
-</details>
-
-<details>
-<summary><strong>spontaneous_polarization</strong></summary>
-
-**Description:** Spontaneous polarization magnitude
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:spontaneous_polarization`
-
-**Unit:** uC/cm2
-
-</details>
-
-<details>
-<summary><strong>reference_structure</strong></summary>
-
-**Description:** Reference paraelectric structure
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:reference_structure`
-
-</details>
-
-<details>
-<summary><strong>switching_barrier</strong></summary>
-
-**Description:** Switching barrier
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:switching_barrier`
-
-**Unit:** eV
-
-</details>
-
-<details>
-<summary><strong>coercive_field</strong></summary>
-
-**Description:** Coercive field
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:coercive_field`
-
-**Unit:** kV/cm
-
-</details>
-
-<details>
-<summary><strong>temperature_dependence</strong></summary>
-
-**Description:** Temperature dependence
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:temperature_dependence`
-
-</details>
-
-</details>
-
-<details>
-<summary>###### BandGap</summary>
-
-**Description:** Band gap property
-
-**URI:** `catcore:BandGap`
-
-#### Slots (9)
-
-<details>
-<summary><strong>identifier</strong></summary>
-
-**Description:** Unique identifier for the entity
-
-**Range:** string
-
-**Multivalued:** No
-
-**URI:** `catcore:identifier`
-
-</details>
-
-<details>
-<summary><strong>material_sample</strong></summary>
-
-**Description:** Material sample
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `voc4cat:0005056`
-
-</details>
-
-<details>
-<summary><strong>structure_model</strong></summary>
-
-**Description:** Structure or model used
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:structure_model`
-
-</details>
-
-<details>
-<summary><strong>k_point_mesh</strong></summary>
-
-**Description:** k-point mesh for sampling
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:k_point_mesh`
-
-</details>
-
-<details>
-<summary><strong>smearing_broadening</strong></summary>
-
-**Description:** Smearing or broadening parameter
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:smearing_broadening`
-
-**Unit:** eV
-
-</details>
-
-<details>
-<summary><strong>direct_indirect</strong></summary>
-
-**Description:** Direct or indirect band gap
-
-**Range:** string
-
-**Multivalued:** Yes
-
-**URI:** `catcore:direct_indirect`
-
-</details>
-
-<details>
-<summary><strong>experimental_reference</strong></summary>
-
-**Description:** Experimental reference value
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:experimental_reference`
-
-**Unit:** eV
-
-</details>
-
-<details>
-<summary><strong>gw_hybrid_correction</strong></summary>
-
-**Description:** GW or hybrid correction used
-
-**Range:** boolean
-
-**Multivalued:** Yes
-
-**URI:** `catcore:gw_hybrid_correction`
-
-</details>
-
-<details>
-<summary><strong>excitonic_correction</strong></summary>
-
-**Description:** Excitonic correction applied
-
-**Range:** float
-
-**Multivalued:** Yes
-
-**URI:** `catcore:excitonic_correction`
-
-**Unit:** eV
-
-</details>
-
-</details>
-
-</details>
-
-#### Slot Usage
-
-- **software_package**: Required
-- **simulation_method**: Required
-- **calculated_property**: Required
-
+<p><strong>Schema Reference:</strong> <a href="https://w3id.org/nfdi4cat/catcore/elements/Simulation">Simulation</a></p>
+<h2 id="slots">Slots</h2>
+<details>
+<summary><strong>software package (Required, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Software or package used for simulation</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:software_package"><code>catcore:software_package</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/software_package.md">software_package</a></p>
+</details>
+<details>
+<summary><strong>simulation method (Required, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Simulation method used</p>
+<p><strong>Range:</strong> SimulationMethod</p>
+<p><strong>URI:</strong> <a href="catcore:simulation_method"><code>catcore:simulation_method</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/simulation_method.md">simulation_method</a></p>
+<p><strong>Range Class Details:</strong></p>
+<details>
+<summary><strong>SimulationMethod</strong></summary>
+<p><strong>Abstract Class</strong></p>
+<p><strong>Description:</strong> Simulation method used</p>
+<p><strong>Schema Reference:</strong> <a href="/elements/SimulationMethod.md">SimulationMethod</a></p>
+</details>
+<p><strong>Subclasses of SimulationMethod:</strong></p>
+<details>
+<summary><strong>DFT</strong></summary>
+<p><strong>Description:</strong> Density functional theory</p>
+<p><strong>URI:</strong> <a href="catcore:DFT"><code>catcore:DFT</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/DFT.md">DFT</a></p>
+<p><strong>Slots</strong></p>
+<details>
+<summary><strong>exchange correlation functional (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Exchange-correlation functional used (e.g., PBE, B3LYP)</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:exchange_correlation_functional"><code>catcore:exchange_correlation_functional</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/exchange_correlation_functional.md">exchange_correlation_functional</a></p>
+</details>
+<details>
+<summary><strong>energy cutoff (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Energy cutoff for plane wave basis</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:energy_cutoff"><code>catcore:energy_cutoff</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/energy_cutoff.md">energy_cutoff</a></p>
+<p><strong>Unit:</strong> eV</p>
+</details>
+<details>
+<summary><strong>convergence criteria (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Convergence criteria (e.g., energy, force)</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:convergence_criteria"><code>catcore:convergence_criteria</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/convergence_criteria.md">convergence_criteria</a></p>
+</details>
+<details>
+<summary><strong>dft u parameters (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> DFT+U parameters used</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:dft_u_parameters"><code>catcore:dft_u_parameters</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/dft_u_parameters.md">dft_u_parameters</a></p>
+</details>
+<details>
+<summary><strong>spin polarization (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Spin polarization setting</p>
+<p><strong>Range:</strong> boolean</p>
+<p><strong>URI:</strong> <a href="catcore:spin_polarization"><code>catcore:spin_polarization</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/spin_polarization.md">spin_polarization</a></p>
+</details>
+<details>
+<summary><strong>total energy per atom (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Total energy per atom</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:total_energy_per_atom"><code>catcore:total_energy_per_atom</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/total_energy_per_atom.md">total_energy_per_atom</a></p>
+<p><strong>Unit:</strong> eV</p>
+</details>
+</details>
+<details>
+<summary><strong>MolecularDynamics</strong></summary>
+<p><strong>Description:</strong> Molecular dynamics</p>
+<p><strong>URI:</strong> <a href="NCIT:C18097"><code>NCIT:C18097</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/MolecularDynamics.md">MolecularDynamics</a></p>
+<p><strong>Slots</strong></p>
+<details>
+<summary><strong>force field (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Force field used</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:force_field"><code>catcore:force_field</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/force_field.md">force_field</a></p>
+</details>
+<details>
+<summary><strong>simulation timestep (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Time step for simulation</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="APOLLO_SV:00000012"><code>APOLLO_SV:00000012</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/simulation_timestep.md">simulation_timestep</a></p>
+<p><strong>Unit:</strong> fs</p>
+</details>
+<details>
+<summary><strong>simulation time (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Total simulation time</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:simulation_time"><code>catcore:simulation_time</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/simulation_time.md">simulation_time</a></p>
+<p><strong>Unit:</strong> ps</p>
+</details>
+<details>
+<summary><strong>ensemble type (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Ensemble type (e.g., NVT, NPT)</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:ensemble_type"><code>catcore:ensemble_type</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/ensemble_type.md">ensemble_type</a></p>
+</details>
+<details>
+<summary><strong>number of atoms (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Number of atoms in simulation</p>
+<p><strong>Range:</strong> integer</p>
+<p><strong>URI:</strong> <a href="catcore:number_of_atoms"><code>catcore:number_of_atoms</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/number_of_atoms.md">number_of_atoms</a></p>
+</details>
+</details>
+<details>
+<summary><strong>Microkinetics</strong></summary>
+<p><strong>Description:</strong> Microkinetics simulation</p>
+<p><strong>URI:</strong> <a href="catcore:Microkinetics"><code>catcore:Microkinetics</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/Microkinetics.md">Microkinetics</a></p>
+<p><strong>Slots</strong></p>
+<details>
+<summary><strong>rate constants (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Rate constants or Arrhenius parameters</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="NCIT:C94967"><code>NCIT:C94967</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/rate_constants.md">rate_constants</a></p>
+</details>
+<details>
+<summary><strong>solver type (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Type of solver used</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:solver_type"><code>catcore:solver_type</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/solver_type.md">solver_type</a></p>
+</details>
+<details>
+<summary><strong>temperature (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Temperature</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="AFR:0001584"><code>AFR:0001584</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/temperature.md">temperature</a></p>
+<p><strong>Unit:</strong> Cel</p>
+</details>
+<details>
+<summary><strong>pressure (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Pressure in simulation</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:pressure"><code>catcore:pressure</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/pressure.md">pressure</a></p>
+<p><strong>Unit:</strong> bar</p>
+</details>
+<details>
+<summary><strong>surface coverage (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Surface coverage of species</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:surface_coverage"><code>catcore:surface_coverage</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/surface_coverage.md">surface_coverage</a></p>
+</details>
+<details>
+<summary><strong>activation energy (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Activation energy for each step</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:activation_energy"><code>catcore:activation_energy</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/activation_energy.md">activation_energy</a></p>
+<p><strong>Unit:</strong> eV</p>
+</details>
+</details>
+<details>
+<summary><strong>MonteCarlo</strong></summary>
+<p><strong>Description:</strong> Monte Carlo simulation</p>
+<p><strong>URI:</strong> <a href="catcore:MonteCarlo"><code>catcore:MonteCarlo</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/MonteCarlo.md">MonteCarlo</a></p>
+<p><strong>Slots</strong></p>
+<details>
+<summary><strong>interaction potential (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Interaction potential used</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:interaction_potential"><code>catcore:interaction_potential</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/interaction_potential.md">interaction_potential</a></p>
+</details>
+<details>
+<summary><strong>number of steps (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Number of Monte Carlo steps</p>
+<p><strong>Range:</strong> integer</p>
+<p><strong>URI:</strong> <a href="catcore:number_of_steps"><code>catcore:number_of_steps</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/number_of_steps.md">number_of_steps</a></p>
+</details>
+<details>
+<summary><strong>temperature (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Temperature</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="AFR:0001584"><code>AFR:0001584</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/temperature.md">temperature</a></p>
+<p><strong>Unit:</strong> Cel</p>
+</details>
+<details>
+<summary><strong>lattice size type (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Lattice size and type</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:lattice_size_type"><code>catcore:lattice_size_type</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/lattice_size_type.md">lattice_size_type</a></p>
+</details>
+<details>
+<summary><strong>acceptance criteria (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Acceptance criteria for Monte Carlo moves</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:acceptance_criteria"><code>catcore:acceptance_criteria</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/acceptance_criteria.md">acceptance_criteria</a></p>
+</details>
+<details>
+<summary><strong>equilibration steps (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Number of equilibration steps</p>
+<p><strong>Range:</strong> integer</p>
+<p><strong>URI:</strong> <a href="catcore:equilibration_steps"><code>catcore:equilibration_steps</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/equilibration_steps.md">equilibration_steps</a></p>
+</details>
+<details>
+<summary><strong>sampling interval (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Sampling interval for data collection</p>
+<p><strong>Range:</strong> integer</p>
+<p><strong>URI:</strong> <a href="catcore:sampling_interval"><code>catcore:sampling_interval</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/sampling_interval.md">sampling_interval</a></p>
+</details>
+</details>
+</details>
+<details>
+<summary><strong>calculated property (Required, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Property calculated from simulation</p>
+<p><strong>Range:</strong> CalculatedProperty</p>
+<p><strong>URI:</strong> <a href="catcore:calculated_property"><code>catcore:calculated_property</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/calculated_property.md">calculated_property</a></p>
+<p><strong>Range Class Details:</strong></p>
+<details>
+<summary><strong>CalculatedProperty</strong></summary>
+<p><strong>Abstract Class</strong></p>
+<p><strong>Description:</strong> Property calculated from simulation</p>
+<p><strong>Schema Reference:</strong> <a href="/elements/CalculatedProperty.md">CalculatedProperty</a></p>
+</details>
+<p><strong>Subclasses of CalculatedProperty:</strong></p>
+<details>
+<summary><strong>ThermodynamicStability</strong></summary>
+<p><strong>Description:</strong> Thermodynamic stability property</p>
+<p><strong>URI:</strong> <a href="catcore:ThermodynamicStability"><code>catcore:ThermodynamicStability</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/ThermodynamicStability.md">ThermodynamicStability</a></p>
+<p><strong>Slots</strong></p>
+<details>
+<summary><strong>formation energy (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Formation energy per atom</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:formation_energy"><code>catcore:formation_energy</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/formation_energy.md">formation_energy</a></p>
+<p><strong>Unit:</strong> eV</p>
+</details>
+<details>
+<summary><strong>reference energies (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Reference elemental energies</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:reference_energies"><code>catcore:reference_energies</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/reference_energies.md">reference_energies</a></p>
+</details>
+<details>
+<summary><strong>energy above hull (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Energy above convex hull</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:energy_above_hull"><code>catcore:energy_above_hull</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/energy_above_hull.md">energy_above_hull</a></p>
+<p><strong>Unit:</strong> eV</p>
+</details>
+<details>
+<summary><strong>phase diagram type (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Phase diagram type (e.g., binary, ternary)</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:phase_diagram_type"><code>catcore:phase_diagram_type</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/phase_diagram_type.md">phase_diagram_type</a></p>
+</details>
+<details>
+<summary><strong>competing phases (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Competing phase list</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:competing_phases"><code>catcore:competing_phases</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/competing_phases.md">competing_phases</a></p>
+</details>
+</details>
+<details>
+<summary><strong>Piezoelectricity</strong></summary>
+<p><strong>Description:</strong> Piezoelectricity property</p>
+<p><strong>URI:</strong> <a href="catcore:Piezoelectricity"><code>catcore:Piezoelectricity</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/Piezoelectricity.md">Piezoelectricity</a></p>
+<p><strong>Slots</strong></p>
+<details>
+<summary><strong>piezoelectric tensor (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Piezoelectric tensor components</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:piezoelectric_tensor"><code>catcore:piezoelectric_tensor</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/piezoelectric_tensor.md">piezoelectric_tensor</a></p>
+</details>
+<details>
+<summary><strong>crystal symmetry (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Crystal symmetry</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:crystal_symmetry"><code>catcore:crystal_symmetry</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/crystal_symmetry.md">crystal_symmetry</a></p>
+</details>
+<details>
+<summary><strong>strain applied (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Strain applied</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:strain_applied"><code>catcore:strain_applied</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/strain_applied.md">strain_applied</a></p>
+</details>
+<details>
+<summary><strong>ionic electronic contributions (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Ionic and electronic contributions</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:ionic_electronic_contributions"><code>catcore:ionic_electronic_contributions</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/ionic_electronic_contributions.md">ionic_electronic_contributions</a></p>
+</details>
+</details>
+<details>
+<summary><strong>ElasticConstants</strong></summary>
+<p><strong>Description:</strong> Elastic constants property</p>
+<p><strong>URI:</strong> <a href="catcore:ElasticConstants"><code>catcore:ElasticConstants</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/ElasticConstants.md">ElasticConstants</a></p>
+<p><strong>Slots</strong></p>
+<details>
+<summary><strong>elastic tensor (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Elastic tensor components</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:elastic_tensor"><code>catcore:elastic_tensor</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/elastic_tensor.md">elastic_tensor</a></p>
+</details>
+<details>
+<summary><strong>bulk modulus (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Bulk modulus</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:bulk_modulus"><code>catcore:bulk_modulus</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/bulk_modulus.md">bulk_modulus</a></p>
+<p><strong>Unit:</strong> GPa</p>
+</details>
+<details>
+<summary><strong>shear modulus (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Shear modulus</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:shear_modulus"><code>catcore:shear_modulus</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/shear_modulus.md">shear_modulus</a></p>
+<p><strong>Unit:</strong> GPa</p>
+</details>
+<details>
+<summary><strong>poisson ratio (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Poisson's ratio</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:poisson_ratio"><code>catcore:poisson_ratio</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/poisson_ratio.md">poisson_ratio</a></p>
+</details>
+<details>
+<summary><strong>young modulus (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Young's modulus</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:young_modulus"><code>catcore:young_modulus</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/young_modulus.md">young_modulus</a></p>
+<p><strong>Unit:</strong> GPa</p>
+</details>
+</details>
+<details>
+<summary><strong>Surfaces</strong></summary>
+<p><strong>Description:</strong> Surface property</p>
+<p><strong>URI:</strong> <a href="catcore:Surfaces"><code>catcore:Surfaces</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/Surfaces.md">Surfaces</a></p>
+<p><strong>Slots</strong></p>
+<details>
+<summary><strong>surface energy (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Surface energy</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:surface_energy"><code>catcore:surface_energy</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/surface_energy.md">surface_energy</a></p>
+<p><strong>Unit:</strong> J/m2</p>
+</details>
+<details>
+<summary><strong>miller indices (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Miller indices of surface</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:miller_indices"><code>catcore:miller_indices</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/miller_indices.md">miller_indices</a></p>
+</details>
+<details>
+<summary><strong>slab thickness (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Slab thickness</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:slab_thickness"><code>catcore:slab_thickness</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/slab_thickness.md">slab_thickness</a></p>
+<p><strong>Unit:</strong> angstrom</p>
+</details>
+<details>
+<summary><strong>vacuum spacing (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Vacuum spacing</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:vacuum_spacing"><code>catcore:vacuum_spacing</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/vacuum_spacing.md">vacuum_spacing</a></p>
+<p><strong>Unit:</strong> angstrom</p>
+</details>
+<details>
+<summary><strong>surface termination method (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Surface termination method</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:surface_termination_method"><code>catcore:surface_termination_method</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/surface_termination_method.md">surface_termination_method</a></p>
+</details>
+</details>
+<details>
+<summary><strong>DielectricTensors</strong></summary>
+<p><strong>Description:</strong> Dielectric tensors property</p>
+<p><strong>URI:</strong> <a href="catcore:DielectricTensors"><code>catcore:DielectricTensors</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/DielectricTensors.md">DielectricTensors</a></p>
+<p><strong>Slots</strong></p>
+<details>
+<summary><strong>material composition (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Material composition</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:material_composition"><code>catcore:material_composition</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/material_composition.md">material_composition</a></p>
+</details>
+<details>
+<summary><strong>crystal structure (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Crystal structure (space group, lattice parameters)</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="SIO:001100"><code>SIO:001100</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/crystal_structure.md">crystal_structure</a></p>
+</details>
+<details>
+<summary><strong>energy cutoff (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Energy cutoff for plane wave basis</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:energy_cutoff"><code>catcore:energy_cutoff</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/energy_cutoff.md">energy_cutoff</a></p>
+<p><strong>Unit:</strong> eV</p>
+</details>
+<details>
+<summary><strong>convergence criteria (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Convergence criteria (e.g., energy, force)</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:convergence_criteria"><code>catcore:convergence_criteria</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/convergence_criteria.md">convergence_criteria</a></p>
+</details>
+<details>
+<summary><strong>k point mesh (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> k-point mesh for sampling</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:k_point_mesh"><code>catcore:k_point_mesh</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/k_point_mesh.md">k_point_mesh</a></p>
+</details>
+</details>
+<details>
+<summary><strong>PhononDispersion</strong></summary>
+<p><strong>Description:</strong> Phonon dispersion property</p>
+<p><strong>URI:</strong> <a href="catcore:PhononDispersion"><code>catcore:PhononDispersion</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/PhononDispersion.md">PhononDispersion</a></p>
+<p><strong>Slots</strong></p>
+<details>
+<summary><strong>material composition (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Material composition</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:material_composition"><code>catcore:material_composition</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/material_composition.md">material_composition</a></p>
+</details>
+<details>
+<summary><strong>crystal structure (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Crystal structure (space group, lattice parameters)</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="SIO:001100"><code>SIO:001100</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/crystal_structure.md">crystal_structure</a></p>
+</details>
+<details>
+<summary><strong>force constant method (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Force constant calculation method</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:force_constant_method"><code>catcore:force_constant_method</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/force_constant_method.md">force_constant_method</a></p>
+</details>
+<details>
+<summary><strong>kq point mesh (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> k/q-point mesh for phonons</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:kq_point_mesh"><code>catcore:kq_point_mesh</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/kq_point_mesh.md">kq_point_mesh</a></p>
+</details>
+<details>
+<summary><strong>smearing parameter (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Smearing/broadening parameter</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:smearing_parameter"><code>catcore:smearing_parameter</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/smearing_parameter.md">smearing_parameter</a></p>
+<p><strong>Unit:</strong> eV</p>
+</details>
+<details>
+<summary><strong>imaginary modes (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Imaginary modes present</p>
+<p><strong>Range:</strong> boolean</p>
+<p><strong>URI:</strong> <a href="catcore:imaginary_modes"><code>catcore:imaginary_modes</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/imaginary_modes.md">imaginary_modes</a></p>
+</details>
+</details>
+<details>
+<summary><strong>EquationsOfState</strong></summary>
+<p><strong>Description:</strong> Equations of state property</p>
+<p><strong>URI:</strong> <a href="catcore:EquationsOfState"><code>catcore:EquationsOfState</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/EquationsOfState.md">EquationsOfState</a></p>
+<p><strong>Slots</strong></p>
+<details>
+<summary><strong>material composition (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Material composition</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:material_composition"><code>catcore:material_composition</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/material_composition.md">material_composition</a></p>
+</details>
+<details>
+<summary><strong>crystal structure (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Crystal structure (space group, lattice parameters)</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="SIO:001100"><code>SIO:001100</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/crystal_structure.md">crystal_structure</a></p>
+</details>
+<details>
+<summary><strong>fit method (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Fit method (e.g., Birch-Murnaghan, Vinet)</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:fit_method"><code>catcore:fit_method</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/fit_method.md">fit_method</a></p>
+</details>
+<details>
+<summary><strong>energy cutoff (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Energy cutoff for plane wave basis</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:energy_cutoff"><code>catcore:energy_cutoff</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/energy_cutoff.md">energy_cutoff</a></p>
+<p><strong>Unit:</strong> eV</p>
+</details>
+<details>
+<summary><strong>k point mesh (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> k-point mesh for sampling</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:k_point_mesh"><code>catcore:k_point_mesh</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/k_point_mesh.md">k_point_mesh</a></p>
+</details>
+<details>
+<summary><strong>bulk modulus (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Bulk modulus</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:bulk_modulus"><code>catcore:bulk_modulus</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/bulk_modulus.md">bulk_modulus</a></p>
+<p><strong>Unit:</strong> GPa</p>
+</details>
+<details>
+<summary><strong>pressure derivative (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Pressure derivative of bulk modulus</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:pressure_derivative"><code>catcore:pressure_derivative</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/pressure_derivative.md">pressure_derivative</a></p>
+</details>
+<details>
+<summary><strong>fit residuals (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Residuals of fit</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:fit_residuals"><code>catcore:fit_residuals</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/fit_residuals.md">fit_residuals</a></p>
+</details>
+</details>
+<details>
+<summary><strong>AqueousStability</strong></summary>
+<p><strong>Description:</strong> Aqueous stability property</p>
+<p><strong>URI:</strong> <a href="catcore:AqueousStability"><code>catcore:AqueousStability</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/AqueousStability.md">AqueousStability</a></p>
+<p><strong>Slots</strong></p>
+<details>
+<summary><strong>material composition (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Material composition</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:material_composition"><code>catcore:material_composition</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/material_composition.md">material_composition</a></p>
+</details>
+<details>
+<summary><strong>crystal structure (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Crystal structure (space group, lattice parameters)</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="SIO:001100"><code>SIO:001100</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/crystal_structure.md">crystal_structure</a></p>
+</details>
+<details>
+<summary><strong>ph range (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> pH range considered</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:ph_range"><code>catcore:ph_range</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/ph_range.md">ph_range</a></p>
+</details>
+<details>
+<summary><strong>potential range (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Potential range considered</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:potential_range"><code>catcore:potential_range</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/potential_range.md">potential_range</a></p>
+</details>
+<details>
+<summary><strong>solvation model (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Solvation model used</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:solvation_model"><code>catcore:solvation_model</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/solvation_model.md">solvation_model</a></p>
+</details>
+<details>
+<summary><strong>ionic strength (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Ionic strength of solution</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:ionic_strength"><code>catcore:ionic_strength</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/ionic_strength.md">ionic_strength</a></p>
+<p><strong>Unit:</strong> mol/L</p>
+</details>
+<details>
+<summary><strong>temperature (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Temperature</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="AFR:0001584"><code>AFR:0001584</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/temperature.md">temperature</a></p>
+<p><strong>Unit:</strong> Cel</p>
+</details>
+</details>
+<details>
+<summary><strong>GrainBoundaries</strong></summary>
+<p><strong>Description:</strong> Grain boundaries property</p>
+<p><strong>URI:</strong> <a href="catcore:GrainBoundaries"><code>catcore:GrainBoundaries</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/GrainBoundaries.md">GrainBoundaries</a></p>
+<p><strong>Slots</strong></p>
+<details>
+<summary><strong>material composition (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Material composition</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:material_composition"><code>catcore:material_composition</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/material_composition.md">material_composition</a></p>
+</details>
+<details>
+<summary><strong>grain boundary plane (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Grain boundary plane</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:grain_boundary_plane"><code>catcore:grain_boundary_plane</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/grain_boundary_plane.md">grain_boundary_plane</a></p>
+</details>
+<details>
+<summary><strong>misorientation angle (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Misorientation angle</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:misorientation_angle"><code>catcore:misorientation_angle</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/misorientation_angle.md">misorientation_angle</a></p>
+<p><strong>Unit:</strong> deg</p>
+</details>
+<details>
+<summary><strong>grain boundary energy (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Grain boundary energy</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:grain_boundary_energy"><code>catcore:grain_boundary_energy</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/grain_boundary_energy.md">grain_boundary_energy</a></p>
+<p><strong>Unit:</strong> J/m2</p>
+</details>
+<details>
+<summary><strong>simulation cell size (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Simulation cell size</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:simulation_cell_size"><code>catcore:simulation_cell_size</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/simulation_cell_size.md">simulation_cell_size</a></p>
+</details>
+<details>
+<summary><strong>gb excess volume (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> GB excess volume</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:gb_excess_volume"><code>catcore:gb_excess_volume</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/gb_excess_volume.md">gb_excess_volume</a></p>
+</details>
+<details>
+<summary><strong>gb structural units (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> GB structural units description</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:gb_structural_units"><code>catcore:gb_structural_units</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/gb_structural_units.md">gb_structural_units</a></p>
+</details>
+<details>
+<summary><strong>charge defect segregation (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Charge or defect segregation data</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:charge_defect_segregation"><code>catcore:charge_defect_segregation</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/charge_defect_segregation.md">charge_defect_segregation</a></p>
+</details>
+</details>
+<details>
+<summary><strong>ElectronicStructure</strong></summary>
+<p><strong>Description:</strong> Electronic structure property</p>
+<p><strong>URI:</strong> <a href="catcore:ElectronicStructure"><code>catcore:ElectronicStructure</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/ElectronicStructure.md">ElectronicStructure</a></p>
+<p><strong>Slots</strong></p>
+<details>
+<summary><strong>material composition (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Material composition</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:material_composition"><code>catcore:material_composition</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/material_composition.md">material_composition</a></p>
+</details>
+<details>
+<summary><strong>crystal structure (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Crystal structure (space group, lattice parameters)</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="SIO:001100"><code>SIO:001100</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/crystal_structure.md">crystal_structure</a></p>
+</details>
+<details>
+<summary><strong>k point mesh (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> k-point mesh for sampling</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:k_point_mesh"><code>catcore:k_point_mesh</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/k_point_mesh.md">k_point_mesh</a></p>
+</details>
+<details>
+<summary><strong>energy cutoff (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Energy cutoff for plane wave basis</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:energy_cutoff"><code>catcore:energy_cutoff</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/energy_cutoff.md">energy_cutoff</a></p>
+<p><strong>Unit:</strong> eV</p>
+</details>
+<details>
+<summary><strong>smearing method (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Smearing method and width</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:smearing_method"><code>catcore:smearing_method</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/smearing_method.md">smearing_method</a></p>
+</details>
+<details>
+<summary><strong>spin polarized (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Spin-polarized calculation</p>
+<p><strong>Range:</strong> boolean</p>
+<p><strong>URI:</strong> <a href="catcore:spin_polarized"><code>catcore:spin_polarized</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/spin_polarized.md">spin_polarized</a></p>
+</details>
+<details>
+<summary><strong>band path (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Band path used</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:band_path"><code>catcore:band_path</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/band_path.md">band_path</a></p>
+</details>
+<details>
+<summary><strong>fermi energy (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Fermi energy</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:fermi_energy"><code>catcore:fermi_energy</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/fermi_energy.md">fermi_energy</a></p>
+<p><strong>Unit:</strong> eV</p>
+</details>
+</details>
+<details>
+<summary><strong>Ferroelectrics</strong></summary>
+<p><strong>Description:</strong> Ferroelectric property</p>
+<p><strong>URI:</strong> <a href="catcore:Ferroelectrics"><code>catcore:Ferroelectrics</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/Ferroelectrics.md">Ferroelectrics</a></p>
+<p><strong>Slots</strong></p>
+<details>
+<summary><strong>material composition (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Material composition</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:material_composition"><code>catcore:material_composition</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/material_composition.md">material_composition</a></p>
+</details>
+<details>
+<summary><strong>crystal structure (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Crystal structure (space group, lattice parameters)</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="SIO:001100"><code>SIO:001100</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/crystal_structure.md">crystal_structure</a></p>
+</details>
+<details>
+<summary><strong>polarization direction (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Polarization direction</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:polarization_direction"><code>catcore:polarization_direction</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/polarization_direction.md">polarization_direction</a></p>
+</details>
+<details>
+<summary><strong>spontaneous polarization (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Spontaneous polarization magnitude</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:spontaneous_polarization"><code>catcore:spontaneous_polarization</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/spontaneous_polarization.md">spontaneous_polarization</a></p>
+<p><strong>Unit:</strong> uC/cm2</p>
+</details>
+<details>
+<summary><strong>reference structure (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Reference paraelectric structure</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:reference_structure"><code>catcore:reference_structure</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/reference_structure.md">reference_structure</a></p>
+</details>
+<details>
+<summary><strong>switching barrier (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Switching barrier</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:switching_barrier"><code>catcore:switching_barrier</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/switching_barrier.md">switching_barrier</a></p>
+<p><strong>Unit:</strong> eV</p>
+</details>
+<details>
+<summary><strong>coercive field (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Coercive field</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:coercive_field"><code>catcore:coercive_field</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/coercive_field.md">coercive_field</a></p>
+<p><strong>Unit:</strong> kV/cm</p>
+</details>
+<details>
+<summary><strong>temperature dependence (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Temperature dependence</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:temperature_dependence"><code>catcore:temperature_dependence</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/temperature_dependence.md">temperature_dependence</a></p>
+</details>
+</details>
+<details>
+<summary><strong>BandGap</strong></summary>
+<p><strong>Description:</strong> Band gap property</p>
+<p><strong>URI:</strong> <a href="catcore:BandGap"><code>catcore:BandGap</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/BandGap.md">BandGap</a></p>
+<p><strong>Slots</strong></p>
+<details>
+<summary><strong>material sample (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Material sample</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="voc4cat:0005056"><code>voc4cat:0005056</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/material_sample.md">material_sample</a></p>
+</details>
+<details>
+<summary><strong>structure model (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Structure or model used</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:structure_model"><code>catcore:structure_model</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/structure_model.md">structure_model</a></p>
+</details>
+<details>
+<summary><strong>k point mesh (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> k-point mesh for sampling</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:k_point_mesh"><code>catcore:k_point_mesh</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/k_point_mesh.md">k_point_mesh</a></p>
+</details>
+<details>
+<summary><strong>smearing broadening (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Smearing or broadening parameter</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:smearing_broadening"><code>catcore:smearing_broadening</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/smearing_broadening.md">smearing_broadening</a></p>
+<p><strong>Unit:</strong> eV</p>
+</details>
+<details>
+<summary><strong>direct indirect (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Direct or indirect band gap</p>
+<p><strong>Range:</strong> string</p>
+<p><strong>URI:</strong> <a href="catcore:direct_indirect"><code>catcore:direct_indirect</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/direct_indirect.md">direct_indirect</a></p>
+</details>
+<details>
+<summary><strong>experimental reference (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Experimental reference value</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:experimental_reference"><code>catcore:experimental_reference</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/experimental_reference.md">experimental_reference</a></p>
+<p><strong>Unit:</strong> eV</p>
+</details>
+<details>
+<summary><strong>gw hybrid correction (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> GW or hybrid correction used</p>
+<p><strong>Range:</strong> boolean</p>
+<p><strong>URI:</strong> <a href="catcore:gw_hybrid_correction"><code>catcore:gw_hybrid_correction</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/gw_hybrid_correction.md">gw_hybrid_correction</a></p>
+</details>
+<details>
+<summary><strong>excitonic correction (Optional, Multivalued)</strong></summary>
+<p><strong>Description:</strong> Excitonic correction applied</p>
+<p><strong>Range:</strong> float</p>
+<p><strong>URI:</strong> <a href="catcore:excitonic_correction"><code>catcore:excitonic_correction</code></a></p>
+<p><strong>Schema Reference:</strong> <a href="/elements/excitonic_correction.md">excitonic_correction</a></p>
+<p><strong>Unit:</strong> eV</p>
+</details>
+</details>
 </details>
 
 
