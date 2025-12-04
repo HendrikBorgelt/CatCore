@@ -40,6 +40,15 @@ prefixes:
   linkml:
     prefix_prefix: linkml
     prefix_reference: https://w3id.org/linkml/
+  AFRL:
+    prefix_prefix: AFRL
+    prefix_reference: http://purl.allotrope.org/ontologies/role#AFRL_
+  APOLLO_SV:
+    prefix_prefix: APOLLO_SV
+    prefix_reference: http://purl.obolibrary.org/obo/APOLLO_SV_
+  SIO:
+    prefix_prefix: SIO
+    prefix_reference: http://semanticscience.org/resource/SIO_
 default_prefix: catcore
 default_range: string
 types:
@@ -6658,7 +6667,7 @@ classes:
     class_uri: catcore:BandGap
 metamodel_version: 1.7.0
 source_file: catcore.yaml
-source_file_date: '2025-12-04T12:33:48'
-source_file_size: 79794
-generation_date: '2025-12-04T12:33:56'
+source_file_date: '2025-12-04T13:15:18'
+source_file_size: 79953
+generation_date: '2025-12-04T13:15:27'
 
