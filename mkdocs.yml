@@ -32,6 +32,9 @@ nav:
 exclude_docs: |
   /templates-linkml/
 
+extra_css:
+  - stylesheets/no-details-box.css
+
 site_url: https://HendrikBorgelt.github.io/CatCore
 repo_url: https://github.com/HendrikBorgelt/CatCore
 
@@ -41,3 +44,7 @@ repo_url: https://github.com/HendrikBorgelt/CatCore
 #   analytics:
 #     provider: google
 #     property: G-XXXXXXXXXX
+
+markdown_extensions:
+  - md_in_html
+  - admonition
