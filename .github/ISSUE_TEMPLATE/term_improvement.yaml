@@ -1,0 +1,28 @@
+name: 🙋 Request a range of IDs
+description: To change terms and improve terms
+title: "🙋 Term Improvment"
+labels: []
+assignees: []
+body:
+- type: markdown
+  id: intro
+  attributes:
+    value: >
+      We want to get feedback from the community to optimise the metadata collection, so please tell us what you deem changeworthy.
+- type: input
+  id: Attribute
+  attributes:
+    label: What do you want to optimize? Type in General, Range, Cardinality a.s.o.
+- type: textarea
+  id: Requested Changes
+  attributes:
+    label: Please just tell us only what you want to change
+- type: textarea
+  id: Reason
+  attributes:
+    label: Please tell us why you request these changes
+- type: textarea
+  id: message
+  attributes:
+    label: Additional information.
+    description: Optionally tell us more about your plans.

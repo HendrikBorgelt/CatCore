@@ -26,13 +26,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Required, Multivalued)
+**Cardinality:**  Required, Multivalued
 
 **CURIE:** [`voc4cat:0000187`](https://w3id.org/nfdi4cat/voc4cat_0000187)
 
 **Schema Reference:** [equipment](./elements/equipment.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20equipment" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>characterization technique</strong> (Required, Multivalued)</summary>
@@ -41,7 +45,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** CharacterizationTechnique
 
-**Cardinality:**  (Required, Multivalued)
+**Cardinality:**  Required, Multivalued
 
 **CURIE:** [`voc4cat:0000066`](https://w3id.org/nfdi4cat/voc4cat_0000066)
 
@@ -56,7 +60,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Characterization technique used for catalyst analysis
 
-**Schema Reference:** [CharacterizationTechnique](./elements/CharacterizationTechnique.md)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20CharacterizationTechnique" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**Schema Reference:** [CharacterizationTechnique](./elements/CharacterizationTechnique.md)
 
 </details>
 
@@ -67,7 +75,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Powder X-ray diffraction
 
-**CURIE:** [`CHMO:0000158`](http://purl.obolibrary.org/obo/CHMO_0000158)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20PowderXRD" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`CHMO:0000158`](http://purl.obolibrary.org/obo/CHMO_0000158)
 
 **Schema Reference:** [PowderXRD](./elements/PowderXRD.md)
 
@@ -80,13 +92,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`OBI:0001138`](http://purl.obolibrary.org/obo/OBI_0001138)
 
 **Schema Reference:** [xray_source](./elements/xray_source.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20xray_source" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>atmosphere</strong> (Optional, Multivalued)</summary>
@@ -95,13 +111,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:atmosphere`](https://w3id.org/nfdi4cat/catcore/atmosphere)
 
 **Schema Reference:** [atmosphere](./elements/atmosphere.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20atmosphere" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>operation mode</strong> (Optional, Multivalued)</summary>
@@ -110,13 +130,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0000108`](https://w3id.org/nfdi4cat/voc4cat_0000108)
 
 **Schema Reference:** [operation_mode](./elements/operation_mode.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20operation_mode" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>minimum 2theta</strong> (Optional, Multivalued)</summary>
@@ -125,7 +149,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:minimum_2theta`](https://w3id.org/nfdi4cat/catcore/minimum_2theta)
 
@@ -133,7 +157,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** deg
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20minimum_2theta" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>maximum 2theta</strong> (Optional, Multivalued)</summary>
@@ -142,7 +170,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:maximum_2theta`](https://w3id.org/nfdi4cat/catcore/maximum_2theta)
 
@@ -150,7 +178,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** deg
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20maximum_2theta" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>step size</strong> (Optional, Multivalued)</summary>
@@ -159,13 +191,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0000950`](http://purl.allotrope.org/ontologies/result#AFR_0000950)
 
 **Schema Reference:** [step_size](./elements/step_size.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20step_size" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>monochromator</strong> (Optional, Multivalued)</summary>
@@ -174,13 +210,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`CHMO:0002120`](http://purl.obolibrary.org/obo/CHMO_0002120)
 
 **Schema Reference:** [monochromator](./elements/monochromator.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20monochromator" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>temperature</strong> (Optional, Multivalued)</summary>
@@ -189,7 +229,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0001584`](http://purl.allotrope.org/ontologies/result#AFR_0001584)
 
@@ -197,7 +237,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>sample spinning speed</strong> (Optional, Multivalued)</summary>
@@ -206,7 +250,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:sample_spinning_speed`](https://w3id.org/nfdi4cat/catcore/sample_spinning_speed)
 
@@ -214,7 +258,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** rpm
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20sample_spinning_speed" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>experiment duration</strong> (Optional, Multivalued)</summary>
@@ -223,7 +271,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0002455`](http://purl.allotrope.org/ontologies/result#AFR_0002455)
 
@@ -231,7 +279,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** h
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20experiment_duration" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -240,7 +292,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** X-ray absorption spectroscopy
 
-**CURIE:** [`voc4cat:0000286`](https://w3id.org/nfdi4cat/voc4cat_0000286)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20XRayAbsorptionSpectroscopy" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`voc4cat:0000286`](https://w3id.org/nfdi4cat/voc4cat_0000286)
 
 **Schema Reference:** [XRayAbsorptionSpectroscopy](./elements/XRayAbsorptionSpectroscopy.md)
 
@@ -253,13 +309,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0000108`](https://w3id.org/nfdi4cat/voc4cat_0000108)
 
 **Schema Reference:** [operation_mode](./elements/operation_mode.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20operation_mode" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>element analyzed</strong> (Optional, Multivalued)</summary>
@@ -268,13 +328,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:element_analyzed`](https://w3id.org/nfdi4cat/catcore/element_analyzed)
 
 **Schema Reference:** [element_analyzed](./elements/element_analyzed.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20element_analyzed" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>absorption edge</strong> (Optional, Multivalued)</summary>
@@ -283,13 +347,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:absorption_edge`](https://w3id.org/nfdi4cat/catcore/absorption_edge)
 
 **Schema Reference:** [absorption_edge](./elements/absorption_edge.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20absorption_edge" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>monochromator</strong> (Optional, Multivalued)</summary>
@@ -298,13 +366,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`CHMO:0002120`](http://purl.obolibrary.org/obo/CHMO_0002120)
 
 **Schema Reference:** [monochromator](./elements/monochromator.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20monochromator" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>minimum energy</strong> (Optional, Multivalued)</summary>
@@ -313,7 +385,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:minimum_energy`](https://w3id.org/nfdi4cat/catcore/minimum_energy)
 
@@ -321,7 +393,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** eV
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20minimum_energy" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>maximum energy</strong> (Optional, Multivalued)</summary>
@@ -330,7 +406,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:maximum_energy`](https://w3id.org/nfdi4cat/catcore/maximum_energy)
 
@@ -338,7 +414,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** eV
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20maximum_energy" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>energy resolution</strong> (Optional, Multivalued)</summary>
@@ -347,7 +427,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0000950`](http://purl.allotrope.org/ontologies/result#AFR_0000950)
 
@@ -355,7 +435,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** eV
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20energy_resolution" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>temperature</strong> (Optional, Multivalued)</summary>
@@ -364,7 +448,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0001584`](http://purl.allotrope.org/ontologies/result#AFR_0001584)
 
@@ -372,7 +456,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>beamline source</strong> (Optional, Multivalued)</summary>
@@ -381,13 +469,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:beamline_source`](https://w3id.org/nfdi4cat/catcore/beamline_source)
 
 **Schema Reference:** [beamline_source](./elements/beamline_source.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20beamline_source" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>noise of measurement</strong> (Optional, Multivalued)</summary>
@@ -396,13 +488,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:noise_of_measurement`](https://w3id.org/nfdi4cat/catcore/noise_of_measurement)
 
 **Schema Reference:** [noise_of_measurement](./elements/noise_of_measurement.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20noise_of_measurement" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>number of cycles</strong> (Optional, Multivalued)</summary>
@@ -411,13 +507,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** integer
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:number_of_cycles`](https://w3id.org/nfdi4cat/catcore/number_of_cycles)
 
 **Schema Reference:** [number_of_cycles](./elements/number_of_cycles.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20number_of_cycles" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -426,7 +526,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Infrared spectroscopy
 
-**CURIE:** [`catcore:InfraredSpectroscopy`](https://w3id.org/nfdi4cat/catcore/InfraredSpectroscopy)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20InfraredSpectroscopy" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`catcore:InfraredSpectroscopy`](https://w3id.org/nfdi4cat/catcore/InfraredSpectroscopy)
 
 **Schema Reference:** [InfraredSpectroscopy](./elements/InfraredSpectroscopy.md)
 
@@ -439,13 +543,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0000108`](https://w3id.org/nfdi4cat/voc4cat_0000108)
 
 **Schema Reference:** [operation_mode](./elements/operation_mode.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20operation_mode" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>minimum wavenumber</strong> (Optional, Multivalued)</summary>
@@ -454,7 +562,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:minimum_wavenumber`](https://w3id.org/nfdi4cat/catcore/minimum_wavenumber)
 
@@ -462,7 +570,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** cm-1
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20minimum_wavenumber" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>maximum wavenumber</strong> (Optional, Multivalued)</summary>
@@ -471,7 +583,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:maximum_wavenumber`](https://w3id.org/nfdi4cat/catcore/maximum_wavenumber)
 
@@ -479,7 +591,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** cm-1
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20maximum_wavenumber" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>step size</strong> (Optional, Multivalued)</summary>
@@ -488,13 +604,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0000950`](http://purl.allotrope.org/ontologies/result#AFR_0000950)
 
 **Schema Reference:** [step_size](./elements/step_size.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20step_size" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>temperature</strong> (Optional, Multivalued)</summary>
@@ -503,7 +623,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0001584`](http://purl.allotrope.org/ontologies/result#AFR_0001584)
 
@@ -511,7 +631,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>background correction</strong> (Optional, Multivalued)</summary>
@@ -520,13 +644,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFP:0003721`](http://purl.allotrope.org/ontologies/process#AFP_0003721)
 
 **Schema Reference:** [background_correction](./elements/background_correction.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20background_correction" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>number of scans</strong> (Optional, Multivalued)</summary>
@@ -535,13 +663,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** integer
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0003051`](http://purl.allotrope.org/ontologies/result#AFR_0003051)
 
 **Schema Reference:** [number_of_scans](./elements/number_of_scans.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20number_of_scans" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>atmosphere</strong> (Optional, Multivalued)</summary>
@@ -550,13 +682,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:atmosphere`](https://w3id.org/nfdi4cat/catcore/atmosphere)
 
 **Schema Reference:** [atmosphere](./elements/atmosphere.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20atmosphere" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -565,7 +701,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Raman spectroscopy
 
-**CURIE:** [`voc4cat:0000069`](https://w3id.org/nfdi4cat/voc4cat_0000069)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20RamanSpectroscopy" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`voc4cat:0000069`](https://w3id.org/nfdi4cat/voc4cat_0000069)
 
 **Schema Reference:** [RamanSpectroscopy](./elements/RamanSpectroscopy.md)
 
@@ -578,7 +718,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0001594`](http://purl.allotrope.org/ontologies/result#AFR_0001594)
 
@@ -586,7 +726,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** nm
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20excitation_laser_wavelength" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>excitation laser power</strong> (Optional, Multivalued)</summary>
@@ -595,7 +739,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0001595`](http://purl.allotrope.org/ontologies/result#AFR_0001595)
 
@@ -603,7 +747,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** mW
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20excitation_laser_power" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>magnification setting</strong> (Optional, Multivalued)</summary>
@@ -612,13 +760,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0002226`](http://purl.allotrope.org/ontologies/result#AFR_0002226)
 
 **Schema Reference:** [magnification_setting](./elements/magnification_setting.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20magnification_setting" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>integration time</strong> (Optional, Multivalued)</summary>
@@ -627,7 +779,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0001671`](http://purl.allotrope.org/ontologies/result#AFR_0001671)
 
@@ -635,7 +787,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** s
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20integration_time" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>number of scans</strong> (Optional, Multivalued)</summary>
@@ -644,13 +800,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** integer
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0003051`](http://purl.allotrope.org/ontologies/result#AFR_0003051)
 
 **Schema Reference:** [number_of_scans](./elements/number_of_scans.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20number_of_scans" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>atmosphere</strong> (Optional, Multivalued)</summary>
@@ -659,13 +819,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:atmosphere`](https://w3id.org/nfdi4cat/catcore/atmosphere)
 
 **Schema Reference:** [atmosphere](./elements/atmosphere.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20atmosphere" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>temperature</strong> (Optional, Multivalued)</summary>
@@ -674,7 +838,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0001584`](http://purl.allotrope.org/ontologies/result#AFR_0001584)
 
@@ -682,7 +846,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>filter or grating</strong> (Optional, Multivalued)</summary>
@@ -691,13 +859,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:filter_or_grating`](https://w3id.org/nfdi4cat/catcore/filter_or_grating)
 
 **Schema Reference:** [filter_or_grating](./elements/filter_or_grating.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20filter_or_grating" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -706,7 +878,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Gas chromatography-mass spectrometry
 
-**CURIE:** [`CHMO:0000497`](http://purl.obolibrary.org/obo/CHMO_0000497)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20GCMS" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`CHMO:0000497`](http://purl.obolibrary.org/obo/CHMO_0000497)
 
 **Schema Reference:** [GCMS](./elements/GCMS.md)
 
@@ -719,13 +895,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:external_standard`](https://w3id.org/nfdi4cat/catcore/external_standard)
 
 **Schema Reference:** [external_standard](./elements/external_standard.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20external_standard" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>internal standard</strong> (Optional, Multivalued)</summary>
@@ -734,13 +914,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:internal_standard`](https://w3id.org/nfdi4cat/catcore/internal_standard)
 
 **Schema Reference:** [internal_standard](./elements/internal_standard.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20internal_standard" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>column type</strong> (Optional, Multivalued)</summary>
@@ -749,13 +933,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0002026`](http://purl.allotrope.org/ontologies/result#AFR_0002026)
 
 **Schema Reference:** [column_type](./elements/column_type.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20column_type" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>carrier gas</strong> (Optional, Multivalued)</summary>
@@ -764,13 +952,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:carrier_gas`](https://w3id.org/nfdi4cat/catcore/carrier_gas)
 
 **Schema Reference:** [carrier_gas](./elements/carrier_gas.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20carrier_gas" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>carrier gas purity</strong> (Optional, Multivalued)</summary>
@@ -779,13 +971,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:carrier_gas_purity`](https://w3id.org/nfdi4cat/catcore/carrier_gas_purity)
 
 **Schema Reference:** [carrier_gas_purity](./elements/carrier_gas_purity.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20carrier_gas_purity" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>inlet temperature</strong> (Optional, Multivalued)</summary>
@@ -794,7 +990,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:inlet_temperature`](https://w3id.org/nfdi4cat/catcore/inlet_temperature)
 
@@ -802,7 +998,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20inlet_temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>minimum oven temperature</strong> (Optional, Multivalued)</summary>
@@ -811,7 +1011,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:minimum_oven_temperature`](https://w3id.org/nfdi4cat/catcore/minimum_oven_temperature)
 
@@ -819,7 +1019,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20minimum_oven_temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>maximum oven temperature</strong> (Optional, Multivalued)</summary>
@@ -828,7 +1032,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:maximum_oven_temperature`](https://w3id.org/nfdi4cat/catcore/maximum_oven_temperature)
 
@@ -836,7 +1040,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20maximum_oven_temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>heating ramp</strong> (Optional, Multivalued)</summary>
@@ -845,7 +1053,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:heating_ramp`](https://w3id.org/nfdi4cat/catcore/heating_ramp)
 
@@ -853,7 +1061,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel/min
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20heating_ramp" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>heating procedure</strong> (Optional, Multivalued)</summary>
@@ -862,13 +1074,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:heating_procedure`](https://w3id.org/nfdi4cat/catcore/heating_procedure)
 
 **Schema Reference:** [heating_procedure](./elements/heating_procedure.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20heating_procedure" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>acquisition mode</strong> (Optional, Multivalued)</summary>
@@ -877,13 +1093,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:acquisition_mode`](https://w3id.org/nfdi4cat/catcore/acquisition_mode)
 
 **Schema Reference:** [acquisition_mode](./elements/acquisition_mode.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20acquisition_mode" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>solvent delay</strong> (Optional, Multivalued)</summary>
@@ -892,7 +1112,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:solvent_delay`](https://w3id.org/nfdi4cat/catcore/solvent_delay)
 
@@ -900,7 +1120,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** min
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20solvent_delay" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>trace ion detection</strong> (Optional, Multivalued)</summary>
@@ -909,13 +1133,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:trace_ion_detection`](https://w3id.org/nfdi4cat/catcore/trace_ion_detection)
 
 **Schema Reference:** [trace_ion_detection](./elements/trace_ion_detection.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20trace_ion_detection" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>mz minimum</strong> (Optional, Multivalued)</summary>
@@ -924,13 +1152,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0002652`](http://purl.allotrope.org/ontologies/result#AFR_0002652)
 
 **Schema Reference:** [mz_minimum](./elements/mz_minimum.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20mz_minimum" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>mz maximum</strong> (Optional, Multivalued)</summary>
@@ -939,13 +1171,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0002653`](http://purl.allotrope.org/ontologies/result#AFR_0002653)
 
 **Schema Reference:** [mz_maximum](./elements/mz_maximum.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20mz_maximum" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>split ratio</strong> (Optional, Multivalued)</summary>
@@ -954,13 +1190,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:split_ratio`](https://w3id.org/nfdi4cat/catcore/split_ratio)
 
 **Schema Reference:** [split_ratio](./elements/split_ratio.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20split_ratio" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>injection volume</strong> (Optional, Multivalued)</summary>
@@ -969,7 +1209,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0001577`](http://purl.allotrope.org/ontologies/result#AFR_0001577)
 
@@ -977,7 +1217,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** uL
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20injection_volume" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -986,7 +1230,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Nuclear magnetic resonance spectroscopy
 
-**CURIE:** [`voc4cat:0000073`](https://w3id.org/nfdi4cat/voc4cat_0000073)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20NMRSpectroscopy" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`voc4cat:0000073`](https://w3id.org/nfdi4cat/voc4cat_0000073)
 
 **Schema Reference:** [NMRSpectroscopy](./elements/NMRSpectroscopy.md)
 
@@ -999,13 +1247,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:nucleus`](https://w3id.org/nfdi4cat/catcore/nucleus)
 
 **Schema Reference:** [nucleus](./elements/nucleus.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20nucleus" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>solvent</strong> (Optional, Multivalued)</summary>
@@ -1014,13 +1266,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0007246`](https://w3id.org/nfdi4cat/voc4cat_0007246)
 
 **Schema Reference:** [solvent](./elements/solvent.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20solvent" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>irradiation frequency</strong> (Optional, Multivalued)</summary>
@@ -1029,7 +1285,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`nmrCV:1400026`](http://nmrML.org/nmrCV#NMR:1400026)
 
@@ -1037,7 +1293,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** MHz
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20irradiation_frequency" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>temperature</strong> (Optional, Multivalued)</summary>
@@ -1046,7 +1306,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0001584`](http://purl.allotrope.org/ontologies/result#AFR_0001584)
 
@@ -1054,7 +1314,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>nmr pulse sequence</strong> (Optional, Multivalued)</summary>
@@ -1063,13 +1327,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`nmrCV:1400037`](http://nmrML.org/nmrCV#NMR:1400037)
 
 **Schema Reference:** [nmr_pulse_sequence](./elements/nmr_pulse_sequence.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20nmr_pulse_sequence" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>nmr sample tube</strong> (Optional, Multivalued)</summary>
@@ -1078,13 +1346,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`nmrCV:1400132`](http://nmrML.org/nmrCV#NMR:1400132)
 
 **Schema Reference:** [nmr_sample_tube](./elements/nmr_sample_tube.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20nmr_sample_tube" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>number of scans</strong> (Optional, Multivalued)</summary>
@@ -1093,13 +1365,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** integer
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0003051`](http://purl.allotrope.org/ontologies/result#AFR_0003051)
 
 **Schema Reference:** [number_of_scans](./elements/number_of_scans.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20number_of_scans" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>atmosphere</strong> (Optional, Multivalued)</summary>
@@ -1108,13 +1384,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:atmosphere`](https://w3id.org/nfdi4cat/catcore/atmosphere)
 
 **Schema Reference:** [atmosphere](./elements/atmosphere.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20atmosphere" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -1123,7 +1403,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Transmission electron microscopy
 
-**CURIE:** [`voc4cat:0000078`](https://w3id.org/nfdi4cat/voc4cat_0000078)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20TransmissionElectronMicroscopy" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`voc4cat:0000078`](https://w3id.org/nfdi4cat/voc4cat_0000078)
 
 **Schema Reference:** [TransmissionElectronMicroscopy](./elements/TransmissionElectronMicroscopy.md)
 
@@ -1136,13 +1420,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0000108`](https://w3id.org/nfdi4cat/voc4cat_0000108)
 
 **Schema Reference:** [operation_mode](./elements/operation_mode.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20operation_mode" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>gun type</strong> (Optional, Multivalued)</summary>
@@ -1151,13 +1439,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:gun_type`](https://w3id.org/nfdi4cat/catcore/gun_type)
 
 **Schema Reference:** [gun_type](./elements/gun_type.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20gun_type" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>acceleration voltage</strong> (Optional, Multivalued)</summary>
@@ -1166,7 +1458,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:acceleration_voltage`](https://w3id.org/nfdi4cat/catcore/acceleration_voltage)
 
@@ -1174,7 +1466,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** kV
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20acceleration_voltage" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>magnification setting</strong> (Optional, Multivalued)</summary>
@@ -1183,13 +1479,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0002226`](http://purl.allotrope.org/ontologies/result#AFR_0002226)
 
 **Schema Reference:** [magnification_setting](./elements/magnification_setting.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20magnification_setting" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -1198,7 +1498,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Inductively-coupled plasma atomic emission spectroscopy
 
-**CURIE:** [`CHMO:0000267`](http://purl.obolibrary.org/obo/CHMO_0000267)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ICPAES" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`CHMO:0000267`](http://purl.obolibrary.org/obo/CHMO_0000267)
 
 **Schema Reference:** [ICPAES](./elements/ICPAES.md)
 
@@ -1211,13 +1515,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:element_analyzed`](https://w3id.org/nfdi4cat/catcore/element_analyzed)
 
 **Schema Reference:** [element_analyzed](./elements/element_analyzed.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20element_analyzed" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>calibration method</strong> (Optional, Multivalued)</summary>
@@ -1226,13 +1534,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:calibration_method`](https://w3id.org/nfdi4cat/catcore/calibration_method)
 
 **Schema Reference:** [calibration_method](./elements/calibration_method.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20calibration_method" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>detection limit</strong> (Optional, Multivalued)</summary>
@@ -1241,13 +1553,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`NCIT:C105701`](http://purl.obolibrary.org/obo/NCIT_C105701)
 
 **Schema Reference:** [detection_limit](./elements/detection_limit.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20detection_limit" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>matrix effect correction</strong> (Optional, Multivalued)</summary>
@@ -1256,13 +1572,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:matrix_effect_correction`](https://w3id.org/nfdi4cat/catcore/matrix_effect_correction)
 
 **Schema Reference:** [matrix_effect_correction](./elements/matrix_effect_correction.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20matrix_effect_correction" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -1271,7 +1591,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Scanning electron microscopy
 
-**CURIE:** [`voc4cat:0000075`](https://w3id.org/nfdi4cat/voc4cat_0000075)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ScanningElectronMicroscopy" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`voc4cat:0000075`](https://w3id.org/nfdi4cat/voc4cat_0000075)
 
 **Schema Reference:** [ScanningElectronMicroscopy](./elements/ScanningElectronMicroscopy.md)
 
@@ -1284,13 +1608,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:gun_type`](https://w3id.org/nfdi4cat/catcore/gun_type)
 
 **Schema Reference:** [gun_type](./elements/gun_type.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20gun_type" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>acceleration voltage</strong> (Optional, Multivalued)</summary>
@@ -1299,7 +1627,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:acceleration_voltage`](https://w3id.org/nfdi4cat/catcore/acceleration_voltage)
 
@@ -1307,7 +1635,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** kV
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20acceleration_voltage" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>image resolution</strong> (Optional, Multivalued)</summary>
@@ -1316,7 +1648,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:image_resolution`](https://w3id.org/nfdi4cat/catcore/image_resolution)
 
@@ -1324,7 +1656,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** nm
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20image_resolution" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>field emitter</strong> (Optional, Multivalued)</summary>
@@ -1333,13 +1669,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:field_emitter`](https://w3id.org/nfdi4cat/catcore/field_emitter)
 
 **Schema Reference:** [field_emitter](./elements/field_emitter.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20field_emitter" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -1348,7 +1688,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Thermogravimetry
 
-**CURIE:** [`CHMO:0000690`](http://purl.obolibrary.org/obo/CHMO_0000690)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20Thermogravimetry" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`CHMO:0000690`](http://purl.obolibrary.org/obo/CHMO_0000690)
 
 **Schema Reference:** [Thermogravimetry](./elements/Thermogravimetry.md)
 
@@ -1361,13 +1705,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0000108`](https://w3id.org/nfdi4cat/voc4cat_0000108)
 
 **Schema Reference:** [operation_mode](./elements/operation_mode.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20operation_mode" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>atmosphere</strong> (Optional, Multivalued)</summary>
@@ -1376,13 +1724,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:atmosphere`](https://w3id.org/nfdi4cat/catcore/atmosphere)
 
 **Schema Reference:** [atmosphere](./elements/atmosphere.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20atmosphere" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>initial temperature</strong> (Optional, Multivalued)</summary>
@@ -1391,7 +1743,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`NCIT:C164644`](http://purl.obolibrary.org/obo/NCIT_C164644)
 
@@ -1399,7 +1751,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20initial_temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>final temperature</strong> (Optional, Multivalued)</summary>
@@ -1408,7 +1764,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`NCIT:C164644`](http://purl.obolibrary.org/obo/NCIT_C164644)
 
@@ -1416,7 +1772,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20final_temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>heating rate</strong> (Optional, Multivalued)</summary>
@@ -1425,7 +1785,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:heating_rate`](https://w3id.org/nfdi4cat/catcore/heating_rate)
 
@@ -1433,7 +1793,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel/min
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20heating_rate" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>heating procedure</strong> (Optional, Multivalued)</summary>
@@ -1442,13 +1806,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:heating_procedure`](https://w3id.org/nfdi4cat/catcore/heating_procedure)
 
 **Schema Reference:** [heating_procedure](./elements/heating_procedure.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20heating_procedure" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>sample mass</strong> (Optional, Multivalued)</summary>
@@ -1457,7 +1825,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0007038`](https://w3id.org/nfdi4cat/voc4cat_0007038)
 
@@ -1465,7 +1833,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** mg
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20sample_mass" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -1474,7 +1846,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** X-ray photoelectron spectroscopy
 
-**CURIE:** [`CHMO:0000404`](http://purl.obolibrary.org/obo/CHMO_0000404)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20XPS" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`CHMO:0000404`](http://purl.obolibrary.org/obo/CHMO_0000404)
 
 **Schema Reference:** [XPS](./elements/XPS.md)
 
@@ -1487,13 +1863,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`OBI:0001138`](http://purl.obolibrary.org/obo/OBI_0001138)
 
 **Schema Reference:** [xray_source](./elements/xray_source.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20xray_source" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>total acquisition time</strong> (Optional, Multivalued)</summary>
@@ -1502,7 +1882,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:total_acquisition_time`](https://w3id.org/nfdi4cat/catcore/total_acquisition_time)
 
@@ -1510,7 +1890,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** s
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20total_acquisition_time" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>number of scans</strong> (Optional, Multivalued)</summary>
@@ -1519,13 +1903,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** integer
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0003051`](http://purl.allotrope.org/ontologies/result#AFR_0003051)
 
 **Schema Reference:** [number_of_scans](./elements/number_of_scans.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20number_of_scans" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>spot size</strong> (Optional, Multivalued)</summary>
@@ -1534,7 +1922,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:spot_size`](https://w3id.org/nfdi4cat/catcore/spot_size)
 
@@ -1542,7 +1930,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** mm
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20spot_size" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>lense mode</strong> (Optional, Multivalued)</summary>
@@ -1551,13 +1943,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0000108`](https://w3id.org/nfdi4cat/voc4cat_0000108)
 
 **Schema Reference:** [lense_mode](./elements/lense_mode.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20lense_mode" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>minimum energy</strong> (Optional, Multivalued)</summary>
@@ -1566,7 +1962,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:minimum_energy`](https://w3id.org/nfdi4cat/catcore/minimum_energy)
 
@@ -1574,7 +1970,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** eV
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20minimum_energy" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>maximum energy</strong> (Optional, Multivalued)</summary>
@@ -1583,7 +1983,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:maximum_energy`](https://w3id.org/nfdi4cat/catcore/maximum_energy)
 
@@ -1591,7 +1991,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** eV
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20maximum_energy" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>step size</strong> (Optional, Multivalued)</summary>
@@ -1600,13 +2004,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0000950`](http://purl.allotrope.org/ontologies/result#AFR_0000950)
 
 **Schema Reference:** [step_size](./elements/step_size.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20step_size" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>pass energy</strong> (Optional, Multivalued)</summary>
@@ -1615,7 +2023,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:pass_energy`](https://w3id.org/nfdi4cat/catcore/pass_energy)
 
@@ -1623,7 +2031,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** eV
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20pass_energy" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>charge compensation</strong> (Optional, Multivalued)</summary>
@@ -1632,13 +2044,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:charge_compensation`](https://w3id.org/nfdi4cat/catcore/charge_compensation)
 
 **Schema Reference:** [charge_compensation](./elements/charge_compensation.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20charge_compensation" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>atmosphere</strong> (Optional, Multivalued)</summary>
@@ -1647,13 +2063,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:atmosphere`](https://w3id.org/nfdi4cat/catcore/atmosphere)
 
 **Schema Reference:** [atmosphere](./elements/atmosphere.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20atmosphere" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -1662,7 +2082,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Brunauer-Emmett-Teller surface area analysis
 
-**CURIE:** [`catcore:BET`](https://w3id.org/nfdi4cat/catcore/BET)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20BET" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`catcore:BET`](https://w3id.org/nfdi4cat/catcore/BET)
 
 **Schema Reference:** [BET](./elements/BET.md)
 
@@ -1675,13 +2099,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:adsorbate_gas`](https://w3id.org/nfdi4cat/catcore/adsorbate_gas)
 
 **Schema Reference:** [adsorbate_gas](./elements/adsorbate_gas.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20adsorbate_gas" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>degassing temperature</strong> (Optional, Multivalued)</summary>
@@ -1690,7 +2118,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:degassing_temperature`](https://w3id.org/nfdi4cat/catcore/degassing_temperature)
 
@@ -1698,7 +2126,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20degassing_temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>measurement temperature</strong> (Optional, Multivalued)</summary>
@@ -1707,7 +2139,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:measurement_temperature`](https://w3id.org/nfdi4cat/catcore/measurement_temperature)
 
@@ -1715,7 +2147,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** K
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20measurement_temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>pore size distribution method</strong> (Optional, Multivalued)</summary>
@@ -1724,13 +2160,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:pore_size_distribution_method`](https://w3id.org/nfdi4cat/catcore/pore_size_distribution_method)
 
 **Schema Reference:** [pore_size_distribution_method](./elements/pore_size_distribution_method.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20pore_size_distribution_method" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>sample mass</strong> (Optional, Multivalued)</summary>
@@ -1739,7 +2179,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0007038`](https://w3id.org/nfdi4cat/voc4cat_0007038)
 
@@ -1747,7 +2187,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** mg
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20sample_mass" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -1756,7 +2200,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Elemental analysis
 
-**CURIE:** [`CHMO:0001075`](http://purl.obolibrary.org/obo/CHMO_0001075)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ElementalAnalysis" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`CHMO:0001075`](http://purl.obolibrary.org/obo/CHMO_0001075)
 
 **Schema Reference:** [ElementalAnalysis](./elements/ElementalAnalysis.md)
 
@@ -1769,13 +2217,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:elements_analyzed`](https://w3id.org/nfdi4cat/catcore/elements_analyzed)
 
 **Schema Reference:** [elements_analyzed](./elements/elements_analyzed.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20elements_analyzed" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>combustion temperature</strong> (Optional, Multivalued)</summary>
@@ -1784,7 +2236,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:combustion_temperature`](https://w3id.org/nfdi4cat/catcore/combustion_temperature)
 
@@ -1792,7 +2244,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20combustion_temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>carrier gas</strong> (Optional, Multivalued)</summary>
@@ -1801,13 +2257,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:carrier_gas`](https://w3id.org/nfdi4cat/catcore/carrier_gas)
 
 **Schema Reference:** [carrier_gas](./elements/carrier_gas.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20carrier_gas" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -1816,7 +2276,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Ultraviolet-visible spectroscopy
 
-**CURIE:** [`voc4cat:0000079`](https://w3id.org/nfdi4cat/voc4cat_0000079)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20UVVisSpectroscopy" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`voc4cat:0000079`](https://w3id.org/nfdi4cat/voc4cat_0000079)
 
 **Schema Reference:** [UVVisSpectroscopy](./elements/UVVisSpectroscopy.md)
 
@@ -1829,7 +2293,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:minimum_wavelength`](https://w3id.org/nfdi4cat/catcore/minimum_wavelength)
 
@@ -1837,7 +2301,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** nm
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20minimum_wavelength" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>maximum wavelength</strong> (Optional, Multivalued)</summary>
@@ -1846,7 +2314,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:maximum_wavelength`](https://w3id.org/nfdi4cat/catcore/maximum_wavelength)
 
@@ -1854,7 +2322,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** nm
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20maximum_wavelength" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>path length</strong> (Optional, Multivalued)</summary>
@@ -1863,7 +2335,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFQ:0000268`](http://purl.allotrope.org/ontologies/quality#AFQ_0000268)
 
@@ -1871,7 +2343,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** cm
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20path_length" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>solvent</strong> (Optional, Multivalued)</summary>
@@ -1880,13 +2356,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0007246`](https://w3id.org/nfdi4cat/voc4cat_0007246)
 
 **Schema Reference:** [solvent](./elements/solvent.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20solvent" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>concentration</strong> (Optional, Multivalued)</summary>
@@ -1895,7 +2375,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0007244`](https://w3id.org/nfdi4cat/voc4cat_0007244)
 
@@ -1903,7 +2383,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** mol/L
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20concentration" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -1912,7 +2396,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Diffuse reflectance infrared Fourier transform spectroscopy
 
-**CURIE:** [`CHMO:0000645`](http://purl.obolibrary.org/obo/CHMO_0000645)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20DRIFTS" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`CHMO:0000645`](http://purl.obolibrary.org/obo/CHMO_0000645)
 
 **Schema Reference:** [DRIFTS](./elements/DRIFTS.md)
 
@@ -1925,13 +2413,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:adsorption_gas`](https://w3id.org/nfdi4cat/catcore/adsorption_gas)
 
 **Schema Reference:** [adsorption_gas](./elements/adsorption_gas.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20adsorption_gas" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>atmosphere</strong> (Optional, Multivalued)</summary>
@@ -1940,13 +2432,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:atmosphere`](https://w3id.org/nfdi4cat/catcore/atmosphere)
 
 **Schema Reference:** [atmosphere](./elements/atmosphere.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20atmosphere" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>flow rate</strong> (Optional, Multivalued)</summary>
@@ -1955,7 +2451,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:flow_rate`](https://w3id.org/nfdi4cat/catcore/flow_rate)
 
@@ -1963,7 +2459,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** mL/min
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20flow_rate" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>diluting reference</strong> (Optional, Multivalued)</summary>
@@ -1972,13 +2472,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:diluting_reference`](https://w3id.org/nfdi4cat/catcore/diluting_reference)
 
 **Schema Reference:** [diluting_reference](./elements/diluting_reference.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20diluting_reference" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>ratio reference sample</strong> (Optional, Multivalued)</summary>
@@ -1987,13 +2491,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:ratio_reference_sample`](https://w3id.org/nfdi4cat/catcore/ratio_reference_sample)
 
 **Schema Reference:** [ratio_reference_sample](./elements/ratio_reference_sample.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ratio_reference_sample" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>step size</strong> (Optional, Multivalued)</summary>
@@ -2002,13 +2510,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0000950`](http://purl.allotrope.org/ontologies/result#AFR_0000950)
 
 **Schema Reference:** [step_size](./elements/step_size.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20step_size" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>resolution</strong> (Optional, Multivalued)</summary>
@@ -2017,7 +2529,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:resolution`](https://w3id.org/nfdi4cat/catcore/resolution)
 
@@ -2025,7 +2537,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** cm-1
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20resolution" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>background correction method</strong> (Optional, Multivalued)</summary>
@@ -2034,13 +2550,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:background_correction_method`](https://w3id.org/nfdi4cat/catcore/background_correction_method)
 
 **Schema Reference:** [background_correction_method](./elements/background_correction_method.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20background_correction_method" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>temperature</strong> (Optional, Multivalued)</summary>
@@ -2049,7 +2569,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0001584`](http://purl.allotrope.org/ontologies/result#AFR_0001584)
 
@@ -2057,7 +2577,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>number of scans</strong> (Optional, Multivalued)</summary>
@@ -2066,13 +2590,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** integer
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0003051`](http://purl.allotrope.org/ontologies/result#AFR_0003051)
 
 **Schema Reference:** [number_of_scans](./elements/number_of_scans.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20number_of_scans" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -2081,7 +2609,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Cyclic voltammetry
 
-**CURIE:** [`CHMO:0000025`](http://purl.obolibrary.org/obo/CHMO_0000025)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20CyclicVoltammetry" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`CHMO:0000025`](http://purl.obolibrary.org/obo/CHMO_0000025)
 
 **Schema Reference:** [CyclicVoltammetry](./elements/CyclicVoltammetry.md)
 
@@ -2094,7 +2626,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0007213`](https://w3id.org/nfdi4cat/voc4cat_0007213)
 
@@ -2102,7 +2634,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** mV/s
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20scan_rate" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>minimum potential</strong> (Optional, Multivalued)</summary>
@@ -2111,7 +2647,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:minimum_potential`](https://w3id.org/nfdi4cat/catcore/minimum_potential)
 
@@ -2119,7 +2655,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** V
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20minimum_potential" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>maximum potential</strong> (Optional, Multivalued)</summary>
@@ -2128,7 +2668,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:maximum_potential`](https://w3id.org/nfdi4cat/catcore/maximum_potential)
 
@@ -2136,7 +2676,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** V
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20maximum_potential" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>step size potential</strong> (Optional, Multivalued)</summary>
@@ -2145,7 +2689,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0007218`](https://w3id.org/nfdi4cat/voc4cat_0007218)
 
@@ -2153,7 +2697,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** mV
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20step_size_potential" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>electrolyte composition</strong> (Optional, Multivalued)</summary>
@@ -2162,13 +2710,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:electrolyte_composition`](https://w3id.org/nfdi4cat/catcore/electrolyte_composition)
 
 **Schema Reference:** [electrolyte_composition](./elements/electrolyte_composition.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20electrolyte_composition" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>electrolyte concentration</strong> (Optional, Multivalued)</summary>
@@ -2177,7 +2729,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:electrolyte_concentration`](https://w3id.org/nfdi4cat/catcore/electrolyte_concentration)
 
@@ -2185,7 +2737,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** mol/L
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20electrolyte_concentration" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>reference electrode</strong> (Optional, Multivalued)</summary>
@@ -2194,13 +2750,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0007204`](https://w3id.org/nfdi4cat/voc4cat_0007204)
 
 **Schema Reference:** [reference_electrode](./elements/reference_electrode.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20reference_electrode" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>number of cycles</strong> (Optional, Multivalued)</summary>
@@ -2209,13 +2769,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** integer
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:number_of_cycles`](https://w3id.org/nfdi4cat/catcore/number_of_cycles)
 
 **Schema Reference:** [number_of_cycles](./elements/number_of_cycles.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20number_of_cycles" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>working electrode</strong> (Optional, Multivalued)</summary>
@@ -2224,13 +2788,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0007202`](https://w3id.org/nfdi4cat/voc4cat_0007202)
 
 **Schema Reference:** [working_electrode](./elements/working_electrode.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20working_electrode" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>counter electrode</strong> (Optional, Multivalued)</summary>
@@ -2239,13 +2807,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0007203`](https://w3id.org/nfdi4cat/voc4cat_0007203)
 
 **Schema Reference:** [counter_electrode](./elements/counter_electrode.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20counter_electrode" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>atmosphere</strong> (Optional, Multivalued)</summary>
@@ -2254,13 +2826,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:atmosphere`](https://w3id.org/nfdi4cat/catcore/atmosphere)
 
 **Schema Reference:** [atmosphere](./elements/atmosphere.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20atmosphere" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>temperature</strong> (Optional, Multivalued)</summary>
@@ -2269,7 +2845,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0001584`](http://purl.allotrope.org/ontologies/result#AFR_0001584)
 
@@ -2277,7 +2853,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -2286,7 +2866,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Dynamic light scattering
 
-**CURIE:** [`CHMO:0000167`](http://purl.obolibrary.org/obo/CHMO_0000167)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20DynamicLightScattering" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`CHMO:0000167`](http://purl.obolibrary.org/obo/CHMO_0000167)
 
 **Schema Reference:** [DynamicLightScattering](./elements/DynamicLightScattering.md)
 
@@ -2299,13 +2883,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0007246`](https://w3id.org/nfdi4cat/voc4cat_0007246)
 
 **Schema Reference:** [solvent](./elements/solvent.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20solvent" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>concentration</strong> (Optional, Multivalued)</summary>
@@ -2314,7 +2902,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0007244`](https://w3id.org/nfdi4cat/voc4cat_0007244)
 
@@ -2322,7 +2910,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** mol/L
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20concentration" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>light wavelength</strong> (Optional, Multivalued)</summary>
@@ -2331,7 +2923,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0000176`](https://w3id.org/nfdi4cat/voc4cat_0000176)
 
@@ -2339,7 +2931,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** nm
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20light_wavelength" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>scattering angle</strong> (Optional, Multivalued)</summary>
@@ -2348,7 +2944,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:scattering_angle`](https://w3id.org/nfdi4cat/catcore/scattering_angle)
 
@@ -2356,7 +2952,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** deg
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20scattering_angle" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>refractive index</strong> (Optional, Multivalued)</summary>
@@ -2365,13 +2965,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:refractive_index`](https://w3id.org/nfdi4cat/catcore/refractive_index)
 
 **Schema Reference:** [refractive_index](./elements/refractive_index.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20refractive_index" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>temperature</strong> (Optional, Multivalued)</summary>
@@ -2380,7 +2984,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0001584`](http://purl.allotrope.org/ontologies/result#AFR_0001584)
 
@@ -2388,7 +2992,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>dispersant</strong> (Optional, Multivalued)</summary>
@@ -2397,13 +3005,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:dispersant`](https://w3id.org/nfdi4cat/catcore/dispersant)
 
 **Schema Reference:** [dispersant](./elements/dispersant.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20dispersant" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>measurement duration</strong> (Optional, Multivalued)</summary>
@@ -2412,7 +3024,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:measurement_duration`](https://w3id.org/nfdi4cat/catcore/measurement_duration)
 
@@ -2420,7 +3032,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** s
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20measurement_duration" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -2429,7 +3045,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Electrospray ionisation mass spectrometry
 
-**CURIE:** [`CHMO:0000482`](http://purl.obolibrary.org/obo/CHMO_0000482)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ESI_MS" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`CHMO:0000482`](http://purl.obolibrary.org/obo/CHMO_0000482)
 
 **Schema Reference:** [ESI_MS](./elements/ESI_MS.md)
 
@@ -2442,13 +3062,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0000108`](https://w3id.org/nfdi4cat/voc4cat_0000108)
 
 **Schema Reference:** [operation_mode](./elements/operation_mode.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20operation_mode" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>mz minimum</strong> (Optional, Multivalued)</summary>
@@ -2457,13 +3081,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0002652`](http://purl.allotrope.org/ontologies/result#AFR_0002652)
 
 **Schema Reference:** [mz_minimum](./elements/mz_minimum.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20mz_minimum" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>mz maximum</strong> (Optional, Multivalued)</summary>
@@ -2472,13 +3100,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0002653`](http://purl.allotrope.org/ontologies/result#AFR_0002653)
 
 **Schema Reference:** [mz_maximum](./elements/mz_maximum.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20mz_maximum" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>spray voltage</strong> (Optional, Multivalued)</summary>
@@ -2487,7 +3119,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`CHMO:0002792`](http://purl.obolibrary.org/obo/CHMO_0002792)
 
@@ -2495,7 +3127,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** kV
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20spray_voltage" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>capillary temperature</strong> (Optional, Multivalued)</summary>
@@ -2504,7 +3140,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:capillary_temperature`](https://w3id.org/nfdi4cat/catcore/capillary_temperature)
 
@@ -2512,7 +3148,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20capillary_temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>solvent composition</strong> (Optional, Multivalued)</summary>
@@ -2521,13 +3161,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0007246`](https://w3id.org/nfdi4cat/voc4cat_0007246)
 
 **Schema Reference:** [solvent_composition](./elements/solvent_composition.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20solvent_composition" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>flow rate</strong> (Optional, Multivalued)</summary>
@@ -2536,7 +3180,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:flow_rate`](https://w3id.org/nfdi4cat/catcore/flow_rate)
 
@@ -2544,7 +3188,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** mL/min
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20flow_rate" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>carrier gas</strong> (Optional, Multivalued)</summary>
@@ -2553,13 +3201,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:carrier_gas`](https://w3id.org/nfdi4cat/catcore/carrier_gas)
 
 **Schema Reference:** [carrier_gas](./elements/carrier_gas.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20carrier_gas" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>concentration</strong> (Optional, Multivalued)</summary>
@@ -2568,7 +3220,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0007244`](https://w3id.org/nfdi4cat/voc4cat_0007244)
 
@@ -2576,7 +3228,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** mol/L
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20concentration" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -2585,7 +3241,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Photoluminescence spectroscopy
 
-**CURIE:** [`catcore:PhotoluminescenceSpectroscopy`](https://w3id.org/nfdi4cat/catcore/PhotoluminescenceSpectroscopy)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20PhotoluminescenceSpectroscopy" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`catcore:PhotoluminescenceSpectroscopy`](https://w3id.org/nfdi4cat/catcore/PhotoluminescenceSpectroscopy)
 
 **Schema Reference:** [PhotoluminescenceSpectroscopy](./elements/PhotoluminescenceSpectroscopy.md)
 
@@ -2598,7 +3258,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0002479`](http://purl.allotrope.org/ontologies/result#AFR_0002479)
 
@@ -2606,7 +3266,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** nm
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20excitation_wavelength" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>emission wavelength</strong> (Optional, Multivalued)</summary>
@@ -2615,7 +3279,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`NCIT:C204101`](http://purl.obolibrary.org/obo/NCIT_C204101)
 
@@ -2623,7 +3287,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** nm
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20emission_wavelength" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>optical filter</strong> (Optional, Multivalued)</summary>
@@ -2632,13 +3300,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:optical_filter`](https://w3id.org/nfdi4cat/catcore/optical_filter)
 
 **Schema Reference:** [optical_filter](./elements/optical_filter.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20optical_filter" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>temperature</strong> (Optional, Multivalued)</summary>
@@ -2647,7 +3319,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0001584`](http://purl.allotrope.org/ontologies/result#AFR_0001584)
 
@@ -2655,7 +3327,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>emission range</strong> (Optional, Multivalued)</summary>
@@ -2664,13 +3340,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:emission_range`](https://w3id.org/nfdi4cat/catcore/emission_range)
 
 **Schema Reference:** [emission_range](./elements/emission_range.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20emission_range" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>slit width</strong> (Optional, Multivalued)</summary>
@@ -2679,7 +3359,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:slit_width`](https://w3id.org/nfdi4cat/catcore/slit_width)
 
@@ -2687,7 +3367,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** nm
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20slit_width" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>step size</strong> (Optional, Multivalued)</summary>
@@ -2696,13 +3380,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0000950`](http://purl.allotrope.org/ontologies/result#AFR_0000950)
 
 **Schema Reference:** [step_size](./elements/step_size.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20step_size" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>integration time</strong> (Optional, Multivalued)</summary>
@@ -2711,7 +3399,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0001671`](http://purl.allotrope.org/ontologies/result#AFR_0001671)
 
@@ -2719,7 +3407,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** s
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20integration_time" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -2728,7 +3420,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Photoluminescence lifetime measurement
 
-**CURIE:** [`catcore:PhotoluminescenceLifetime`](https://w3id.org/nfdi4cat/catcore/PhotoluminescenceLifetime)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20PhotoluminescenceLifetime" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`catcore:PhotoluminescenceLifetime`](https://w3id.org/nfdi4cat/catcore/PhotoluminescenceLifetime)
 
 **Schema Reference:** [PhotoluminescenceLifetime](./elements/PhotoluminescenceLifetime.md)
 
@@ -2741,7 +3437,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0002479`](http://purl.allotrope.org/ontologies/result#AFR_0002479)
 
@@ -2749,7 +3445,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** nm
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20excitation_wavelength" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>emission wavelength</strong> (Optional, Multivalued)</summary>
@@ -2758,7 +3458,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`NCIT:C204101`](http://purl.obolibrary.org/obo/NCIT_C204101)
 
@@ -2766,7 +3466,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** nm
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20emission_wavelength" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>optical filter</strong> (Optional, Multivalued)</summary>
@@ -2775,13 +3479,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:optical_filter`](https://w3id.org/nfdi4cat/catcore/optical_filter)
 
 **Schema Reference:** [optical_filter](./elements/optical_filter.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20optical_filter" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>temperature</strong> (Optional, Multivalued)</summary>
@@ -2790,7 +3498,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0001584`](http://purl.allotrope.org/ontologies/result#AFR_0001584)
 
@@ -2798,7 +3506,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>lifetime fitting model</strong> (Optional, Multivalued)</summary>
@@ -2807,13 +3519,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:lifetime_fitting_model`](https://w3id.org/nfdi4cat/catcore/lifetime_fitting_model)
 
 **Schema Reference:** [lifetime_fitting_model](./elements/lifetime_fitting_model.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20lifetime_fitting_model" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>number of shots</strong> (Optional, Multivalued)</summary>
@@ -2822,13 +3538,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** integer
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:number_of_shots`](https://w3id.org/nfdi4cat/catcore/number_of_shots)
 
 **Schema Reference:** [number_of_shots](./elements/number_of_shots.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20number_of_shots" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -2837,7 +3557,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Size-exclusion chromatography
 
-**CURIE:** [`AFP:0000843`](http://purl.allotrope.org/ontologies/process#AFP_0000843)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20SizeExclusionChromatography" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`AFP:0000843`](http://purl.allotrope.org/ontologies/process#AFP_0000843)
 
 **Schema Reference:** [SizeExclusionChromatography](./elements/SizeExclusionChromatography.md)
 
@@ -2850,13 +3574,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0002026`](http://purl.allotrope.org/ontologies/result#AFR_0002026)
 
 **Schema Reference:** [column_type](./elements/column_type.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20column_type" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>temperature</strong> (Optional, Multivalued)</summary>
@@ -2865,7 +3593,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0001584`](http://purl.allotrope.org/ontologies/result#AFR_0001584)
 
@@ -2873,7 +3601,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>eluent</strong> (Optional, Multivalued)</summary>
@@ -2882,13 +3614,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
-**CURIE:** [`AFRL:0000011`](AFRL:0000011)
+**CURIE:** [`AFRL:0000011`](http://purl.allotrope.org/ontologies/role#AFRL_0000011)
 
 **Schema Reference:** [eluent](./elements/eluent.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20eluent" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>flow rate</strong> (Optional, Multivalued)</summary>
@@ -2897,7 +3633,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:flow_rate`](https://w3id.org/nfdi4cat/catcore/flow_rate)
 
@@ -2905,7 +3641,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** mL/min
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20flow_rate" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>calibration standard</strong> (Optional, Multivalued)</summary>
@@ -2914,13 +3654,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:calibration_standard`](https://w3id.org/nfdi4cat/catcore/calibration_standard)
 
 **Schema Reference:** [calibration_standard](./elements/calibration_standard.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20calibration_standard" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>injection volume</strong> (Optional, Multivalued)</summary>
@@ -2929,7 +3673,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0001577`](http://purl.allotrope.org/ontologies/result#AFR_0001577)
 
@@ -2937,7 +3681,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** uL
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20injection_volume" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -2946,7 +3694,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** High-performance liquid chromatography mass spectrometry
 
-**CURIE:** [`CHMO:0000796`](http://purl.obolibrary.org/obo/CHMO_0000796)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20HPLC_MS" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`CHMO:0000796`](http://purl.obolibrary.org/obo/CHMO_0000796)
 
 **Schema Reference:** [HPLC_MS](./elements/HPLC_MS.md)
 
@@ -2959,13 +3711,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0002026`](http://purl.allotrope.org/ontologies/result#AFR_0002026)
 
 **Schema Reference:** [column_type](./elements/column_type.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20column_type" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>eluent</strong> (Optional, Multivalued)</summary>
@@ -2974,13 +3730,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
-**CURIE:** [`AFRL:0000011`](AFRL:0000011)
+**CURIE:** [`AFRL:0000011`](http://purl.allotrope.org/ontologies/role#AFRL_0000011)
 
 **Schema Reference:** [eluent](./elements/eluent.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20eluent" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>gradient program</strong> (Optional, Multivalued)</summary>
@@ -2989,13 +3749,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:gradient_program`](https://w3id.org/nfdi4cat/catcore/gradient_program)
 
 **Schema Reference:** [gradient_program](./elements/gradient_program.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20gradient_program" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>ionization mode</strong> (Optional, Multivalued)</summary>
@@ -3004,13 +3768,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:ionization_mode`](https://w3id.org/nfdi4cat/catcore/ionization_mode)
 
 **Schema Reference:** [ionization_mode](./elements/ionization_mode.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ionization_mode" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>temperature</strong> (Optional, Multivalued)</summary>
@@ -3019,7 +3787,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0001584`](http://purl.allotrope.org/ontologies/result#AFR_0001584)
 
@@ -3027,7 +3795,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>flow rate</strong> (Optional, Multivalued)</summary>
@@ -3036,7 +3808,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:flow_rate`](https://w3id.org/nfdi4cat/catcore/flow_rate)
 
@@ -3044,7 +3816,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** mL/min
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20flow_rate" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>injection volume</strong> (Optional, Multivalued)</summary>
@@ -3053,7 +3829,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0001577`](http://purl.allotrope.org/ontologies/result#AFR_0001577)
 
@@ -3061,7 +3837,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** uL
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20injection_volume" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>external standard</strong> (Optional, Multivalued)</summary>
@@ -3070,13 +3850,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:external_standard`](https://w3id.org/nfdi4cat/catcore/external_standard)
 
 **Schema Reference:** [external_standard](./elements/external_standard.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20external_standard" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>internal standard</strong> (Optional, Multivalued)</summary>
@@ -3085,13 +3869,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:internal_standard`](https://w3id.org/nfdi4cat/catcore/internal_standard)
 
 **Schema Reference:** [internal_standard](./elements/internal_standard.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20internal_standard" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -3100,7 +3888,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Single crystal X-ray diffraction
 
-**CURIE:** [`CHMO:0000852`](http://purl.obolibrary.org/obo/CHMO_0000852)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20SingleCrystalXRD" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`CHMO:0000852`](http://purl.obolibrary.org/obo/CHMO_0000852)
 
 **Schema Reference:** [SingleCrystalXRD](./elements/SingleCrystalXRD.md)
 
@@ -3113,13 +3905,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`OBI:0001138`](http://purl.obolibrary.org/obo/OBI_0001138)
 
 **Schema Reference:** [xray_source](./elements/xray_source.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20xray_source" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>temperature</strong> (Optional, Multivalued)</summary>
@@ -3128,7 +3924,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0001584`](http://purl.allotrope.org/ontologies/result#AFR_0001584)
 
@@ -3136,7 +3932,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -3145,7 +3945,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Energy-dispersive X-ray emission spectroscopy
 
-**CURIE:** [`CHMO:0000309`](http://purl.obolibrary.org/obo/CHMO_0000309)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20EDX" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`CHMO:0000309`](http://purl.obolibrary.org/obo/CHMO_0000309)
 
 **Schema Reference:** [EDX](./elements/EDX.md)
 
@@ -3158,7 +3962,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:primary_energy`](https://w3id.org/nfdi4cat/catcore/primary_energy)
 
@@ -3166,7 +3970,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** keV
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20primary_energy" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>counting time</strong> (Optional, Multivalued)</summary>
@@ -3175,7 +3983,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:counting_time`](https://w3id.org/nfdi4cat/catcore/counting_time)
 
@@ -3183,7 +3991,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** s
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20counting_time" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>resolution</strong> (Optional, Multivalued)</summary>
@@ -3192,7 +4004,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:resolution`](https://w3id.org/nfdi4cat/catcore/resolution)
 
@@ -3200,7 +4012,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** cm-1
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20resolution" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>calibration method</strong> (Optional, Multivalued)</summary>
@@ -3209,13 +4025,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:calibration_method`](https://w3id.org/nfdi4cat/catcore/calibration_method)
 
 **Schema Reference:** [calibration_method](./elements/calibration_method.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20calibration_method" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -3224,7 +4044,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Temperature-programmed oxidation
 
-**CURIE:** [`CHMO:0002907`](http://purl.obolibrary.org/obo/CHMO_0002907)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20TPO" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`CHMO:0002907`](http://purl.obolibrary.org/obo/CHMO_0002907)
 
 **Schema Reference:** [TPO](./elements/TPO.md)
 
@@ -3237,13 +4061,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:oxidizing_gas_composition`](https://w3id.org/nfdi4cat/catcore/oxidizing_gas_composition)
 
 **Schema Reference:** [oxidizing_gas_composition](./elements/oxidizing_gas_composition.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20oxidizing_gas_composition" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>heating rate</strong> (Optional, Multivalued)</summary>
@@ -3252,7 +4080,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:heating_rate`](https://w3id.org/nfdi4cat/catcore/heating_rate)
 
@@ -3260,7 +4088,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel/min
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20heating_rate" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>minimum temperature</strong> (Optional, Multivalued)</summary>
@@ -3269,7 +4101,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:minimum_temperature`](https://w3id.org/nfdi4cat/catcore/minimum_temperature)
 
@@ -3277,7 +4109,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20minimum_temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>maximum temperature</strong> (Optional, Multivalued)</summary>
@@ -3286,7 +4122,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:maximum_temperature`](https://w3id.org/nfdi4cat/catcore/maximum_temperature)
 
@@ -3294,7 +4130,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20maximum_temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -3303,7 +4143,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Temperature-programmed reduction
 
-**CURIE:** [`CHMO:0002908`](http://purl.obolibrary.org/obo/CHMO_0002908)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20TPR" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`CHMO:0002908`](http://purl.obolibrary.org/obo/CHMO_0002908)
 
 **Schema Reference:** [TPR](./elements/TPR.md)
 
@@ -3316,13 +4160,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:reducing_gas_composition`](https://w3id.org/nfdi4cat/catcore/reducing_gas_composition)
 
 **Schema Reference:** [reducing_gas_composition](./elements/reducing_gas_composition.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20reducing_gas_composition" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>heating rate</strong> (Optional, Multivalued)</summary>
@@ -3331,7 +4179,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:heating_rate`](https://w3id.org/nfdi4cat/catcore/heating_rate)
 
@@ -3339,7 +4187,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel/min
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20heating_rate" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>minimum temperature</strong> (Optional, Multivalued)</summary>
@@ -3348,7 +4200,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:minimum_temperature`](https://w3id.org/nfdi4cat/catcore/minimum_temperature)
 
@@ -3356,7 +4208,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20minimum_temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>maximum temperature</strong> (Optional, Multivalued)</summary>
@@ -3365,7 +4221,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:maximum_temperature`](https://w3id.org/nfdi4cat/catcore/maximum_temperature)
 
@@ -3373,7 +4229,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20maximum_temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
@@ -3382,7 +4242,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Description:** Conductivity measurement
 
-**CURIE:** [`catcore:ConductivityMeasurement`](https://w3id.org/nfdi4cat/catcore/ConductivityMeasurement)
+<p>
+      <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ConductivityMeasurement" target="_blank" class="md-button md-button--primary">
+        💡 Submit Documentation Feedback
+      </a>
+    </p>**CURIE:** [`catcore:ConductivityMeasurement`](https://w3id.org/nfdi4cat/catcore/ConductivityMeasurement)
 
 **Schema Reference:** [ConductivityMeasurement](./elements/ConductivityMeasurement.md)
 
@@ -3395,7 +4259,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0001584`](http://purl.allotrope.org/ontologies/result#AFR_0001584)
 
@@ -3403,7 +4267,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Cel
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20temperature" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>electrode configuration</strong> (Optional, Multivalued)</summary>
@@ -3412,13 +4280,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:electrode_configuration`](https://w3id.org/nfdi4cat/catcore/electrode_configuration)
 
 **Schema Reference:** [electrode_configuration](./elements/electrode_configuration.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20electrode_configuration" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>frequency</strong> (Optional, Multivalued)</summary>
@@ -3427,7 +4299,7 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** float
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0007239`](https://w3id.org/nfdi4cat/voc4cat_0007239)
 
@@ -3435,7 +4307,11 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Unit:** Hz
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20frequency" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>ac dc mode</strong> (Optional, Multivalued)</summary>
@@ -3444,13 +4320,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:ac_dc_mode`](https://w3id.org/nfdi4cat/catcore/ac_dc_mode)
 
 **Schema Reference:** [ac_dc_mode](./elements/ac_dc_mode.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20ac_dc_mode" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>sample geometry</strong> (Optional, Multivalued)</summary>
@@ -3459,17 +4339,25 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:sample_geometry`](https://w3id.org/nfdi4cat/catcore/sample_geometry)
 
 **Schema Reference:** [sample_geometry](./elements/sample_geometry.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20sample_geometry" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 </details>
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20characterization_technique" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>sample state</strong> (Optional, Multivalued)</summary>
@@ -3478,13 +4366,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** SampleStateEnum
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:sample_state`](https://w3id.org/nfdi4cat/catcore/sample_state)
 
 **Schema Reference:** [sample_state](./elements/sample_state.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20sample_state" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>sample description</strong> (Optional, Multivalued)</summary>
@@ -3493,13 +4385,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`catcore:sample_description`](https://w3id.org/nfdi4cat/catcore/sample_description)
 
 **Schema Reference:** [sample_description](./elements/sample_description.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20sample_description" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>detector type</strong> (Optional, Multivalued)</summary>
@@ -3508,13 +4404,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFR:0000317`](http://purl.allotrope.org/ontologies/result#AFR_0000317)
 
 **Schema Reference:** [detector_type](./elements/detector_type.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20detector_type" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>sample preparation</strong> (Optional, Multivalued)</summary>
@@ -3523,13 +4423,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`AFP:0001159`](http://purl.allotrope.org/ontologies/process#AFP_0001159)
 
 **Schema Reference:** [sample_preparation](./elements/sample_preparation.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20sample_preparation" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <details markdown="1">
 <summary><strong>sample pretreatment</strong> (Optional, Multivalued)</summary>
@@ -3538,13 +4442,17 @@ Fields for Metadata which should be described when using this Metadata Aspect.
 
 **Range:** string
 
-**Cardinality:**  (Optional, Multivalued)
+**Cardinality:**  Optional, Multivalued
 
 **CURIE:** [`voc4cat:0000122`](https://w3id.org/nfdi4cat/voc4cat_0000122)
 
 **Schema Reference:** [sample_pretreatment](./elements/sample_pretreatment.md)
 
-</details>
+<p>
+  <a href=https://github.com/HendrikBorgelt/CatCore/issues/new?template=term_improvement.yaml&title=Term%20Feedback:%20sample_pretreatment" target="_blank" class="md-button md-button--primary">
+    💡 Submit Documentation Feedback
+  </a>
+</p></details>
 
 <iframe
     src="assets/chart_characterization.html"
