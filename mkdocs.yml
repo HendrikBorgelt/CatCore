@@ -7,6 +7,11 @@ theme:
   #  primary: cyan
   features:
     - content.tabs.link
+    - search.highlight
+    - navigation.expand
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
 
 # for adding extra css/js see https://www.mkdocs.org/user-guide/customizing-your-theme/
 
