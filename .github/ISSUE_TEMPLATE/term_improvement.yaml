@@ -14,7 +14,7 @@ body:
   attributes:
     label: What do you want to optimize? Type in General, Range, Cardinality a.s.o.
 - type: textarea
-  id: Requested Changes
+  id: Requested_Changes
   attributes:
     label: Please just tell us only what you want to change
 - type: textarea
