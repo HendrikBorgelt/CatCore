@@ -7,44 +7,35 @@ software_package: ["VASP 6.3.0", "ASE 3.22.1"]
 
 simulation_method:
   - identifier: "SIM_METHOD_001"
-    class_uri: "catcore:DFT"
     exchange_correlation_functional: ["PBE (Perdew-Burke-Ernzerhof)"]
     energy_cutoff: [450.0]  # eV
-    convergence_criteria: ["energy: 1×10⁻⁵ eV, forces: 0.02 eV/Å"]
+    convergence_criteria: ["energy: 1x10-5 eV, forces: 0.02 eV/A"]
     dft_u_parameters: ["not applied"]
     spin_polarization: [true]
     total_energy_per_atom: [-5.234]  # eV
-    k_point_mesh: ["5×5×1 Monkhorst-Pack"]
-    smearing_method: ["Methfessel-Paxton, sigma=0.2 eV"]
 
 calculated_property:
   # Surface properties
   - identifier: "CALC_PROP_001"
-    class_uri: "catcore:Surfaces"
     surface_energy: [0.089]  # J/m²
     miller_indices: ["(111)"]
     slab_thickness: [12.75]  # Angstrom (5 layers)
     vacuum_spacing: [15.0]  # Angstrom
     surface_termination_method: ["symmetric, both surfaces Pt-terminated"]
-    material_composition: ["Pt"]
-    crystal_structure: ["fcc, a = 3.92 Å"]
 
   # Electronic structure
   - identifier: "CALC_PROP_002"
-    class_uri: "catcore:ElectronicStructure"
     material_composition: ["Pt(111) surface with adsorbed CO"]
     crystal_structure: ["fcc Pt substrate"]
-    k_point_mesh: ["5×5×1 for surface calculations"]
+    k_point_mesh: ["5x5x1 for surface calculations"]
     energy_cutoff: [450.0]  # eV
     smearing_method: ["Methfessel-Paxton, sigma=0.2 eV"]
     spin_polarized: [true]
-    band_path: ["Γ-M-K-Γ"]
+    band_path: ["|-M-K-|"]
     fermi_energy: [5.42]  # eV
-    convergence_criteria: ["SCF: 1×10⁻⁶ eV"]
 
   # Adsorption energies (as additional property)
   - identifier: "CALC_PROP_003"
-    class_uri: "catcore:ThermodynamicStability"
     formation_energy: [-1.68]  # eV (CO adsorption energy)
     reference_energies: ["E(Pt_slab) = -261.70 eV, E(CO_gas) = -14.84 eV, E(Pt_slab+CO) = -278.22 eV"]
     energy_above_hull: [0.0]  # eV (most stable configuration)

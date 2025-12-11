@@ -1,5 +1,5 @@
 # Auto generated from catcore.yaml by pythongen.py version: 0.0.1
-# Generation date: 2025-12-11T12:56:00
+# Generation date: 2025-12-11T14:30:24
 # Schema: catcore-metadata
 #
 # id: https://w3id.org/nfdi4cat/catcore
@@ -3007,6 +3007,7 @@ class OperationParameters(CatCoreEntity):
         super().__post_init__(**kwargs)
 
 
+@dataclass(repr=False)
 class ProductIdentificationMethod(CatCoreEntity):
     """
     Method used for product identification
@@ -3017,6 +3018,15 @@ class ProductIdentificationMethod(CatCoreEntity):
     class_class_curie: ClassVar[str] = "catcore:ProductIdentificationMethod"
     class_name: ClassVar[str] = "ProductIdentificationMethod"
     class_model_uri: ClassVar[URIRef] = CATCORE.ProductIdentificationMethod
+
+    equipment: Optional[Union[str, list[str]]] = empty_list()
+
+    def __post_init__(self, *_: str, **kwargs: Any):
+        if not isinstance(self.equipment, list):
+            self.equipment = [self.equipment] if self.equipment is not None else []
+        self.equipment = [v if isinstance(v, str) else str(v) for v in self.equipment]
+
+        super().__post_init__(**kwargs)
 
 
 @dataclass(repr=False)

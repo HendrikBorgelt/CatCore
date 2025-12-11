@@ -1043,7 +1043,7 @@ slots:
     mappings:
     - voc4cat:0000187
     slot_uri: voc4cat:0000187
-    owner: Characterization
+    owner: ProductIdentificationMethod
     domain_of:
     - Solvothermal
     - PlasmaAssisted
@@ -1051,6 +1051,7 @@ slots:
     - MicrowaveAssisted
     - MechanochemicalSynthesis
     - Characterization
+    - ProductIdentificationMethod
     range: string
     multivalued: true
   stirring_speed:
@@ -6343,6 +6344,7 @@ classes:
     abstract: true
     slots:
     - identifier
+    - equipment
     class_uri: catcore:ProductIdentificationMethod
   Simulation:
     name: Simulation
@@ -6667,7 +6669,7 @@ classes:
     class_uri: catcore:BandGap
 metamodel_version: 1.7.0
 source_file: catcore.yaml
-source_file_date: '2025-12-11T12:55:52'
-source_file_size: 83282
-generation_date: '2025-12-11T12:57:46'
+source_file_date: '2025-12-11T14:29:28'
+source_file_size: 83313
+generation_date: '2025-12-11T14:32:11'
 

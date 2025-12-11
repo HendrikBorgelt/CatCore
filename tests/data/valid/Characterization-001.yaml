@@ -5,16 +5,15 @@
 identifier: "CHAR_001_Pt_Al2O3"
 equipment: ["Bruker D8 Advance diffractometer", "Thermo Scientific K-Alpha XPS", "Micromeritics ASAP 2020"]
 sample_state: ["powder"]
-sample_description: ["5 wt% Pt/Al2O3 catalyst after calcination at 450°C"]
+sample_description: ["5 wt% Pt/Al2O3 catalyst after calcination at 450C"]
 detector_type: ["Lynxeye detector", "hemispherical analyzer", "thermal conductivity detector"]
 sample_preparation: ["pressed into sample holder without binder", "mounted on carbon tape", "degassed under vacuum"]
-sample_pretreatment: ["calcined at 450°C for 4 hours", "none", "degassed at 300°C for 6 hours"]
+sample_pretreatment: ["calcined at 450C for 4 hours", "none", "degassed at 300C for 6 hours"]
 
 characterization_technique:
   # Powder XRD
   - identifier: "CHAR_TECH_001"
-    class_uri: "CHMO:0000158"
-    xray_source: ["Cu Kα (λ = 1.5406 Å)"]
+    xray_source: ["Cu Kalpha (lambda = 1.5406 A)"]
     atmosphere: ["ambient air"]
     operation_mode: ["continuous scan"]
     minimum_2theta: [10.0]  # degrees
@@ -27,8 +26,7 @@ characterization_technique:
 
   # XPS
   - identifier: "CHAR_TECH_002"
-    class_uri: "CHMO:0000404"
-    xray_source: ["Al Kα (1486.6 eV)"]
+    xray_source: ["Al Kalpha (1486.6 eV)"]
     total_acquisition_time: [1800.0]  # seconds
     number_of_scans: [10]
     spot_size: [400.0]  # micrometers
@@ -38,27 +36,19 @@ characterization_technique:
     step_size: [0.1]  # eV
     pass_energy: [50.0]  # eV
     charge_compensation: ["flood gun, 1.0 eV electrons"]
-    atmosphere: ["ultra-high vacuum, 2×10⁻⁹ mbar"]
-    temperature: [25.0]  # Celsius
+    atmosphere: ["ultra-high vacuum, 2x10-9 mbar"]
 
   # BET Surface Area
   - identifier: "CHAR_TECH_003"
-    class_uri: "catcore:BET"
     adsorbate_gas: ["N2"]
     degassing_temperature: [300.0]  # Celsius
     measurement_temperature: [77.0]  # Kelvin
     pore_size_distribution_method: ["BJH method from desorption branch"]
     sample_mass: [150.0]  # mg
-    atmosphere: ["nitrogen"]
-    temperature: [-196.0]  # Celsius (liquid N2)
 
   # Temperature Programmed Reduction
   - identifier: "CHAR_TECH_004"
-    class_uri: "CHMO:0002908"
     reducing_gas_composition: ["5% H2/Ar"]
     heating_rate: [10.0]  # Celsius/min
     minimum_temperature: [50.0]  # Celsius
     maximum_temperature: [800.0]  # Celsius
-    flow_rate: [50.0]  # mL/min
-    sample_mass: [50.0]  # mg
-    detector_type: ["thermal conductivity detector"]

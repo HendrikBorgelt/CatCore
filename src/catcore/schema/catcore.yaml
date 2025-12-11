@@ -823,6 +823,8 @@ classes:
   ProductIdentificationMethod:
     is_a: CatCoreEntity
     description: Method used for product identification
+    slots:
+      - equipment
     abstract: true
 
   # ==================== SIMULATION ====================

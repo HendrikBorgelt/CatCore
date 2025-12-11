@@ -8,8 +8,6 @@ catalyst_type: ["5 wt% Pt/Al2O3, 250-355 μm sieve fraction"]
 
 reactor_design_type:
   - identifier: "REACTOR_001"
-    class_uri: "catcore:FixedBedReactor"
-
 reactant: 
   - "CO (1000 ppm)"
   - "O2 (5 vol%)"
@@ -22,19 +20,17 @@ operation_parameters:
     experiment_pressure: [1.0]  # bar (atmospheric)
     feed_composition_range: ["CO: 1000 ppm, O2: 5 vol%, N2: balance"]
     experiment_duration: [8.0]  # hours
-    flow_rate: [100.0]  # mL/min (total flow)
 
 product_identification_method:
   - identifier: "PROD_ID_001"
-    class_uri: "CHMO:0000497"
     equipment: ["Agilent 7890B GC with TCD and FID"]
-    column_type: ["HP-PLOT Q column, 30 m × 0.32 mm × 20 μm"]
-    carrier_gas: ["helium"]
-    carrier_gas_purity: ["99.999%"]
-    inlet_temperature: [200.0]  # Celsius
-    detector_type: ["thermal conductivity detector (TCD)", "flame ionization detector (FID)"]
-    minimum_oven_temperature: [40.0]  # Celsius
-    maximum_oven_temperature: [250.0]  # Celsius
-    heating_ramp: [10.0]  # Celsius/min
-    external_standard: ["CO calibration gas 1000 ppm"]
-    internal_standard: ["CH4 100 ppm"]
+#     column_type: ["HP-PLOT Q column, 30 m × 0.32 mm × 20 μm"]
+#     carrier_gas: ["helium"]
+#     carrier_gas_purity: ["99.999%"]
+#     inlet_temperature: [200.0]  # Celsius
+#     detector_type: ["thermal conductivity detector (TCD)", "flame ionization detector (FID)"]
+#     minimum_oven_temperature: [40.0]  # Celsius
+#     maximum_oven_temperature: [250.0]  # Celsius
+#     heating_ramp: [10.0]  # Celsius/min
+#     external_standard: ["CO calibration gas 1000 ppm"]
+#     internal_standard: ["CH4 100 ppm"]

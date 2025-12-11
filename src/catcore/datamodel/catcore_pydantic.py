@@ -550,7 +550,8 @@ class Solvothermal(PreparationMethod):
                        'CombustionSynthesis',
                        'MicrowaveAssisted',
                        'MechanochemicalSynthesis',
-                       'Characterization'],
+                       'Characterization',
+                       'ProductIdentificationMethod'],
          'slot_uri': 'voc4cat:0000187'} })
     stirring_speed: Optional[list[float]] = Field(default=[], description="""Speed of stirring""", json_schema_extra = { "linkml_meta": {'domain_of': ['Solvothermal', 'MolecularSynthesis'],
          'slot_uri': 'catcore:stirring_speed',
@@ -575,7 +576,8 @@ class PlasmaAssisted(PreparationMethod):
                        'CombustionSynthesis',
                        'MicrowaveAssisted',
                        'MechanochemicalSynthesis',
-                       'Characterization'],
+                       'Characterization',
+                       'ProductIdentificationMethod'],
          'slot_uri': 'voc4cat:0000187'} })
     atmosphere: Optional[list[str]] = Field(default=[], description="""Atmospheric conditions""", json_schema_extra = { "linkml_meta": {'domain_of': ['PlasmaAssisted',
                        'CombustionSynthesis',
@@ -645,7 +647,8 @@ class CombustionSynthesis(PreparationMethod):
                        'CombustionSynthesis',
                        'MicrowaveAssisted',
                        'MechanochemicalSynthesis',
-                       'Characterization'],
+                       'Characterization',
+                       'ProductIdentificationMethod'],
          'slot_uri': 'voc4cat:0000187'} })
     identifier: Optional[str] = Field(default=None, description="""Unique identifier for the entity""", json_schema_extra = { "linkml_meta": {'domain_of': ['CatCoreEntity'], 'slot_uri': 'catcore:identifier'} })
 
@@ -811,7 +814,8 @@ class MicrowaveAssisted(PreparationMethod):
                        'CombustionSynthesis',
                        'MicrowaveAssisted',
                        'MechanochemicalSynthesis',
-                       'Characterization'],
+                       'Characterization',
+                       'ProductIdentificationMethod'],
          'slot_uri': 'voc4cat:0000187'} })
     power: Optional[list[float]] = Field(default=[], description="""Power setting""", json_schema_extra = { "linkml_meta": {'domain_of': ['MicrowaveAssisted'],
          'slot_uri': 'catcore:power',
@@ -994,7 +998,8 @@ class MechanochemicalSynthesis(PreparationMethod):
                        'CombustionSynthesis',
                        'MicrowaveAssisted',
                        'MechanochemicalSynthesis',
-                       'Characterization'],
+                       'Characterization',
+                       'ProductIdentificationMethod'],
          'slot_uri': 'voc4cat:0000187'} })
     vessel_volume: Optional[list[float]] = Field(default=[], description="""Volume of vessel""", json_schema_extra = { "linkml_meta": {'domain_of': ['MechanochemicalSynthesis'],
          'slot_uri': 'catcore:vessel_volume',
@@ -1229,7 +1234,8 @@ class Characterization(CatCoreEntity):
                        'CombustionSynthesis',
                        'MicrowaveAssisted',
                        'MechanochemicalSynthesis',
-                       'Characterization'],
+                       'Characterization',
+                       'ProductIdentificationMethod'],
          'slot_uri': 'voc4cat:0000187'} })
     characterization_technique: list[CharacterizationTechnique] = Field(default=..., description="""Technique used for characterization""", json_schema_extra = { "linkml_meta": {'domain_of': ['Characterization'], 'slot_uri': 'voc4cat:0000066'} })
     sample_state: Optional[list[SampleStateEnum]] = Field(default=[], description="""State of the sample""", json_schema_extra = { "linkml_meta": {'domain_of': ['Characterization'], 'slot_uri': 'catcore:sample_state'} })
@@ -2569,6 +2575,14 @@ class ProductIdentificationMethod(CatCoreEntity):
     """
     linkml_meta: ClassVar[LinkMLMeta] = LinkMLMeta({'abstract': True, 'from_schema': 'https://w3id.org/nfdi4cat/catcore'})
 
+    equipment: Optional[list[str]] = Field(default=[], description="""Equipment used""", json_schema_extra = { "linkml_meta": {'domain_of': ['Solvothermal',
+                       'PlasmaAssisted',
+                       'CombustionSynthesis',
+                       'MicrowaveAssisted',
+                       'MechanochemicalSynthesis',
+                       'Characterization',
+                       'ProductIdentificationMethod'],
+         'slot_uri': 'voc4cat:0000187'} })
     identifier: Optional[str] = Field(default=None, description="""Unique identifier for the entity""", json_schema_extra = { "linkml_meta": {'domain_of': ['CatCoreEntity'], 'slot_uri': 'catcore:identifier'} })
 
 

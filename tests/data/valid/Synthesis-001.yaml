@@ -12,7 +12,6 @@ precursor:
 
 preparation_method:
   - identifier: "PREP_001"
-    class_uri: "catcore:Impregnation"
     impregnation_type: ["wet_impregnation"]
     impregnation_duration: [4.0]  # hours
     impregnation_temperature: [25.0]  # Celsius
